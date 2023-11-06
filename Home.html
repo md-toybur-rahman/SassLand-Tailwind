@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="assets/css/libs/google_font.css">
+
+
+    <!-- Tailwind Css -->
+    <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif']
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body class="font-[inter]">
+    <section class="bg-[#6A26DA]">
+        <nav class="lg:mx-[150px] py-[18px] flex items-center justify-between">
+            <div class="flex items-center gap-1">
+                <img src="assets/images/icons/logo_shape.svg" alt="">
+                <h1 class="font-bold text-2xl text-white">SassLand</h1>
+            </div>
+            <ul class="flex items-center gap-6 text-[14px] font-semibold text-white">
+                <li class="p-2"><a href="#" class="flex items-center gap-1">Home <img src="assets/images/icons/arrow_drop_down.svg" alt=""></a></li>
+                <li class="p-2"><a href="#" class="flex items-center gap-1">Pages <img src="assets/images/icons/arrow_drop_down.svg" alt=""></a></li>
+                <li class="p-2"><a href="#" class="flex items-center gap-1">Components <img src="assets/images/icons/arrow_drop_down.svg" alt=""></a></li>
+                <li class="p-2"><a href="#">Support</a></li>
+            </ul>
+            <div>
+                <button class="bg-white rounded-lg text-[#25373F] px-6 py-[13px] font-medium text-sm">Get Started Free</button>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section>
+            <div class="max-w-[558px]">
+                <h1>Understand your startup</h1>
+                <p>The first data tool you'll love. ANd the last one you'll ever need.</p>
+                <div>
+                    <button class="bg-white rounded-lg text-[#25373F] px-[54px] py-[18px] font-medium text-base">Get Started Free</button>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner Section -->
+    </section>
+</body>
+
+</html>
