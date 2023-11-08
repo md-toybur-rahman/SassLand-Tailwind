@@ -32,47 +32,52 @@
 </head>
 
 <body class="font-[inter]">
-    <section class="bg-[#6A26DA]">
+    <section>
         <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
             <div class="md:hidden">
                 <img src="assets/images/icons/align-justify.svg" alt="">
             </div>
             <div class="flex items-center gap-1">
                 <img class="w-9" src="assets/images/icons/logo_shape.svg" alt="">
-                <h1 class="font-bold text-xl md:text-2xl text-white">SassLand</h1>
+                <h1 class="font-bold text-xl md:text-2xl text-[#25373F]">SassLand</h1>
             </div>
-            <ul class="hidden lg:flex items-center gap-6 text-[14px] font-semibold text-white">
+            <ul class="hidden lg:flex items-center gap-6 text-[14px] font-semibold text-[#25373F]">
                 <li class="p-2 relative">
-                    <div class="flex items-center gap-1">
+                    <div class="flex items-center">
                         <a href="#" class="">Home </a>
                         <img id="homeArrow" onclick="menubarDropdownHandler('homeDropdown', 'homeArrow')"
-                            class="cursor-pointer duration-300" src="assets/images/icons/arrow_drop_down.svg" alt="">
+                            class="cursor-pointer p-2" src="assets/images/icons/arrow_black_drop_down.svg" alt="">
                     </div>
                     <div id="homeDropdown"
-                        class="flex flex-col gap-3 text-white overflow-hidden h-0 duration-300 absolute top-3">
+                        class="flex flex-col gap-3 text-[#25373F] overflow-hidden h-0 duration-300 absolute top-5">
                         <div class="cursor-pointer">
-                            <a href="Home2.html" class="text-sm">Home 2</a>
+                            <a href="Home.html" class="text-sm">Home 1</a>
                         </div>
                         <div class="cursor-pointer">
                             <a href="#" class="text-sm">Home 3</a>
                         </div>
                     </div>
                 </li>
-                <li class="p-2"><a href="#" class="flex items-center gap-1">Pages <img
-                            src="assets/images/icons/arrow_drop_down.svg" alt=""></a></li>
-                <li class="p-2"><a href="#" class="flex items-center gap-1">Components <img
-                            src="assets/images/icons/arrow_drop_down.svg" alt=""></a></li>
+                <li class="p-2"><a href="#" class="flex items-center">Pages <img class="p-2 cursor-pointer"
+                            src="assets/images/icons/arrow_black_drop_down.svg" alt=""></a></li>
+                <li class="p-2"><a href="#" class="flex items-center">Components <img class="p-2 cursor-pointer"
+                            src="assets/images/icons/arrow_black_drop_down.svg" alt=""></a></li>
                 <li class="p-2"><a href="#">Support</a></li>
             </ul>
             <div>
-                <button class="bg-white rounded-md text-[#25373F] px-4 md:px-6 py-2 md:py-[13px] font-medium text-xs md:text-sm">Get Started
+                <button class="bg-[#6A26DA] rounded-3xl text-white px-4 md:px-6 py-2 md:py-[13px] font-medium text-xs md:text-sm">Get Started
                     Free</button>
             </div>
         </nav>
         <!-- Banner Section -->
         <section class="pt-[51px] pb-[69px] lg:flex items-center justify-between ms-6 md:ms-[70px] xl:ms-[150px]">
+            <div class="flex justify-end mt-10 lg:block lg:mt-0">
+                <img src="assets/images/Dashboard.svg" alt="">
+            </div>
             <div class="lg:max-w-[558px]">
-                <h1 class="font-bold text-white text-[36px] lg:text-[57px] mb-6">Understand your startup</h1>
+                <h1 class="text-base text-[#6A26DA] font-medium">Meetings from anywhere</h1>
+                <p class="max-w-[346px]">We share common trends and strategies for improving your rental income.</p>
+                <h1 class="font-bold text-[#25373F] text-[36px] lg:text-[57px] mb-6">Understand your startup</h1>
                 <p class="text-lg md:text-xl lg:text-2xl font-medium text-[#E9EBEB] mb-12">The first data tool you'll love. And the
                     last one you'll ever need.</p>
                 <div class="flex items-center gap-4">
@@ -83,9 +88,6 @@
                         class="bg-transparent border border-[#A67DE9] rounded-md text-white px-10 md:px-[54px] py-4 md:py-[18px] font-medium text-sm md:text-base">Get
                         Started Free</button>
                 </div>
-            </div>
-            <div class="flex justify-end mt-10 lg:block lg:mt-0">
-                <img src="assets/images/Dashboard.svg" alt="">
             </div>
         </section>
         <!-- End Banner Section -->
