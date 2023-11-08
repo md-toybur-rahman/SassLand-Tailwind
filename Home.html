@@ -42,7 +42,8 @@
                 <li class="p-2 relative">
                     <div class="flex items-center gap-1">
                         <a href="#" class="">Home </a>
-                        <img id="homeArrow"  onclick="menubarDropdownHandler('homeDropdown', 'homeArrow')" class="cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
+                        <img id="homeArrow" onclick="menubarDropdownHandler('homeDropdown', 'homeArrow')"
+                            class="cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
                     </div>
                     <div id="homeDropdown"
                         class="flex flex-col gap-5 text-white overflow-hidden h-0 duration-300 absolute">
@@ -357,7 +358,7 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-[127px] mb-[122px]">
+            <div class="text-center mt-[127px] mb-[50px] md:mb-[122px]">
                 <h1 class="text-sm text-[#25373F]">Haven't got your answer? <a href="#" class="text-[#6A26DA]">Contact
                         our support now</a></h1>
             </div>
@@ -367,20 +368,83 @@
         <!-- Time is Money -->
         <section class="flex flex-wrap justify-between items-center gap-5 px-5 lg:px-0">
             <div class="max-w-[413px]">
-                <h1 class="text-2xl font-semibold text-[#25373F] mb-3">Time is money. Save both.</h1>
-                <p class="text-base text-[#676769] font-normal">With lots of unique blocks, you can easily build a page
+                <h1 class="text-xl md:text-2xl font-semibold text-[#25373F] mb-3">Time is money. Save both.</h1>
+                <p class="text-sm md:text-base text-[#676769] font-normal">With lots of unique blocks, you can easily build a page
                     without coding. Build your next landing page.</p>
             </div>
             <div
                 class="p-[6px] border border-[#DCE0E0] rounded-md max-w-[450px] lg:w-[450px] flex justify-between items-center mt-7 md:mt-0">
-                <input class="outline-none text-sm font-medium px-2" type="email" placeholder="what's your work email?">
-                <button class="py-[14px] w-[149px] bg-[#6A26DA] text-base font-medium text-white rounded-md">Get
+                <input class="outline-none text-xs md:text-sm font-medium px-2" type="email" placeholder="what's your work email?">
+                <button class="py-2 md:py-[14px] w-[100px] md:w-[149px] bg-[#6A26DA] text-sm md:text-base font-medium text-white rounded-md">Get
                     Started</button>
             </div>
         </section>
         <!-- End Time is Money -->
     </main>
     <!-- End Bottom Main -->
+
+
+    <!-- Footer -->
+    <footer
+        class="mt-[100px] md:mt-[156px] px-[30px] lg:px-[150px] border-t border-[#DCE0E0] pt-[50px] lg:pt-[126px] pb-[30px] lg:pb-[102px]">
+        <div class="flex flex-col md:flex-row md:justify-between gap-5">
+            <div class="max-w-[269px]">
+                <div class="flex items-center gap-3">
+                    <div class="w-[20px] md:w-[33px] h-[30px] md:h-[47px] bg-[#FF6AC2] rotate-[50deg] rounded-lg md:rounded-xl"></div>
+                    <h1 class="text-sm md:text-base font-bold text-[#25373F]">SassLand</h1>
+                </div>
+                <div class="mt-6 mb-[42px]">
+                    <p class="text-xs md:text-sm text-[#676769]">With lots of unique blocks, you can easily build a page without
+                        coding. Build your next landing page.</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <img src="assets/images/icons/Facebook.svg" alt="">
+                    <img src="assets/images/icons/twitter.svg" alt="">
+                    <img src="assets/images/icons/linkedin.svg" alt="">
+                    <img src="assets/images/icons/instagram.svg" alt="">
+                </div>
+            </div>
+            <div class="flex justify-between md:justify-start md:gap-[55px] mt-10 md:mt-0">
+                <div>
+                    <h1 class="font-semibold text-sm text-[#25373F] mb-4">Company</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-[#25373F] mb-4">Product</h1>
+                    <ul class="flex flex-col gap-[18px] text-xs md:text-sm text-[#676769]">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-[#25373F] mb-[25px]">Services</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                        <li><a href="#">SEO for Business</a></li>
+                        <li><a href="#">UI Design</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-[#25373F] mb-[15px]">Legal</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 
 
 
