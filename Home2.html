@@ -8,6 +8,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <!-- Daisyui -->
+    <link href="assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
     <!-- Google Font -->
     <link rel="stylesheet" href="assets/css/libs/google_font.css">
 
@@ -42,7 +45,7 @@
                 <h1 class="font-bold text-xl md:text-2xl text-[#25373F]">SassLand</h1>
             </div>
             <ul class="hidden lg:flex items-center gap-6 text-[14px] font-semibold text-[#25373F]">
-                <li class="p-2 relative">
+                <!-- <li class="p-2 relative">
                     <div class="flex items-center">
                         <a href="#" class="">Home </a>
                         <img id="homeArrow" onclick="menubarDropdownHandler('homeDropdown', 'homeArrow')"
@@ -57,7 +60,21 @@
                             <a href="#" class="text-sm">Home 3</a>
                         </div>
                     </div>
-                </li>
+                </li> -->
+                <div class="dropdown dropdown-hover">
+                    <label tabindex="0" class="">
+                        <div class="flex items-center gap-1">
+                            <a href="#" class="">Home </a>
+                            <img id="homeArrow" onclick="menubarDropdownHandler('homeDropdown', 'homeArrow')"
+                                class="cursor-pointer duration-300" src="assets/images/icons/arrow_drop_down.svg"
+                                alt="">
+                        </div>
+                    </label>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a>Home 3</a></li>
+                    </ul>
+                </div>
                 <li class="p-2"><a href="#" class="flex items-center">Pages <img class="p-2 cursor-pointer"
                             src="assets/images/icons/arrow_black_drop_down.svg" alt=""></a></li>
                 <li class="p-2"><a href="#" class="flex items-center">Components <img class="p-2 cursor-pointer"
