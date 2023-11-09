@@ -38,45 +38,72 @@
     <section>
         <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
             <div class="md:hidden">
-                <img src="assets/images/icons/align-justify.svg" alt="">
+                <img src="assets/images/icons/align-justify-dark.svg" alt="">
             </div>
             <div class="flex items-center gap-1">
-                <img class="w-9" src="assets/images/icons/logo_shape.svg" alt="">
-                <h1 class="font-bold text-xl md:text-2xl text-[#25373F]">SassLand</h1>
+                <img class="w-8 md:w-9" src="assets/images/icons/logo_shape.svg" alt="">
+                <h1 class="font-bold text-lg md:text-2xl text-[#25373F]">SassLand</h1>
             </div>
-            <ul class="hidden lg:flex items-center gap-6 text-[14px] font-semibold text-[#25373F]">
-                <div class="dropdown dropdown-hover">
-                    <label tabindex="0" class="">
-                        <div class="flex items-center gap-1">
-                            <a href="#" class="">Home </a>
-                            <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg" alt="">
-                        </div>
-                    </label>
-                    <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40">
-                        <li><a href="Home.html">Home</a></li>
-                        <li><a>Home 3</a></li>
-                    </ul>
-                </div>
-                <li class="p-2"><a href="#" class="flex items-center">Pages <img class="p-2 cursor-pointer"
-                            src="assets/images/icons/arrow_black_drop_down.svg" alt=""></a></li>
-                <li class="p-2"><a href="#" class="flex items-center">Components <img class="p-2 cursor-pointer"
-                            src="assets/images/icons/arrow_black_drop_down.svg" alt=""></a></li>
+            <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#25373F]">
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Home </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white">
+                            <li><a href="Home.html">Home</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Pages </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Components </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white">
+                            <li><a href="#">Components 1</a></li>
+                            <li><a href="#">Components 2</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="p-2"><a href="#">Support</a></li>
             </ul>
             <div>
                 <button
-                    class="bg-[#6A26DA] rounded-full text-white px-4 md:px-6 py-2 md:py-[13px] font-medium text-xs md:text-sm">Get
+                    class="bg-[#6A26DA] rounded-full text-white px-4 md:px-6 py-2 md:py-[13px] font-normal md:font-medium text-xs md:text-sm">Get
                     Started
                     Free</button>
             </div>
         </nav>
         <!-- Banner Section -->
-        <section class="pt-[51px] pb-[69px] lg:flex items-center gap-[54px] lg:me-[70px] xl:me-[150px]">
+        <section class="lg:pt-[51px] pb-[69px] lg:flex items-center gap-[54px] lg:me-[70px] xl:me-[150px]">
             <div
-                class="flex justify-start mt-10 lg:block lg:mt-0 w-full lg:w-[50%] h-[361px] rounded-e-xl bg-gradient-to-br from-[#FBE6F5] via-[#FDF4E7] to-[#FFEDF7] relative min-w-[600px]">
-                <!-- <img class="absolute right-[210px] top-[37px] z-10" src="assets/images/Widget2.svg" alt="">
-                <img class="absolute right-6 top-[50px]" src="assets/images/Widget.svg" alt=""> -->
-                <img class="absolute right-6 top-[37px]" src="assets/images/Group 361.svg" alt="">
+                class="flex justify-start mt-10 lg:block lg:mt-0 w-full lg:w-[50%] h-[200px] md:h-[361px] rounded-e-xl bg-gradient-to-br from-[#FBE6F5] via-[#FDF4E7] to-[#FFEDF7] relative lg:min-w-[600px]">
+                <img class="absolute right-6 top-[37px] w-[300px] md:w-auto" src="assets/images/Group 361.svg" alt="">
             </div>
             <div class="lg:max-w-[558px] mt-20 lg:mt-0 px-5">
                 <div class="relative flex items-end gap-6 max-w-[479px] mb-[50px] lg:mb-[133px]">
@@ -90,7 +117,7 @@
                 </div>
                 <h1 class="font-bold text-[#25373F] text-[36px] xl:text-[48px] mb-12">Organize any project and team</h1>
                 <button
-                    class="bg-[#6A26DA] rounded-full text-white px-5 md:px-9 py-4 md:py-[18px] font-semibold text-sm md:text-base">Get
+                    class="bg-[#6A26DA] rounded-full text-white px-9 md:px-9 py-4 md:py-[18px] font-normal md:font-semibold text-sm md:text-base">Get
                     Started Free</button>
             </div>
         </section>
@@ -132,18 +159,18 @@
                     ullamco est sit aliqua dolor do amet sint velit of a officia</p>
                 <div class=" flex items-center justify-center lg:justify-start gap-6">
                     <div class="text-center">
-                        <h1 class="text-[48px] text-[#6A26DA] font-bold mb-4">53K</h1>
-                        <p class="text-base test-[#676769]">Cool Number</p>
+                        <h1 class="text-[36px] md:text-[48px] text-[#6A26DA] font-bold mb-4">53K</h1>
+                        <p class="text-sm md:text-base test-[#676769]">Cool Number</p>
                     </div>
                     <div class="w-[1px] h-[51px] bg-[#E8E8E9]"></div>
                     <div class="text-center">
-                        <h1 class="text-[48px] text-[#6A26DA] font-bold mb-4">10K</h1>
-                        <p class="text-base test-[#676769]">Projects Done</p>
+                        <h1 class="text-[36px] md:text-[48px] text-[#6A26DA] font-bold mb-4">10K</h1>
+                        <p class="text-sm md:text-base test-[#676769]">Projects Done</p>
                     </div>
                     <div class="w-[1px] h-[51px] bg-[#E8E8E9]"></div>
                     <div class="text-center">
-                        <h1 class="text-[48px] text-[#6A26DA] font-bold mb-4">120</h1>
-                        <p class="text-base test-[#676769]">Cool Number</p>
+                        <h1 class="text-[36px] md:text-[48px] text-[#6A26DA] font-bold mb-4">120</h1>
+                        <p class="text-sm md:text-base test-[#676769]">Cool Number</p>
                     </div>
                 </div>
             </div>
@@ -163,27 +190,30 @@
         <div class="flex items-center gap-6 flex-wrap justify-center">
             <div class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[##E6E9E9] rounded-2xl">
                 <img class="mb-7" src="assets/images/icons/Group248.svg" alt="">
-                <h1 class="text-2xl font-semibold text-[#25373F] mb-4">Design & Vreatives</h1>
-                <p class="text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem lpsum
+                <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Design & Vreatives</h1>
+                <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem
+                    lpsum
                     majority, some words don’t look believable if you are going to use.</p>
-                <a class="flex items-center gap-2 text-[#6A26DA]" href="#">Get Started <img
-                        src="assets/images/icons/Arrow Right.svg" alt=""></a>
+                <a class="text-sm md:text-base font-bold md:font-normal flex items-center gap-2 text-[#6A26DA]"
+                    href="#">Get Started <img src="assets/images/icons/Arrow Right.svg" alt=""></a>
             </div>
             <div class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[##E6E9E9] rounded-2xl">
                 <img class="mb-7" src="assets/images/icons/Group248(1).svg" alt="">
-                <h1 class="text-2xl font-semibold text-[#25373F] mb-4">Team Accounts</h1>
-                <p class="text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem lpsum
+                <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Team Accounts</h1>
+                <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem
+                    lpsum
                     majority, some words don’t look believable if you are going to use.</p>
-                <a class="flex items-center gap-2 text-[#6A26DA]" href="#">Get Started <img
-                        src="assets/images/icons/Arrow Right.svg" alt=""></a>
+                <a class="text-sm md:text-base font-bold md:font-normal flex items-center gap-2 text-[#6A26DA]"
+                    href="#">Get Started <img src="assets/images/icons/Arrow Right.svg" alt=""></a>
             </div>
             <div class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[##E6E9E9] rounded-2xl">
                 <img class="mb-7" src="assets/images/icons/Group248(2).svg" alt="">
-                <h1 class="text-2xl font-semibold text-[#25373F] mb-4">Branding</h1>
-                <p class="text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem lpsum
+                <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Branding</h1>
+                <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem
+                    lpsum
                     majority, some words don’t look believable if you are going to use.</p>
-                <a class="flex items-center gap-2 text-[#6A26DA]" href="#">Get Started <img
-                        src="assets/images/icons/Arrow Right.svg" alt=""></a>
+                <a class="text-sm md:text-base font-bold md:font-normal flex items-center gap-2 text-[#6A26DA]"
+                    href="#">Get Started <img src="assets/images/icons/Arrow Right.svg" alt=""></a>
             </div>
         </div>
     </section>
@@ -224,7 +254,7 @@
                 <div>
                     <div class="border-b border-[#DADADA] text-center">
                         <h1 class="font-extrabold text-4xl md:text-6xl mb-4 tracking-tighter"><span
-                                class="text-xl font-medium">$</span>99<span
+                                class="text-base md:text-xl font-medium">$</span>99<span
                                 class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
                         <p class="text-[#464646] font-medium text-sm md:text-base mb-6">Save 20% when billed yearly
                         </p>
@@ -256,12 +286,15 @@
     <main class="max-w-[1137px] mx-auto">
 
         <!-- Ready to Started -->
-        <section class="rounded-[35px] overflow-hidden mt-[157px] mx-5">
-            <div class="bg-[url('assets/images/Frame23.svg')] bg-cover py-[105px] ps-[84px]">
-                <h1 class="text-[36px] text-[#ECECEC] font-semibold mb-6">Ready to get started?</h1>
-                <p class="text-[20px] text-[#EDEDED] font-medium mb-12 max-w-[405px]">Amet minim mollit non deserunt
+        <section class="rounded-[35px] overflow-hidden mt-[50px] md:mt-[157px] mx-5">
+            <div
+                class="bg-[url('assets/images/Frame23.svg')] bg-cover py-[50px] md:py-[105px] md:ps-[84px] px-5 md:px-0">
+                <h1 class="text-[24px] md:text-[36px] text-[#ECECEC] font-semibold mb-6">Ready to get started?</h1>
+                <p class="text-base md:text-[20px] text-[#EDEDED] font-medium mb-12 max-w-[405px]">Amet minim mollit non
+                    deserunt
                     ullamco est sit aliqua sint. velit officia consequat duis enim velit mollit. </p>
-                <button class="bg-[#6A26DA] px-[54px] py-[13px] rounded-full text-white">Get Started</button>
+                <button class="bg-[#6A26DA] text-sm md:text-base px-[54px] py-[13px] rounded-full text-white">Get
+                    Started</button>
             </div>
         </section>
         <!-- End Ready to Started -->
@@ -269,7 +302,7 @@
 
         <!-- Footer -->
         <footer class="mt-[100px] md:mt-[152px]">
-            <div class="flex flex-col md:flex-row items-center justify-between mb-6 px-5">
+            <div class="flex flex-col md:flex-row gap-3 items-center justify-between mb-6 px-5">
                 <div class="md:hidden">
                     <img src="assets/images/icons/align-justify.svg" alt="">
                 </div>
@@ -277,27 +310,56 @@
                     <img class="w-9" src="assets/images/icons/logo_shape.svg" alt="">
                     <h1 class="font-bold text-[17px] text-[#25373F]">SassLand</h1>
                 </div>
-                <ul class="flex items-center gap-6 text-[14px] font-semibold text-[#25373F]">
-                    <div class="dropdown dropdown-hover">
-                        <label tabindex="0" class="">
-                            <div class="flex items-center gap-1">
-                                <a href="#" class="">Home </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg" alt="">
-                            </div>
-                        </label>
-                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white">
-                            <li><a href="Home.html">Home</a></li>
-                            <li><a>Home 3</a></li>
-                        </ul>
-                    </div>
-                    <li class="p-2"><a href="#" class="flex items-center">Pages <img class="p-2 cursor-pointer"
-                                src="assets/images/icons/arrow_black_drop_down.svg" alt=""></a></li>
-                    <li class="p-2"><a href="#" class="flex items-center">Components <img class="p-2 cursor-pointer"
-                                src="assets/images/icons/arrow_black_drop_down.svg" alt=""></a></li>
+                <ul class="flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#25373F]">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white">
+                                <li><a href="Home.html">Home</a></li>
+                                <li><a href="#">Home 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white">
+                                <li><a href="#">Page 1</a></li>
+                                <li><a href="#">Page 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li class="p-2"><a href="#">Support</a></li>
                 </ul>
             </div>
-            <div class="pt-10 pb-[85px] flex justify-between items-center border-t border-[#E5E8E8] px-5">
+            <div class="pt-10 pb-[85px] flex flex-col md:flex-row gap-5 justify-between items-center border-t border-[#E5E8E8] px-5">
                 <div>
                     <p class="text-xs md:text-sm text-[#484848]">© 2021 Fastland By FinestDevs. All Rights Reserved</p>
                 </div>
