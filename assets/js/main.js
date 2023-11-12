@@ -14,3 +14,25 @@ function menubarDropdownHandler (id, arrow) {
         dropdownContainer.classList.remove('py-[23px]');
     }
 }
+
+function handleInstallmentToggle () {
+    const monthly = document.getElementById('monthly');
+    const yearly = document.getElementById('yearly');
+    const installmentToggle = document.getElementById('installmentToggle');
+    if(!installmentToggle.classList.contains('right-0')) {
+        installmentToggle.classList.remove('left-0');
+        installmentToggle.classList.add('right-0');
+        monthly.classList.remove('text-white');
+        monthly.classList.add('text-[#BABAC6]');
+        yearly.classList.remove('text-[#BABAC6]');
+        yearly.classList.add('text-white');
+    }
+    else {
+        installmentToggle.classList.remove('right-0');
+        installmentToggle.classList.add('left-0');
+        yearly.classList.remove('text-white');
+        yearly.classList.add('text-[#BABAC6]');
+        monthly.classList.remove('text-[#BABAC6]');
+        monthly.classList.add('text-white');
+    }
+}

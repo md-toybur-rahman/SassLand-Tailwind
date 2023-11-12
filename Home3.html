@@ -163,10 +163,10 @@
         <!-- End Top Slack -->
 
         <!-- Our Best Features -->
-        <section class="mt-[80px] md:mt-[156px] max-w-[1176px] px-5 xl:px-0">
-            <div class="mx-auto mb-12">
+        <section class="mt-[80px] md:mt-[106px] max-w-[1176px] px-5 xl:px-0">
+            <div class="mx-auto mb-[96px]">
                 <h1 class="font-semibold text-[24px] md:text-[36px] text-[#000000] mb-4">Our Best Features</h1>
-                <p class="font-medium text-base md:text-[20px] text-[#000000]">Everything you need to control spend and
+                <p class="font-medium text-sm md:text-base text-[#000000]">Everything you need to control spend and
                     optimize
                     finance operations, all on a single platform.</p>
             </div>
@@ -182,7 +182,7 @@
                             Lorem
                             lpsum
                             majority, some words don’t look believable if you are going to use.</p>
-                        <a class="text-sm md:text-base font-bold md:font-normal flex items-center gap-2 text-[#FF6AC2]"
+                        <a class="text-sm md:text-base font-semibold flex items-center gap-2 text-[#FF6AC2]"
                             href="#">Get Started <img src="assets/images/icons/pink-arrow.svg" alt=""></a>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
                             Lorem
                             lpsum
                             majority, some words don’t look believable if you are going to use.</p>
-                        <a class="text-sm md:text-base font-bold md:font-normal flex items-center gap-2 text-[#FF6AC2]"
+                        <a class="text-sm md:text-base font-semibold flex items-center gap-2 text-[#FF6AC2]"
                             href="#">Get Started <img src="assets/images/icons/pink-arrow.svg" alt=""></a>
                     </div>
                 </div>
@@ -210,171 +210,167 @@
                             Lorem
                             lpsum
                             majority, some words don’t look believable if you are going to use.</p>
-                        <a class="text-sm md:text-base font-bold md:font-normal flex items-center gap-2 text-[#FF6AC2]"
+                        <a class="text-sm md:text-base font-semibold flex items-center gap-2 text-[#FF6AC2]"
                             href="#">Get Started <img src="assets/images/icons/pink-arrow.svg" alt=""></a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Our Best Features -->
-
-        <!-- Love us -->
-        <section
-            class="flex flex-wrap items-center justify-between gap-6 md:gap-10 mt-[80px] md:mt-[156px] max-w-[1057px] px-5 xl:px-0 lg:ms-[56px]">
-            <div class="max-w-[547px]">
-                <h1 class="text-[24px] md:text-[36px] text-[#262729] font-bold mb-4">Hundreds of people already love us
-                </h1>
-                <p class="font-medium text-base md:text-[20px] text-[#676769]">But don't just take our word for it.</p>
-            </div>
-            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
-                <div
-                    class="bg-[url('assets/images/profile.jpg')] min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
-                </div>
-                <div class="max-w-[245px]">
-                    <div class="flex items-center gap-1">
-                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
-                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
-                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
-                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
-                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
-                    </div>
-                    <div>
-                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to accommodate our
-                            growth and
-                            a variety of event types throughout the year.”</p>
-                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Love Us -->
     </main>
     <!-- End Top Main -->
 
 
-    <!-- Pricing And Plans -->
-    <section class="bg-[#162126] mt-[114px] px-5 lg:px-0 pb-[86px]">
-        <div class="pt-[86px] mb-[56px] text-center">
-            <h1 class="text-2xl md:text-[36px] text-white font-semibold mb-6">Pricing & Plans</h1>
-            <p class="text-base md:text-[20px] font-medium text-[#E9EBEB]">Everything you need to control spend and
-                optimize finance.
-            </p>
+    <!-- Subscription Packages -->
+    <section class="bg-[#2E2E52] mt-[156px] px-5 lg:px-0 pb-[86px]">
+        <div class="pt-[88px] mb-[56px] text-center">
+            <h1 class="text-2xl md:text-[36px] text-white font-semibold mb-6">Our Subscription Packages</h1>
+            <div onclick="handleInstallmentToggle()" class="mt-8 flex items-center justify-center gap-6">
+                <h1 id="monthly" class="text-white text-sm font-semibold">Monthly</h1>
+                <div class="w-9 relative">
+                    <div class="w-full h-3 border-4 rounded-full">
+                        <div id="installmentToggle" class="h-[19px] w-[19px] border-4 rounded-full bg-[#2E2E52] absolute -top-1 left-0"></div>
+                    </div>
+                </div>
+                <h1 id="yearly" class="text-[#BABAC6] text-sm font-semibold">Yearly</h1>
+            </div>
         </div>
-        <div class="flex items-center gap-6 flex-wrap justify-center">
-            <div
-                class="px-[30px] md:px-[42px] pt-[20px] md:pt-[37px] pb-[50px] md:pb-[71px] bg-white rounded-2xl max-w-[363px]">
-                <h1 class="text-[#6A26DA] text-sm md:text-base font-medium mb-[30px] md:mb-[42px]">BASIC</h1>
-                <h1 class="font-extrabold text-2xl md:text-4xl mb-4 tracking-tighter">$
-                    10<span class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
-                <p class="text-[#676769] font-medium text-xs md:text-sm mb-[42px]">first 14 days free</p>
-                <ul class="flex flex-col gap-4">
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">Includes 1 seat</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">1 Brand voice</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">50+ Templates</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Unchecked.svg" alt="">
-                        <h1 class="font-noraml text-xs md:text-sm text-[#3D3D3D]">Access SEO mode</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Unchecked.svg" alt="">
-                        <h1 class="font-normal text-xs md:text-sm text-[#3D3D3D]">Use AI everywhere with browser
-                            extension</h1>
-                    </li>
-                </ul>
-                <div class="flex justify-center mt-[42px]">
-                    <button
-                        class="px-[30px] md:px-[50px] py-[10px] md:py-[17px] rounded-md bg-[#6A26DA] text-white text-sm md:text-base">Get
-                        started for free</button>
+        <div class="mt-[82px] flex items-center gap-6 flex-wrap justify-center">
+            <div class="bg-white rounded-2xl w-[433px] px-[40px] py-[42px]">
+                <div class="mb-[56px]">
+                    <h1 class="font-extrabold text-4xl md:text-6xl mb-4 tracking-tighter"><span
+                            class="text-base md:text-xl font-medium">$</span>99<span
+                            class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
+                    <p class="text-[#464646] font-medium text-sm md:text-base mb-6">Save 20% when billed yearly
+                    </p>
                 </div>
-                <p class="font-medium text-xs md:text-sm text-[#828282] mt-[11px] text-center">No credit card required
-                </p>
+                <div>
+                    <h1 class="text-[#3C3C3C] text-lg font-bold mb-2">Creator includes:</h1>
+                    <ul class="flex flex-col gap-[14px] text-[#3D3D3D]">
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Includes 1 seat</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">1 Brand voice</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">50+ Templates</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-noraml text-xs md:text-sm">Access SEO mode</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Use AI everywhere with browser
+                                extension</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex justify-center mt-[42px]">
+                        <button
+                            class="px-[30px] md:px-[67px] py-[9px] md:py-[13px] rounded-md bg-[#FF6AC2] text-white text-xs md:text-sm font-semibold">Start free 7-day trial</button>
+                    </div>
+                    <p class="text-[10px] md:text-xs text-[#909090] mt-[5px] text-center">(No credit card
+                        required)
+                    </p>
+                </div>
             </div>
-            <div
-                class="px-[30px] md:px-[42px] pt-[20px] md:pt-[37px] pb-[50px] md:pb-[71px] bg-white rounded-2xl max-w-[363px]">
-                <h1 class="text-[#6A26DA] text-sm md:text-base font-medium mb-[30px] md:mb-[42px]">Standard</h1>
-                <h1 class="font-extrabold text-2xl md:text-4xl mb-4 tracking-tighter">$
-                    49<span class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
-                <p class="text-[#676769] font-medium text-xs md:text-sm mb-[42px]">first 14 days free</p>
-                <ul class="flex flex-col gap-4">
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">Includes 1 seat</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">1 Brand voice</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">50+ Templates</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Unchecked.svg" alt="">
-                        <h1 class="font-noraml text-xs md:text-sm text-[#3D3D3D]">Access SEO mode</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Unchecked.svg" alt="">
-                        <h1 class="font-normal text-xs md:text-sm text-[#3D3D3D]">Use AI everywhere with browser
-                            extension</h1>
-                    </li>
-                </ul>
-                <div class="flex justify-center mt-[42px]">
-                    <button
-                        class="px-[30px] md:px-[50px] py-[10px] md:py-[17px] rounded-md bg-[#6A26DA] text-white text-sm md:text-base">Get
-                        started for free</button>
+            <div class="bg-white rounded-2xl w-[433px] px-[40px] py-[42px]">
+                <div class="mb-[56px]">
+                    <h1 class="font-extrabold text-4xl md:text-6xl mb-4 tracking-tighter"><span
+                            class="text-base md:text-xl font-medium">$</span>99<span
+                            class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
+                    <p class="text-[#464646] font-medium text-sm md:text-base mb-6">Save 20% when billed yearly
+                    </p>
                 </div>
-                <p class="font-medium text-xs md:text-sm text-[#828282] mt-[11px] text-center">No credit card required
-                </p>
+                <div>
+                    <h1 class="text-[#3C3C3C] text-lg font-bold mb-2">Creator includes:</h1>
+                    <ul class="flex flex-col gap-[14px] text-[#3D3D3D]">
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Includes 1 seat</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">1 Brand voice</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">50+ Templates</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-noraml text-xs md:text-sm">Access SEO mode</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Use AI everywhere with browser
+                                extension</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex justify-center mt-[42px]">
+                        <button
+                            class="px-[30px] md:px-[67px] py-[9px] md:py-[13px] rounded-md bg-[#FF6AC2] text-white text-xs md:text-sm font-semibold">Start free 7-day trial</button>
+                    </div>
+                    <p class="text-[10px] md:text-xs text-[#909090] mt-[5px] text-center">(No credit card
+                        required)
+                    </p>
+                </div>
             </div>
-            <div
-                class="px-[30px] md:px-[42px] pt-[20px] md:pt-[37px] pb-[50px] md:pb-[71px] bg-white rounded-2xl max-w-[363px]">
-                <h1 class="text-[#6A26DA] text-sm md:text-base font-medium mb-[30px] md:mb-[42px]">Premium</h1>
-                <h1 class="font-extrabold text-2xl md:text-4xl mb-4 tracking-tighter">$
-                    99<span class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
-                <p class="text-[#676769] font-medium text-xs md:text-sm mb-[42px]">first 14 days free</p>
-                <ul class="flex flex-col gap-4">
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">Includes 1 seat</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">1 Brand voice</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Check.svg" alt="">
-                        <h1 class="font-semibold text-xs md:text-sm text-[#3D3D3D]">50+ Templates</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Unchecked.svg" alt="">
-                        <h1 class="font-noraml text-xs md:text-sm text-[#3D3D3D]">Access SEO mode</h1>
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <img src="assets/images/icons/Unchecked.svg" alt="">
-                        <h1 class="font-normal text-xs md:text-sm text-[#3D3D3D]">Use AI everywhere with browser
-                            extension</h1>
-                    </li>
-                </ul>
-                <div class="flex justify-center mt-[42px]">
-                    <button
-                        class="px-[30px] md:px-[50px] py-[10px] md:py-[17px] rounded-md bg-[#6A26DA] text-white text-sm md:text-base">Get
-                        started for free</button>
+            <div class="bg-white rounded-2xl w-[433px] px-[40px] py-[42px]">
+                <div class="mb-[56px]">
+                    <h1 class="font-extrabold text-4xl md:text-6xl mb-4 tracking-tighter"><span
+                            class="text-base md:text-xl font-medium">$</span>99<span
+                            class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
+                    <p class="text-[#464646] font-medium text-sm md:text-base mb-6">Save 20% when billed yearly
+                    </p>
                 </div>
-                <p class="font-medium text-xs md:text-sm text-[#828282] mt-[11px] text-center">No credit card required
-                </p>
+                <div>
+                    <h1 class="text-[#3C3C3C] text-lg font-bold mb-2">Creator includes:</h1>
+                    <ul class="flex flex-col gap-[14px] text-[#3D3D3D]">
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Includes 1 seat</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">1 Brand voice</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">50+ Templates</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-noraml text-xs md:text-sm">Access SEO mode</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Use AI everywhere with browser
+                                extension</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex justify-center mt-[42px]">
+                        <button
+                            class="px-[30px] md:px-[67px] py-[9px] md:py-[13px] rounded-md bg-[#FF6AC2] text-white text-xs md:text-sm font-semibold">Start free 7-day trial</button>
+                    </div>
+                    <p class="text-[10px] md:text-xs text-[#909090] mt-[5px] text-center">(No credit card
+                        required)
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-    <!-- End Pricing and Plans -->
+    <!-- End Subscription Packages -->
 
 
     <!-- Bottom Main -->
