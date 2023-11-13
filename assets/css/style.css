@@ -187,9 +187,35 @@ img {
     position: absolute;
     z-index: 3;
     top: 48%;
-    width: 946px;
+    max-width: 946px;
   }
   .dash-con{
     display: flex;
     justify-content: center;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .oval-header{
+        height: 1000px;
+    }
+    .testDiv{
+        height: 700px;
+    }
+    .dash{
+        top: 35%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .oval-header{
+        height: 670px;
+    }
+    .oval-header--mask{
+        height: 300px;
+    }
+    .testDiv{
+        height: 500px;
+    }
+    .dash{
+        top: 55%;
+    }
   }
