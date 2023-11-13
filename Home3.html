@@ -35,15 +35,9 @@
 </head>
 
 <body class="font-[inter]">
-    <!-- <div class="absolute w-[100vw] z-0">
-        <img class="w-full min-h-[800px] h-full" src="assets/images/Home-bg.svg" alt="">
-        <div class="flex items-center justify-center -mt-[330px]">
-            <img class="w-[500px] md:w-[800px] lg:w-auto" src="assets/images/Dashboard 13.svg" alt="">
-        </div>
-    </div> -->
-    <div>
+    <div class="oval-header">
         <!-- <section class="bg-[url(assets/images/Home-bg.svg)] w-[100vw]  h-[900px]"> -->
-        <section class="relative bg-[#2E2E52]">
+        <section class="bg-[#2E2E52] oval-header--mask">
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <div class="md:hidden">
                     <img src="assets/images/icons/align-justify.svg" alt="">
@@ -108,7 +102,7 @@
                 </div>
             </nav>
             <!-- Banner Section -->
-            <section class="pt-[51px] pb-[69px] lg:flex items-center justify-between ms-6 md:ms-[70px] xl:ms-[150px]">
+            <section class="pt-[104px] pb-[156px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">
                 <div class="flex flex-col items-center justify-center w-full">
                     <div class="max-w-[703px] text-center">
                         <h1 class="font-bold text-white text-[36px] lg:text-[57px] mb-8">Organize your work and life,
@@ -122,13 +116,20 @@
             <!-- End Banner Section -->
         </section>
         <!-- End Menubar and Banner Section -->
+
+        <div class="testDiv"></div>
+        <div class="dash-con">
+            <div class="dash">
+                <img src="assets/images/Dashboard13.svg" alt="">
+            </div>
+        </div>
     </div>
 
 
     <!-- Top Main -->
     <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
         <!-- Trusted Companies -->
-        <section class="flex items-center justify-center mt-[50px] lg:mt-[150px] px-5">
+        <section class="flex items-center justify-center mt-[50px] lg:mt-[100px] px-5">
             <div>
                 <h1 class="text-sm md:text-base text-[#C5C5CF] font-medium mb-10 text-center">TRUSTED BY COMPANIES ALL
                     OVER THE
@@ -394,103 +395,87 @@
             </div>
 
             <!-- Carousel -->
-            <div id="carouselContainer2">
-                <div class="slideshow-container2">
-                    <div class="mySlides fade">
-                        <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
-                            <div class="flex items-center gap-1">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
+                        <div class="flex items-center gap-1">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                        </div>
+                        <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to
+                            accommodate our
+                            growth and
+                            a variety of event types throughout the year.”</p>
+                        <div class="flex items-center gap-6 mt-[98px]">
+                            <div
+                                class="bg-[url('assets/images/profile.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
                             </div>
-                            <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to accommodate our
-                                growth and
-                                a variety of event types throughout the year.”</p>
-                            <div class="flex items-center gap-6 mt-[98px]">
-                                <div
-                                    class="bg-[url('assets/images/profile.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
-                                </div>
-                                <p class="text-base text-[#879295]">Hunter A., Head of Growth</p>
-                            </div>
+                            <p class="text-base text-[#879295]">Hunter A., Head of Growth</p>
                         </div>
                     </div>
-
-                    <div class="mySlides fade">
-                        <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
-                            <div class="flex items-center gap-1">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                            </div>
-                            <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to accommodate our
-                                growth and
-                                a variety of event types throughout the year.”</p>
-                            <div class="flex items-center gap-6 mt-[98px]">
-                                <div
-                                    class="bg-[url('assets/images/man.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
-                                </div>
-                                <p class="text-base text-[#879295]">Hunter A., Head of Growth</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mySlides fade">
-                        <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
-                            <div class="flex items-center gap-1">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                            </div>
-                            <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to
-                                accommodate our
-                                growth and
-                                a variety of event types throughout the year.”</p>
-                            <div class="flex items-center gap-6 mt-[98px]">
-                                <div
-                                    class="bg-[url('assets/images/profile2.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
-                                </div>
-                                <p class="text-base text-[#879295]">Hunter A., Head of Growth</p>
-                            </div>
-                        </div>
-                    </div>
-                                        
-                    <a class="prev" onclick="plusSlides2(-1)"><img class="rotate-180" src="assets/images/icons/arrow_forward.svg" alt=""></a>
-                    <a class="next" onclick="plusSlides2(1)"><img src="assets/images/icons/arrow_forward.svg" alt=""></a>
-
                 </div>
-                <br>
 
-                <!-- <div id="dot-home1" style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div> -->
+                <div class="mySlides fade">
+                    <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
+                        <div class="flex items-center gap-1">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                        </div>
+                        <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to
+                            accommodate our
+                            growth and
+                            a variety of event types throughout the year.”</p>
+                        <div class="flex items-center gap-6 mt-[98px]">
+                            <div
+                                class="bg-[url('assets/images/man.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
+                            </div>
+                            <p class="text-base text-[#879295]">Hunter A., Head of Growth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
+                        <div class="flex items-center gap-1">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
+                        </div>
+                        <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to
+                            accommodate our
+                            growth and
+                            a variety of event types throughout the year.”</p>
+                        <div class="flex items-center gap-6 mt-[98px]">
+                            <div
+                                class="bg-[url('assets/images/profile2.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
+                            </div>
+                            <p class="text-base text-[#879295]">Hunter A., Head of Growth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><img class="rotate-180"
+                        src="assets/images/icons/arrow_forward.svg" alt=""></a>
+                <a class="next" onclick="plusSlides(1)"><img src="assets/images/icons/arrow_forward.svg" alt=""></a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
             <!-- End Carousel -->
-            <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
-                <div class="flex items-center gap-1">
-                    <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                    <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                    <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                    <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                    <img class="w-4 md:w-auto" src="assets/images/icons/brown-star.svg" alt="">
-                </div>
-                <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to accommodate our
-                    growth and
-                    a variety of event types throughout the year.”</p>
-                <div class="flex items-center gap-6 mt-[98px]">
-                    <div
-                        class="bg-[url('assets/images/profile.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
-                    </div>
-                    <p class="text-base text-[#879295]">Hunter A., Head of Growth</p>
-                </div>
-            </div>
         </section>
         <!-- End What Customers Saying Section -->
 

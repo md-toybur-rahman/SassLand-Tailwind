@@ -64,10 +64,10 @@ img {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
+/* .prev:hover,
 .next:hover {
     background-color: red;
-}
+} */
 
 /* Caption text */
 .text {
@@ -151,3 +151,45 @@ img {
 }
 
 /* End Carousel */
+
+
+
+
+.oval-header {
+    position: relative;
+    height: 1300px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .oval-header--mask {
+    width: 100%; /* Mask width 2x the size of the header */
+    height: 600px; /* Mask height 2x the size of the header */
+    /* border-radius:  0 0 50% 50%; */
+    position: absolute;
+    overflow: hidden;
+    border-top: 0;
+    background-size: cover;
+    z-index: 1;
+  }
+  .testDiv{
+    position: absolute;
+    overflow: hidden;
+    background: #2E2E52;
+    left: -50%;
+    top: 0;
+    width: 200%;
+    height: 900px;
+    border-radius: 50%;
+    z-index: 0;
+  }
+  .dash{
+    position: absolute;
+    z-index: 3;
+    top: 48%;
+    width: 946px;
+  }
+  .dash-con{
+    display: flex;
+    justify-content: center;
+  }
