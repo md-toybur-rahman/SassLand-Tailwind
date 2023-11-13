@@ -37,14 +37,19 @@ function handleInstallmentToggle() {
     }
 }
 
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+
+const wrapper = document.querySelector(".carouselContainer");
+// const carousel = document.querySelector(".slideshow-container");
+// const firstCardWidth = carousel.querySelector(".mySlides").offsetWidth;
 let slideIndex = 1;
-let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    setInterval(() => {
+        setTimeout(() => {
+            showSlides(slideIndex += n);     
+        }, 3000);
+    }, 3000);
 }
 
 function currentSlide(n) {
@@ -68,10 +73,11 @@ function showSlides(n) {
 }
 
 
-// 
-const autoPlay = () => {
-    if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
-    // Autoplay the carousel after every 2500 ms
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-}
-autoPlay();
+// // 
+// const autoPlay = () => {
+//     if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+//     // Autoplay the carousel after every 2500 ms
+//     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+// }
+// autoPlay();
+// wrapper.addEventListener("mouseleave", autoPlay);
