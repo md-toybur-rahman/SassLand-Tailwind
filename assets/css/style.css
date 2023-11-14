@@ -164,7 +164,7 @@ img {
 
 
 
-.oval-header {
+/* .oval-header {
     position: relative;
     height: 1300px;
     width: 100%;
@@ -172,11 +172,10 @@ img {
 }
 
 .oval-header--mask {
+    background-image: url('/assets/images/home3-banner-bg.svg');
+    background-size: cover;
     width: 100%;
-    /* Mask width 2x the size of the header */
     height: 600px;
-    /* Mask height 2x the size of the header */
-    /* border-radius:  0 0 50% 50%; */
     position: absolute;
     overflow: hidden;
     border-top: 0;
@@ -206,13 +205,29 @@ img {
 .dash-con {
     display: flex;
     justify-content: center;
+} */
+
+
+.home3-banner{
+    background-image: url('/assets/images/test.svg');
+    background-size: cover;
+    background-position: center;
+
 }
 
  footer {
     background-image: url('/assets/images/footer-bg.svg');
     position: relative;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
+    background-position: left bottom;
+}
+ .home4-hero-section {
+    background-image: url('/assets/images/banner-bg.svg');
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
     background-position: left bottom;
 }
 

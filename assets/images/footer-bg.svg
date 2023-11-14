@@ -1,4 +1,8 @@
-<svg width="335" height="329" viewBox="0 0 335 329" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="239.67" width="92.5709" height="989.779" rx="46.2855" transform="rotate(43.0509 239.67 0)" fill="#6BAAE6"/>
-<rect x="266.67" y="160" width="92.5709" height="989.779" rx="46.2855" transform="rotate(43.0509 266.67 160)" fill="#6BAAE6"/>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 335 329" width="335" height="329">
+	<title>footer-bg-svg</title>
+	<style>
+		.s0 { opacity: .5;fill: #92c3f2 } 
+	</style>
+	<path id="Layer" class="s0" d="m208.1 33.8c17.4-18.7 46.7-19.7 65.4-2.2 18.7 17.4 19.7 46.7 2.2 65.4l-612.5 655.6c-17.4 18.7-46.7 19.7-65.4 2.3-18.7-17.5-19.7-46.8-2.2-65.4z"/>
+	<path id="Layer" class="s0" d="m235.1 193.8c17.4-18.7 46.7-19.7 65.4-2.2 18.7 17.4 19.7 46.7 2.2 65.4l-612.5 655.6c-17.4 18.7-46.7 19.7-65.4 2.3-18.7-17.5-19.7-46.8-2.2-65.4z"/>
 </svg>
