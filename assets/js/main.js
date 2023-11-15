@@ -38,6 +38,14 @@ function handleInstallmentToggle() {
 }
 
 
-function mobileMenubarHandler () {
-    
+function mobileMenubarHandler (id) {
+    const menubar = document.getElementById(id);
+    if(!menubar.classList.contains('left-0')) {
+        menubar.classList.remove('-left-[1024px]');
+        menubar.classList.add('left-0');
+    }
+    else {
+        menubar.classList.remove('left-0');
+        menubar.classList.add('-left-[1024px]');
+    }
 }

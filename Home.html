@@ -37,14 +37,63 @@
 <body class="font-[inter]">
     <section class="bg-[#6A26DA]">
         <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
-            <div onclick="mobileMenubarHandler()" class="md:hidden">
+            <!-- mobile menubar -->
+            <ul id="homeMenubar"
+                class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Home </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
+                            <li><a href="Home2.html">Home 2</a></li>
+                            <li><a href="Home3.html">Home 3</a></li>
+                            <li><a href="Home4.html">Home 4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Pages </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Components </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
+                            <li><a href="#">Components 1</a></li>
+                            <li><a href="#">Components 2</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="p-2"><a href="#">Support</a></li>
+            </ul>
+            <!-- end mobile menubar -->
+            <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                 <img src="assets/images/icons/align-justify.svg" alt="">
             </div>
             <div class="flex items-center gap-1">
                 <img class="w-9" src="assets/images/icons/logo_shape.svg" alt="">
                 <h1 class="font-bold text-xl md:text-2xl text-white">SassLand</h1>
             </div>
-            <ul id="homeMenubar" class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
+            <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
                 <li>
                     <div class="dropdown dropdown-hover">
                         <label tabindex="0" class="">
