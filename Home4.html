@@ -38,7 +38,59 @@
     <div class="home4-hero-section">
         <section>
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
-                <div class="md:hidden">
+                <!-- mobile menubar -->
+                <ul id="homeMenubar"
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#25373F]">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="Home.html">Home 1</a></li>
+                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="Home3.html">Home 3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="#">Page 1</a></li>
+                                <li><a href="#">Page 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <!-- end mobile menubar -->
+                <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
                 <div class="flex items-center gap-1">
@@ -51,12 +103,12 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
-                                        src="assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
                                 </div>
                             </label>
-                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-transparent">
-                                <li><a href="Home.html">Home</a></li>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="Home.html">Home 1</a></li>
                                 <li><a href="Home2.html">Home 2</a></li>
                                 <li><a href="Home3.html">Home 3</a></li>
                             </ul>
@@ -67,11 +119,11 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
-                                        src="assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
                                 </div>
                             </label>
-                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-transparent">
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
                                 <li><a href="#">Page 1</a></li>
                                 <li><a href="#">Page 2</a></li>
                             </ul>
@@ -82,11 +134,11 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
-                                        src="assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
                                 </div>
                             </label>
-                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-transparent">
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
                                 <li><a href="#">Components 1</a></li>
                                 <li><a href="#">Components 2</a></li>
                             </ul>
@@ -175,7 +227,7 @@
                     <h1 class="text-lg md:text-2xl font-semibold text-[#14202D] mb-4">Team Accounts</h1>
                     <p class="text-sm md:text-base text-[#74889C] mb-[27px]">Amet minim mollit non deserunt ullamco est
                         sit aliqua dolor do amet sint velit of a </p>
-                        <a class="text-xs md:text-sm py-[11px] rounded-full border border-[#70B7FE] font-normal flex items-center justify-center text-[#70B7FE] max-w-[273px]"
+                    <a class="text-xs md:text-sm py-[11px] rounded-full border border-[#70B7FE] font-normal flex items-center justify-center text-[#70B7FE] max-w-[273px]"
                         href="#">Get Started</a>
                 </div>
                 <div
@@ -184,7 +236,7 @@
                     <h1 class="text-lg md:text-2xl font-semibold text-[#14202D] mb-4">Branding</h1>
                     <p class="text-sm md:text-base text-[#74889C] mb-[27px]">Amet minim mollit non deserunt ullamco est
                         sit aliqua dolor do amet sint velit of a </p>
-                        <a class="text-xs md:text-sm py-[11px] rounded-full border border-[#70B7FE] font-normal flex items-center justify-center text-[#70B7FE] max-w-[273px]"
+                    <a class="text-xs md:text-sm py-[11px] rounded-full border border-[#70B7FE] font-normal flex items-center justify-center text-[#70B7FE] max-w-[273px]"
                         href="#">Get Started</a>
                 </div>
             </div>
@@ -390,7 +442,8 @@
                     <div
                         class="md:h-[348px] w-[705px] bg-[url('assets/images/testimonials1.svg')] bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
                         <div>
-                            <h1 class="text-lg md:text-[26px] text-white">“The platform has been able to accommodate our growth and
+                            <h1 class="text-lg md:text-[26px] text-white">“The platform has been able to accommodate our
+                                growth and
                                 a
                                 variety of event types throughout the year.”</h1>
                             <div class="flex items-end justify-between mt-[13px]">
@@ -408,7 +461,8 @@
                         class="md:h-[348px] w-full md:w-[407px] bg-[#63A5E5] rounded-2xl md:ps-[28px] md:pe-[71px] md:pb-[28px] p-5 md:p-0 flex items-end">
                         <div>
                             <h1 class="font-semibold text-[50px] md:text-[73px] text-white">98%</h1>
-                            <p class="font-semibold text-lg md:text-[26px] text-white">of customers recommend sassland services</p>
+                            <p class="font-semibold text-lg md:text-[26px] text-white">of customers recommend sassland
+                                services</p>
                         </div>
                     </div>
                 </div>
@@ -416,12 +470,14 @@
                     <div
                         class="w-full md:w-[397px] md:h-[367px] bg-[#14202D] rounded-2xl md:ps-[33px] md:pe-[25px] md:pb-[24px] p-5 md:p-0 flex items-center md:items-end justify-center md:justify-start">
                         <div>
-                            <p class="font-semibold text-lg md:text-[26px] text-white mb-[15px]">How Christos Fellas Saves 25 hours
+                            <p class="font-semibold text-lg md:text-[26px] text-white mb-[15px]">How Christos Fellas
+                                Saves 25 hours
                                 a Month </p>
                             <img class="w-full md:w-auto" src="assets/images/testimonials2.svg" alt="">
                         </div>
                     </div>
-                    <div class="md:h-[367px] w-full md:w-[716px] px-5 md:px-[60px] py-5 md:py-[42px] rounded-2xl border border-[#E5E8EC]">
+                    <div
+                        class="md:h-[367px] w-full md:w-[716px] px-5 md:px-[60px] py-5 md:py-[42px] rounded-2xl border border-[#E5E8EC]">
                         <div>
                             <div class="flex items-center gap-1">
                                 <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
@@ -430,7 +486,8 @@
                                 <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
                                 <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
                             </div>
-                            <p class="text-[#2E2E52] font-semibold text-lg md:text-[28px] mt-[10px]">“The platform has been able to
+                            <p class="text-[#2E2E52] font-semibold text-lg md:text-[28px] mt-[10px]">“The platform has
+                                been able to
                                 accommodate our
                                 growth and
                                 a variety of event types throughout the year.”</p>
@@ -463,7 +520,8 @@
                             non
                             deserunt ullamco est sit aliqua sint. velit officia consequat duis enim velit mollit.</p>
                     </div>
-                    <button class="text-[#14202D] px-5 md:px-[30px] py-3 md:py-[18px] font-medium rounded-full bg-white text-sm md:text-base">Get
+                    <button
+                        class="text-[#14202D] px-5 md:px-[30px] py-3 md:py-[18px] font-medium rounded-full bg-white text-sm md:text-base">Get
                         Started</button>
                 </div>
             </section>
