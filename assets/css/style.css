@@ -162,64 +162,19 @@ img {
 /* End Carousel */
 
 
-
-
-/* .oval-header {
-    position: relative;
-    height: 1300px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.oval-header--mask {
-    background-image: url('/assets/images/home3-banner-bg.svg');
-    background-size: cover;
-    width: 100%;
-    height: 600px;
-    position: absolute;
-    overflow: hidden;
-    border-top: 0;
-    background-size: cover;
-    z-index: 1;
-}
-
-.testDiv {
-    position: absolute;
-    overflow: hidden;
-    background: #2E2E52;
-    left: -50%;
-    top: 0;
-    width: 200%;
-    height: 900px;
-    border-radius: 50%;
-    z-index: 0;
-}
-
-.dash {
-    position: absolute;
-    z-index: 3;
-    top: 48%;
-    max-width: 946px;
-}
-
-.dash-con {
-    display: flex;
-    justify-content: center;
-} */
-
-
 .home3-banner{
     background-image: url('/assets/images/test.svg');
     background-size: cover;
-    background-position: center;
+    background-position: top center;
+    /* background-attachment: fixed; */
+    height: 970px;
 
 }
 
- footer {
+ .home4-footer {
     background-image: url('/assets/images/footer-bg.svg');
     position: relative;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: left bottom;
 }
  .home4-hero-section {
@@ -227,38 +182,17 @@ img {
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: left bottom;
 }
 
-@media only screen and (max-width: 1024px) {
-    .oval-header {
-        height: 1000px;
-    }
-
-    .testDiv {
-        height: 700px;
-    }
-
-    .dash {
-        top: 35%;
+@media only screen and (max-width: 1023px) {
+    .home3-banner{
+        height: 670px;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .oval-header {
-        height: 670px;
-    }
-
-    .oval-header--mask {
-        height: 300px;
-    }
-
-    .testDiv {
-        height: 500px;
-    }
-
-    .dash {
-        top: 55%;
+@media only screen and (max-width: 767px) {
+    .home3-banner{
+        height: 470px;
     }
 }

@@ -37,14 +37,14 @@
 <body class="font-[inter]">
     <section class="bg-[#6A26DA]">
         <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
-            <div class="md:hidden">
+            <div onclick="mobileMenubarHandler()" class="md:hidden">
                 <img src="assets/images/icons/align-justify.svg" alt="">
             </div>
             <div class="flex items-center gap-1">
                 <img class="w-9" src="assets/images/icons/logo_shape.svg" alt="">
                 <h1 class="font-bold text-xl md:text-2xl text-white">SassLand</h1>
             </div>
-            <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
+            <ul id="homeMenubar" class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
                 <li>
                     <div class="dropdown dropdown-hover">
                         <label tabindex="0" class="">
@@ -201,7 +201,7 @@
         <!-- End Our Best Features -->
 
         <!-- Love us -->
-        <section  
+        <section
             class="flex flex-wrap items-center justify-between gap-6 md:gap-10 mt-[80px] md:mt-[156px] max-w-[1057px] px-5 xl:px-0 lg:ms-[56px]">
             <div class="max-w-[547px]">
                 <h1 class="text-[24px] md:text-[36px] text-[#262729] font-bold mb-4">Hundreds of people already love us
@@ -286,7 +286,7 @@
                             </div>
                         </div>
                     </div>
-<!--                     
+                    <!--                     
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
                     <a class="next" onclick="plusSlides(1)">❯</a> -->
 

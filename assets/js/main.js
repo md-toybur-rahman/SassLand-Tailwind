@@ -36,3 +36,8 @@ function handleInstallmentToggle() {
         monthly.classList.add('text-white');
     }
 }
+
+
+function mobileMenubarHandler () {
+    
+}
