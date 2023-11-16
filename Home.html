@@ -35,7 +35,7 @@
 </head>
 
 <body class="font-[inter]">
-    <section class="bg-[#6A26DA]">
+    <section class="bg-[url('assets/images/home1-banner.svg')] bg-cover">
         <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
             <!-- mobile menubar -->
             <ul id="homeMenubar"
@@ -97,7 +97,7 @@
                 <img src="assets/images/icons/align-justify.svg" alt="">
             </div>
             <div class="flex items-center gap-1">
-                <img class="w-9" src="assets/images/icons/logo_shape.svg" alt="">
+                <img class="w-9" src="assets/images/icons/logo.svg" alt="">
                 <h1 class="font-bold text-xl md:text-2xl text-white">SassLand</h1>
             </div>
             <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
@@ -162,18 +162,21 @@
         </nav>
         <!-- Banner Section -->
         <section class="pt-[51px] pb-[69px] lg:flex items-center justify-between ms-6 md:ms-[70px] xl:ms-[150px]">
-            <div class="lg:max-w-[558px]">
-                <h1 class="font-bold text-white text-[36px] lg:text-[57px] mb-6">Understand your startup</h1>
-                <p class="text-lg md:text-xl lg:text-2xl font-medium text-[#E9EBEB] mb-12">The first data tool you'll
+            <div class="lg:max-w-[590px]">
+                <h1 class="font-bold text-white text-[36px] lg:text-[57px] mb-6">Made for people.
+                    <span class="text-[#FCB900]">Built for productivity.</span>
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl font-medium text-[#E9EBEB] mb-12 lg:max-w-[558px]">The first
+                    data tool you'll
                     love. And the
                     last one you'll ever need.</p>
                 <div class="flex items-center gap-4">
                     <button
-                        class="bg-white rounded-md text-[#25373F] px-10 md:px-[54px] py-4 md:py-[18px] font-semibold text-sm md:text-base">Get
+                        class="bg-white rounded-md text-[#25373F] w-full max-w-[236px] py-4 md:py-[18px] font-semibold text-sm md:text-base">Get
                         Started Free</button>
                     <button
-                        class="bg-transparent border border-[#A67DE9] rounded-md text-white px-10 md:px-[54px] py-4 md:py-[18px] font-medium text-sm md:text-base">Get
-                        Started Free</button>
+                        class="bg-transparent border border-[#A67DE9] rounded-md text-white w-full max-w-[236px] py-4 md:py-[18px] font-medium text-sm md:text-base">Learn
+                        More</button>
                 </div>
             </div>
             <div class="flex justify-end mt-10 lg:block lg:mt-0">
@@ -190,12 +193,13 @@
         <!-- Trusted Companies -->
         <section class="flex items-center justify-center mt-12 px-5">
             <div>
-                <h1 class="text-sm md:text-base text-[#B1B1B1] font-medium mb-10 text-center">TRUSTED BY COMPANIES ALL
+                <h1 class="text-sm md:text-base text-[#262729] font-medium mb-10 text-center">TRUSTED BY COMPANIES ALL
                     OVER THE
                     WORLD</h1>
                 <div class="flex flex-wrap items-center justify-center gap-[30px] md:gap-[56px]">
                     <img class="w-[50px] md:w-auto" src="assets/images/icons/airbnb.svg" alt="">
                     <img class="w-[50px] md:w-auto" src="assets/images/icons/amd.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="assets/images/icons/eatstreet.svg" alt="">
                     <img class="w-[50px] md:w-auto" src="assets/images/icons/dell.svg" alt="">
                     <img class="w-[50px] md:w-auto" src="assets/images/icons/stumble_upon.svg" alt="">
                     <img class="w-[50px] md:w-auto" src="assets/images/icons/kickstarter.svg" alt="">
@@ -493,11 +497,9 @@
     </section>
     <!-- End Pricing and Plans -->
 
-
-    <!-- Bottom Main -->
-    <main class="max-w-[1137px] mx-auto">
-        <!-- FAQ Section -->
-        <section class="px-5 lg:px-0 mt-[56px]">
+    <!-- FAQ Section -->
+    <section class="px-5 lg:px-0 pt-[56px] pb-[63px] bg-[#F8F8F8] mb-[59px]">
+        <div class="max-w-[1137px] mx-auto">
             <div class="flex flex-wrap justify-center lg:justify-end gap-x-4 gap-y-[84px]">
                 <div class="flex items-start gap-2 w-[500px] h-fit">
                     <div class="h-6 w-6 mt-1">
@@ -558,16 +560,20 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-[70px] md:mt-[127px] mb-[90px] md:mb-[122px]">
+            <div class="text-center mt-[70px] md:mt-[127px]">
                 <h1 class="text-xs md:text-sm text-[#25373F]">Haven't got your answer? <a href="#"
                         class="text-[#6A26DA]">Contact
                         our support now</a></h1>
             </div>
-        </section>
-        <!-- FAQ Section -->
+        </div>
+    </section>
+    <!-- FAQ Section -->
+
+    <!-- Bottom Main -->
+    <main class="max-w-[1137px] mx-auto">
 
         <!-- Time is Money -->
-        <section class="flex flex-wrap justify-between items-center gap-5 px-5">
+        <section class="flex flex-wrap justify-between items-center gap-5 px-5 pt-[66px] pb-[156px]">
             <div class="max-w-[413px]">
                 <h1 class="text-xl md:text-2xl font-semibold text-[#25373F] mb-3">Time is money. Save both.</h1>
                 <p class="text-sm md:text-base text-[#676769] font-normal">With lots of unique blocks, you can easily
@@ -575,7 +581,7 @@
                     without coding. Build your next landing page.</p>
             </div>
             <div
-                class="p-[6px] border border-[#DCE0E0] rounded-md max-w-[450px] lg:w-[450px] flex justify-between items-center mt-7 md:mt-0">
+                class="p-[6px] border border-[#DCE0E0] rounded-md max-w-[450px] lg:w-[450px] flex justify-between items-center mt-7 md:mt-0 bg-[#FDFDFD]">
                 <input class="outline-none text-xs md:text-sm font-medium px-2" type="email"
                     placeholder="what's your work email?">
                 <button
@@ -590,7 +596,7 @@
 
     <!-- Footer -->
     <footer
-        class="mt-[100px] md:mt-[156px] px-[30px] lg:px-[150px] border-t border-[#DCE0E0] pt-[50px] lg:pt-[126px] pb-[30px] lg:pb-[102px]">
+        class="px-[30px] lg:px-[150px] border-t border-[#DCE0E0] pt-[50px] lg:pt-[126px] pb-[30px] lg:pb-[102px]">
         <div class="flex flex-col md:flex-row md:justify-between gap-5">
             <div class="max-w-[269px]">
                 <div class="flex items-center gap-3">
