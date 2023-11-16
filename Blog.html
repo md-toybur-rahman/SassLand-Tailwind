@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Daisyui -->
+    <link href="assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="assets/css/libs/google_font.css">
+
+
+    <!-- Tailwind Css -->
+    <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif']
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body class="font-[inter]">
+    <div>
+        <section>
+            <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
+                <!-- mobile menubar -->
+                <ul id="homeMenubar"
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="Home.html">Home 1</a></li>
+                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="Home3.html">Home 3</a></li>
+                                <li><a href="Home4.html">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="About_Us.html">About us 1</a></li>
+                                <li><a href="About_Us2.html">About us 2</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Pricing plans</a></li>
+                                <li><a href="#">Utility</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">404</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <!-- end mobile menubar -->
+                <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
+                    <img src="assets/images/icons/align-justify-dark.svg" alt="">
+                </div>
+                <div class="flex items-center gap-1">
+                    <img class="w-9" src="assets/images/icons/logo_shape.svg" alt="">
+                    <h1 class="font-bold text-xl md:text-2xl text-[#262729]">SassLand</h1>
+                </div>
+                <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="Home.html">Home 1</a></li>
+                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="Home3.html">Home 3</a></li>
+                                <li><a href="Home4.html">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="About_Us.html">About Us 1</a></li>
+                                <li><a href="About_Us2.html">About us 2</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Pricing plans</a></li>
+                                <li><a href="#">Utility</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">404</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <div>
+                    <button
+                        class="bg-[#6A26DA] rounded-md text-white px-4 md:px-6 py-2 md:py-[13px] font-medium text-xs md:text-sm">Get
+                        Started
+                        Free</button>
+                </div>
+            </nav>
+            <!-- Banner Section -->
+            <section class="pt-[128px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">
+                <div class="flex flex-col items-center justify-center w-full">
+                    <div class="max-w-[746px] text-center">
+                        <h1 class="font-bold text-[#262729] text-[36px] lg:text-[57px] mb-8 leading-[85px]">Stay
+                            Informed with Our
+                            Latest News</h1>
+                        <p class="text-sm md:text-base lg:text-[20px] font-medium text-[#676769] leading-[32px]">We
+                            partner
+                            closely with the most progressive companies in the world to improve their customer support
+                            operations. As consumers, we all have our own version of that one call to customer support.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- End Banner Section -->
+        </section>
+        <!-- End Menubar and Banner Section -->
+    </div>
+
+
+    <!-- Top Main -->
+    <main class="max-w-[1156px] mx-auto px-5 xl:px-0">
+        <!-- Blog Card -->
+        <section class="mt-[80px] md:mt-[156px] max-w-[1176px] px-5 xl:px-0">
+            <div class="flex flex-wrap justify-center gap-[32px]">
+                <div class="px-[11px] pt-2 pb-7 rounded-lg max-w-[364px] blog-card">
+                    <div class="h-[162px] rounded-lg">
+                        <img class="w-full h-full overflow-hidden" src="assets/images/blog-card1.svg" alt="">
+                    </div>
+                    <div class="ps-[14px] pt-6">
+                        <h2 class="text-[9px] md:text-[11px] text-[#6A26DA] font-semibold mb-3">Everything</h2>
+                        <h1 class="text-[#212121] text-lg md:text-[24px] font-bold leading-[36px]">Reduced cost per
+                            conversion</h1>
+                        <h2 class="text-xs md:text-sm text-[#6A26DA] font-semibold mt-6">Read More</h2>
+                    </div>
+                </div>
+                <div class="px-[11px] pt-2 pb-7 rounded-lg max-w-[364px] blog-card">
+                    <div class="h-[162px] rounded-lg">
+                        <img class="w-full h-full overflow-hidden" src="assets/images/blog-card2.svg" alt="">
+                    </div>
+                    <div class="ps-[14px] pt-6">
+                        <h2 class="text-[9px] md:text-[11px] text-[#6A26DA] font-semibold mb-3">Everything</h2>
+                        <h1 class="text-[#212121] text-lg md:text-[24px] font-bold leading-[36px]">Reduced cost per
+                            conversion</h1>
+                        <h2 class="text-xs md:text-sm text-[#6A26DA] font-semibold mt-6">Read More</h2>
+                    </div>
+                </div>
+                <div class="px-[11px] pt-2 pb-7 rounded-lg max-w-[364px] blog-card">
+                    <div class="h-[162px] rounded-lg">
+                        <img class="w-full h-full overflow-hidden" src="assets/images/blog-card3.svg" alt="">
+                    </div>
+                    <div class="ps-[14px] pt-6">
+                        <h2 class="text-[9px] md:text-[11px] text-[#6A26DA] font-semibold mb-3">Everything</h2>
+                        <h1 class="text-[#212121] text-lg md:text-[24px] font-bold leading-[36px]">Reduced cost per
+                            conversion</h1>
+                        <h2 class="text-xs md:text-sm text-[#6A26DA] font-semibold mt-6">Read More</h2>
+                    </div>
+                </div>
+                <div class="px-[11px] pt-2 pb-7 rounded-lg max-w-[364px] blog-card">
+                    <div class="h-[162px] rounded-lg">
+                        <img class="w-full h-full overflow-hidden" src="assets/images/blog-card3.svg" alt="">
+                    </div>
+                    <div class="ps-[14px] pt-6">
+                        <h2 class="text-[9px] md:text-[11px] text-[#6A26DA] font-semibold mb-3">Everything</h2>
+                        <h1 class="text-[#212121] text-lg md:text-[24px] font-bold leading-[36px]">Reduced cost per
+                            conversion</h1>
+                        <h2 class="text-xs md:text-sm text-[#6A26DA] font-semibold mt-6">Read More</h2>
+                    </div>
+                </div>
+                <div class="px-[11px] pt-2 pb-7 rounded-lg max-w-[364px] blog-card">
+                    <div class="h-[162px] rounded-lg">
+                        <img class="w-full h-full overflow-hidden" src="assets/images/blog-card1.svg" alt="">
+                    </div>
+                    <div class="ps-[14px] pt-6">
+                        <h2 class="text-[9px] md:text-[11px] text-[#6A26DA] font-semibold mb-3">Everything</h2>
+                        <h1 class="text-[#212121] text-lg md:text-[24px] font-bold leading-[36px]">Reduced cost per
+                            conversion</h1>
+                        <h2 class="text-xs md:text-sm text-[#6A26DA] font-semibold mt-6">Read More</h2>
+                    </div>
+                </div>
+                <div class="px-[11px] pt-2 pb-7 rounded-lg max-w-[364px] blog-card">
+                    <div class="h-[162px] rounded-lg">
+                        <img class="w-full h-full overflow-hidden" src="assets/images/blog-card2.svg" alt="">
+                    </div>
+                    <div class="ps-[14px] pt-6">
+                        <h2 class="text-[9px] md:text-[11px] text-[#6A26DA] font-semibold mb-3">Everything</h2>
+                        <h1 class="text-[#212121] text-lg md:text-[24px] font-bold leading-[36px]">Reduced cost per
+                            conversion</h1>
+                        <h2 class="text-xs md:text-sm text-[#6A26DA] font-semibold mt-6">Read More</h2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Blog Card -->
+    </main>
+    <!-- End Top Main -->
+
+
+    <!-- Footer -->
+    <footer class="mt-[50px] md:mt-[137px] px-[30px] lg:px-[150px] pb-[30px] lg:pb-[48px] bg-[#6A26DA]">
+        <!-- Ready to get started -->
+        <div class="footer-content">
+            <section class="pt-[96px] pb-[71px] border-b border-[#E9E9E9]">
+                <div class="flex flex-wrap gap-6 items-center justify-between">
+                    <div class="max-w-[558px]">
+                        <h1 class="text-2xl md:text-[32px] font-semibold text-[#ECECEC] mb-4">Ready to get started?</h1>
+                        <p class="text-base md:text-[20px] text-[#EDEDED] font-medium leading-[153%]">Amet minim mollit
+                            non
+                            deserunt ullamco est sit aliqua sint. velit officia consequat duis enim velit mollit.</p>
+                    </div>
+                    <button
+                        class="text-[#333333] px-10 md:px-[86px] py-3 md:py-[18px] rounded-md bg-white text-sm md:text-base font-semibold">Get
+                        Started</button>
+                </div>
+            </section>
+            <!-- End Ready to get Started -->
+            <div class="flex flex-col md:flex-row md:justify-between gap-5 mt-[69px]">
+                <div class="max-w-[269px]">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-[20px] md:w-[33px] h-[30px] md:h-[47px] bg-[#FF6AC2] rotate-[50deg] rounded-lg md:rounded-xl">
+                        </div>
+                        <h1 class="text-base md:text-[20px] font-bold text-white">SassLand</h1>
+                    </div>
+                    <div class="mt-6 mb-[42px]">
+                        <p class="text-sm md:text-base text-white">With lots of unique blocks, you can easily build a
+                            page
+                            without
+                            coding. Build your next landing page.</p>
+                    </div>
+                    <div class="flex gap-4 items-center">
+                        <a href="#"><img src="assets/images/icons/Facebook.svg" alt=""></a>
+                        <a href="#"><img src="assets/images/icons/twitter.svg" alt=""></a>
+                        <a href="#"><img src="assets/images/icons/linkedin.svg" alt=""></a>
+                        <a href="#"><img src="assets/images/icons/instagram.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="flex justify-between md:justify-start md:gap-[55px] mt-10 md:mt-0">
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-4">Company</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-4">Product</h1>
+                        <ul class="flex flex-col gap-[18px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-[25px]">Services</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Content Writing</a></li>
+                            <li><a href="#">SEO for Business</a></li>
+                            <li><a href="#">UI Design</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-[15px]">Legal</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
