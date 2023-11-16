@@ -6,6 +6,10 @@
     box-shadow: 1px 10px 20px -1px rgba(200, 203, 203, 0.67);
     transition: .5s ease;
 }
+.leader-card {
+    box-shadow: 1px 10px 20px -1px rgba(200, 203, 203, 0.67);
+    transition: .5s ease;
+}
 
 .love_us_card {
     box-shadow: 1px 10px 20px -1px rgba(173, 181, 183, 0.67);
