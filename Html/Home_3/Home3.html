@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <!-- Daisyui -->
+    <link href="../../assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="../../assets/css/libs/google_font.css">
+
+
+    <!-- Tailwind Css -->
+    <script src="../../assets/js/libs/tailwind_css/tailwind_css.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif']
+                },
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body class="font-[inter]">
+    <div class="h-[550px] sm:h-[700px] md:h-[950px] lg:h-[1300px]">
+        <div class="home3-banner">
+            <section>
+                <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
+                    <!-- mobile menubar -->
+                    <ul id="homeMenubar"
+                        class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                        <li>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="">
+                                    <div class="flex items-center gap-1">
+                                        <a href="#" class="">Home </a>
+                                        <img class="p-2 cursor-pointer"
+                                            src="../../assets/images/icons/arrow_drop_down.svg" alt="">
+                                    </div>
+                                </label>
+                                <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#2E2E52] px-2">
+                                    <li><a href="Home.html">Home 1</a></li>
+                                    <li><a href="../Home_2/Home2.html">Home 2</a></li>
+                                    <li><a href="../Home_4/Home4.html">Home 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="">
+                                    <div class="flex items-center gap-1">
+                                        <a href="#" class="">Pages </a>
+                                        <img class="p-2 cursor-pointer"
+                                            src="../../assets/images/icons/arrow_drop_down.svg" alt="">
+                                    </div>
+                                </label>
+                                <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#2E2E52] px-2">
+                                    <li><a href="About_Us.html">About Us 1</a></li>
+                                    <li><a href="About_Us2.html">About us 2</a></li>
+                                    <li><a href="#">Account</a></li>
+                                    <li><a href="Pricing_Plans.html">Pricing plans</a></li>
+                                    <li><a href="#">Utility</a></li>
+                                    <li><a href="Gallery.html">Gallery</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="Contact_Us.html">Contact us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="">
+                                    <div class="flex items-center gap-1">
+                                        <a href="#" class="">Components </a>
+                                        <img class="p-2 cursor-pointer"
+                                            src="../../assets/images/icons/arrow_drop_down.svg" alt="">
+                                    </div>
+                                </label>
+                                <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#2E2E52] px-2">
+                                    <li><a href="#">Components 1</a></li>
+                                    <li><a href="#">Components 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="p-2"><a href="#">Support</a></li>
+                    </ul>
+                    <!-- end mobile menubar -->
+                    <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
+                        <img src="../../assets/images/icons/align-justify.svg" alt="">
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <img class="w-9" src="../../assets/images/icons/logo.svg" alt="">
+                        <h1 class="font-bold text-xl md:text-2xl text-white">SassLand</h1>
+                    </div>
+                    <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
+                        <li>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="">
+                                    <div class="flex items-center gap-1">
+                                        <a href="#" class="">Home </a>
+                                        <img class="p-2 cursor-pointer"
+                                            src="../../assets/images/icons/arrow_drop_down.svg" alt="">
+                                    </div>
+                                </label>
+                                <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#2E2E52] px-2">
+                                    <li><a href="Home.html">Home 1</a></li>
+                                    <li><a href="../Home_2/Home2.html">Home 2</a></li>
+                                    <li><a href="../Home_4/Home4.html">Home 4</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="">
+                                    <div class="flex items-center gap-1">
+                                        <a href="#" class="">Pages </a>
+                                        <img class="p-2 cursor-pointer"
+                                            src="../../assets/images/icons/arrow_drop_down.svg" alt="">
+                                    </div>
+                                </label>
+                                <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#2E2E52] px-2">
+                                    <li><a href="About_Us.html">About Us 1</a></li>
+                                    <li><a href="About_Us2.html">About us 2</a></li>
+                                    <li><a href="#">Account</a></li>
+                                    <li><a href="Pricing_Plans.html">Pricing plans</a></li>
+                                    <li><a href="#">Utility</a></li>
+                                    <li><a href="Gallery.html">Gallery</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                    <li><a href="Contact_Us.html">Contact us</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown dropdown-hover">
+                                <label tabindex="0" class="">
+                                    <div class="flex items-center gap-1">
+                                        <a href="#" class="">Components </a>
+                                        <img class="p-2 cursor-pointer"
+                                            src="../../assets/images/icons/arrow_drop_down.svg" alt="">
+                                    </div>
+                                </label>
+                                <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#2E2E52] px-2">
+                                    <li><a href="#">Components 1</a></li>
+                                    <li><a href="#">Components 2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="p-2"><a href="#">Support</a></li>
+                    </ul>
+                    <div>
+                        <button
+                            class="bg-white rounded-md text-[#25373F] px-4 md:px-6 py-2 md:py-[13px] font-medium text-xs md:text-sm">Get
+                            Started
+                            Free</button>
+                    </div>
+                </nav>
+                <!-- Banner Section -->
+                <section
+                    class="pt-[50px] lg:pt-[104px] md:pb-[50px] lg:pb-[156px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">
+                    <div class="flex flex-col items-center justify-center w-full">
+                        <div class="max-w-[703px] text-center">
+                            <h1 class="font-bold text-white text-[24px] md:text-[36px] lg:text-[57px] mb-8">Organize
+                                your
+                                work and life,
+                                finally.</h1>
+                            <p class="text-sm md:text-base lg:text-lg font-medium text-[#E9EBEB] mb-12">Clarity gives
+                                you
+                                the blocks & components you need to create a truly professional website, landing page or
+                                admin panel for SaaS</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Banner Section -->
+            </section>
+            <!-- End Menubar and Banner Section -->
+            <div class="flex items-center justify-center px-[30px] lg:px-0 relative top-[00px]">
+                <img src="../../assets/images/Dashboard13.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Top Main -->
+    <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
+        <!-- Trusted Companies -->
+        <section class="flex items-center justify-center mt-[50px] lg:mt-[100px] px-5">
+            <div>
+                <h1 class="text-sm md:text-base text-[#C5C5CF] font-medium mb-10 text-center">TRUSTED BY COMPANIES ALL
+                    OVER THE
+                    WORLD</h1>
+                <div class="flex flex-wrap items-center justify-center gap-[30px] md:gap-[86px]">
+                    <img class="w-[50px] md:w-auto" src="../../assets/images/icons/git.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../../assets/images/icons/evernote.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../../assets/images/icons/zendesk.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../../assets/images/icons/kayako.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../../assets/images/icons/intercom.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../../assets/images/icons/treehouse.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End Trusted Companies -->
+
+        <!-- Video Section -->
+        <section class="mt-[60px] md:mt-[156px] max-w-[1140px] mx-auto px-5">
+            <img src="../../assets/images/Group 88.svg" alt="">
+        </section>
+        <!-- End Video Section -->
+
+        <!-- Top Slack -->
+        <section class="flex flex-wrap md:flex-nowrap items-center gap-[69px] mt-[100px] md:mt-[156px]">
+            <div>
+                <img src="../../assets/images/Group 402.svg" alt="">
+            </div>
+            <div>
+                <h1 class="font-semibold text-[#212121] text-[36px] lg:text-[57px] mb-6 max-w-[553px]">Top Slack Tips To
+                    Boost Productivity</h1>
+                <p class="font-medium text-base md:text-[20px] text-[#000000] max-w-[461px] mb-12">Amet minim mollit non
+                    deserunt ullamco est sit aliqua dolor do amet sint velit of a officia</p>
+                <button class="bg-[#FE79A1] px-[59px] py-[18px] rounded-md text-base font-medium text-white">
+                    See all features
+                </button>
+            </div>
+        </section>
+        <!-- End Top Slack -->
+
+        <!-- Our Best Features -->
+        <section class="mt-[80px] md:mt-[106px] max-w-[1176px] px-5 xl:px-0">
+            <div class="mx-auto mb-[96px]">
+                <h1 class="font-semibold text-2xl md:text-[36px] text-[#000000] mb-4">Our Best Features</h1>
+                <p class="font-medium text-sm md:text-base text-[#000000]">Everything you need to control spend and
+                    optimize
+                    finance operations, all on a single platform.</p>
+            </div>
+            <!-- <div class="flex flex-col items-center md:grid grid-cols-3 gap-[22px]"> -->
+            <div class="flex items-center gap-[78px] flex-wrap justify-center">
+                <div class="max-w-[327px] flex gap-6 justify-between">
+                    <div class="w-[84px] h-[84px]">
+                        <img class="h-full w-full" src="../../assets/images/icons/Group 275.svg" alt="">
+                    </div>
+                    <div class="max-w-[219px]">
+                        <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Design & Vreatives</h1>
+                        <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of
+                            Lorem
+                            lpsum
+                            majority, some words don’t look believable if you are going to use.</p>
+                        <a class="text-sm md:text-base font-semibold flex items-center gap-2 text-[#FF6AC2]"
+                            href="#">Get Started <img src="../../assets/images/icons/pink-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="max-w-[327px] flex gap-6 justify-between">
+                    <div class="w-[84px] h-[84px]">
+                        <img class="h-full w-full" src="../../assets/images/icons/Group 275.svg" alt="">
+                    </div>
+                    <div class="max-w-[219px]">
+                        <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Team Accounts</h1>
+                        <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of
+                            Lorem
+                            lpsum
+                            majority, some words don’t look believable if you are going to use.</p>
+                        <a class="text-sm md:text-base font-semibold flex items-center gap-2 text-[#FF6AC2]"
+                            href="#">Get Started <img src="../../assets/images/icons/pink-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="max-w-[327px] flex gap-6 justify-between">
+                    <div class="w-[84px] h-[84px]">
+                        <img class="h-full w-full" src="../../assets/images/icons/Group 275.svg" alt="">
+                    </div>
+                    <div class="max-w-[219px]">
+                        <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Branding</h1>
+                        <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of
+                            Lorem
+                            lpsum
+                            majority, some words don’t look believable if you are going to use.</p>
+                        <a class="text-sm md:text-base font-semibold flex items-center gap-2 text-[#FF6AC2]"
+                            href="#">Get Started <img src="../../assets/images/icons/pink-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Our Best Features -->
+    </main>
+    <!-- End Top Main -->
+
+
+    <!-- Subscription Packages -->
+    <section class="bg-[#2E2E52] mt-[100px] md:mt-[156px] px-5 lg:px-0 pb-[86px]">
+        <div class="pt-[88px] mb-[56px] text-center">
+            <h1 class="text-2xl md:text-[36px] text-white font-semibold mb-6">Our Subscription Packages</h1>
+            <div onclick="handleInstallmentToggle()" class="mt-8 flex items-center justify-center gap-6">
+                <h1 id="monthly" class="text-white text-sm font-semibold">Monthly</h1>
+                <div class="w-9 relative">
+                    <div class="w-full h-3 border-4 rounded-full">
+                        <div id="installmentToggle"
+                            class="h-[19px] w-[19px] border-4 rounded-full bg-[#2E2E52] absolute -top-1 left-0"></div>
+                    </div>
+                </div>
+                <h1 id="yearly" class="text-[#BABAC6] text-sm font-semibold">Yearly</h1>
+            </div>
+        </div>
+        <div class="mt-[82px] flex items-center gap-6 flex-wrap justify-center">
+            <div class="bg-white rounded-2xl w-[361px] px-[40px] py-[42px]">
+                <div class="mb-[56px]">
+                    <h1 class="font-extrabold text-4xl md:text-6xl mb-4 tracking-tighter"><span
+                            class="text-base md:text-xl font-medium">$</span>99<span
+                            class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
+                    <p class="text-[#464646] font-medium text-sm md:text-base mb-6">Save 20% when billed yearly
+                    </p>
+                </div>
+                <div>
+                    <h1 class="text-[#3C3C3C] text-lg font-bold mb-2">Creator includes:</h1>
+                    <ul class="flex flex-col gap-[14px] text-[#3D3D3D]">
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Includes 1 seat</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">1 Brand voice</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">50+ Templates</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-noraml text-xs md:text-sm">Access SEO mode</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Use AI everywhere with browser
+                                extension</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex justify-center mt-[42px]">
+                        <button
+                            class="px-[30px] md:px-[67px] py-[9px] md:py-[13px] rounded-md bg-[#FF6AC2] text-white text-xs md:text-sm font-semibold">Start
+                            free 7-day trial</button>
+                    </div>
+                    <p class="text-[10px] md:text-xs text-[#909090] mt-[5px] text-center">(No credit card
+                        required)
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl w-[361px] px-[40px] py-[42px]">
+                <div class="mb-[56px]">
+                    <h1 class="font-extrabold text-4xl md:text-6xl mb-4 tracking-tighter"><span
+                            class="text-base md:text-xl font-medium">$</span>99<span
+                            class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
+                    <p class="text-[#464646] font-medium text-sm md:text-base mb-6">Save 20% when billed yearly
+                    </p>
+                </div>
+                <div>
+                    <h1 class="text-[#3C3C3C] text-lg font-bold mb-2">Creator includes:</h1>
+                    <ul class="flex flex-col gap-[14px] text-[#3D3D3D]">
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Includes 1 seat</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">1 Brand voice</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">50+ Templates</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-noraml text-xs md:text-sm">Access SEO mode</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Use AI everywhere with browser
+                                extension</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex justify-center mt-[42px]">
+                        <button
+                            class="px-[30px] md:px-[67px] py-[9px] md:py-[13px] rounded-md bg-[#FF6AC2] text-white text-xs md:text-sm font-semibold">Start
+                            free 7-day trial</button>
+                    </div>
+                    <p class="text-[10px] md:text-xs text-[#909090] mt-[5px] text-center">(No credit card
+                        required)
+                    </p>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl w-[361px] px-[40px] py-[42px]">
+                <div class="mb-[56px]">
+                    <h1 class="font-extrabold text-4xl md:text-6xl mb-4 tracking-tighter"><span
+                            class="text-base md:text-xl font-medium">$</span>99<span
+                            class="text-sm md:text-base font-bold tracking-normal"> /mo</span></h1>
+                    <p class="text-[#464646] font-medium text-sm md:text-base mb-6">Save 20% when billed yearly
+                    </p>
+                </div>
+                <div>
+                    <h1 class="text-[#3C3C3C] text-lg font-bold mb-2">Creator includes:</h1>
+                    <ul class="flex flex-col gap-[14px] text-[#3D3D3D]">
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Includes 1 seat</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">1 Brand voice</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">50+ Templates</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-noraml text-xs md:text-sm">Access SEO mode</h1>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <img src="../../assets/images/icons/black-check.svg" alt="">
+                            <h1 class="font-normal text-xs md:text-sm">Use AI everywhere with browser
+                                extension</h1>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex justify-center mt-[42px]">
+                        <button
+                            class="px-[30px] md:px-[67px] py-[9px] md:py-[13px] rounded-md bg-[#FF6AC2] text-white text-xs md:text-sm font-semibold">Start
+                            free 7-day trial</button>
+                    </div>
+                    <p class="text-[10px] md:text-xs text-[#909090] mt-[5px] text-center">(No credit card
+                        required)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Subscription Packages -->
+
+
+    <!-- Bottom Main -->
+    <main class="max-w-[1137px] mx-auto">
+        <!-- What Customers Saying Section -->
+        <section class="px-5 lg:px-0 mt-[100px] md:mt-[156px]">
+            <div class="mx-auto mb-[56px]">
+                <h1 class="font-bold text-[24px] md:text-[36px] text-[#000000] mb-4">What Customers Saying</h1>
+                <p class="font-normal text-sm md:text-base text-[#000000] max-w-[480px]">Everything you need to control
+                    spend and optimize finance operations, all on a single platform.</p>
+            </div>
+
+            <!-- Carousel -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
+                        <div class="flex items-center gap-1">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                        </div>
+                        <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to
+                            accommodate our
+                            growth and
+                            a variety of event types throughout the year.”</p>
+                        <div class="flex items-center gap-6 mt-[98px]">
+                            <div
+                                class="bg-[url('../../assets/images/profile.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
+                            </div>
+                            <p class="text-base text-[#6B6B6B]">Hunter A., Head of Growth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
+                        <div class="flex items-center gap-1">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                        </div>
+                        <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to
+                            accommodate our
+                            growth and
+                            a variety of event types throughout the year.”</p>
+                        <div class="flex items-center gap-6 mt-[98px]">
+                            <div
+                                class="bg-[url('../../assets/images/man.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
+                            </div>
+                            <p class="text-base text-[#6B6B6B]">Hunter A., Head of Growth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="p-6 rounded-3xl ps-[73px] pt-[66px] pb-[42px] love_us_card bg-[#FFFBF2]">
+                        <div class="flex items-center gap-1">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                            <img class="w-4 md:w-auto" src="../../assets/images/icons/brown-star.svg" alt="">
+                        </div>
+                        <p class="text-[#2E2E52] text-lg md:text-[24px] mt-8">“The platform has been able to
+                            accommodate our
+                            growth and
+                            a variety of event types throughout the year.”</p>
+                        <div class="flex items-center gap-6 mt-[98px]">
+                            <div
+                                class="bg-[url('../../assets/images/profile2.jpg')] min-w-[72px] min-h-[72px] md:min-w-[108px] md:min-h-[108px] rounded-full bg-cover">
+                            </div>
+                            <p class="text-base text-[#6B6B6B]">Hunter A., Head of Growth</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)"><img class="rotate-180"
+                        src="../../assets/images/icons/arrow_forward.svg" alt=""></a>
+                <a class="next" onclick="plusSlides(1)"><img src="../../assets/images/icons/arrow_forward.svg"
+                        alt=""></a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!-- End Carousel -->
+        </section>
+        <!-- End What Customers Saying Section -->
+
+    </main>
+    <!-- End Bottom Main -->
+
+
+
+    <!-- Ready to get started -->
+    <section
+        class="bg-[url(../../assets/images/Rectangle35.svg)] bg-cover h-[498px] lg:px-[150px] px-5 py-[100px] md:py-[194px] mt-[100px] md:mt-[156px]">
+        <div class="mx-auto max-w-[1137px] flex flex-wrap gap-6 items-center justify-between">
+            <div class="max-w-[505px]">
+                <h1 class="text-2xl md:text-[36px] font-semibold text-[#ECECEC] mb-3">Ready to get started?</h1>
+                <p class="text-sm md:text-base text-[#EDEDED] font-medium">Amet minim mollit non deserunt ullamco est
+                    sit
+                    aliqua sint. velit officia consequat.</p>
+            </div>
+            <div class="rounded-md max-w-[496px] mt-7 md:mt-0">
+                <h1 class="font-medium text-base md:text-[20px] mb-[26px] text-white">Subscribe to our newsletter</h1>
+                <div class="flex flex-wrap items-center gap-6">
+                    <div class="h-[56px] w-[236px] flex items-center justify-center bg-[#3C3C6B] rounded-md px-6">
+                        <input class="outline-none text-xs md:text-sm font-medium px-2 bg-transparent" type="email"
+                            placeholder="email address">
+                    </div>
+                    <button
+                        class="h-[56px] py-2 md:py-[14px] w-[130px] md:w-[149px] bg-[#FF6AC2] text-sm md:text-base font-semibold text-white rounded-md">Subscribe
+                        now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Ready to get Started -->
+
+
+    <!-- Footer -->
+    <footer class="mt-[100px] md:mt-[184px] px-[30px] lg:px-[150px] pb-[30px] lg:pb-[102px]">
+        <div class="flex flex-col md:flex-row md:justify-between gap-5">
+            <div class="max-w-[269px]">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-[20px] md:w-[33px] h-[30px] md:h-[47px] bg-[#FF6AC2] rotate-[50deg] rounded-lg md:rounded-xl">
+                    </div>
+                    <h1 class="text-sm md:text-base font-bold text-[#25373F]">SassLand</h1>
+                </div>
+                <div class="mt-6 mb-[42px]">
+                    <p class="text-xs md:text-sm text-[#676769]">With lots of unique blocks, you can easily build a page
+                        without
+                        coding. Build your next landing page.</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <a href="#"><img src="../../assets/images/icons/Facebook.svg" alt=""></a>
+                    <a href="#"><img src="../../assets/images/icons/twitter.svg" alt=""></a>
+                    <a href="#"><img src="../../assets/images/icons/linkedin.svg" alt=""></a>
+                    <a href="#"><img src="../../assets/images/icons/instagram.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="flex justify-between md:justify-start md:gap-[55px] mt-10 md:mt-0">
+                <div>
+                    <h1 class="font-semibold text-sm text-[#25373F] mb-4">Company</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="Contact_Us.html">Contact us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-[#25373F] mb-4">Product</h1>
+                    <ul class="flex flex-col gap-[18px] text-xs md:text-sm text-[#676769]">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-[#25373F] mb-[25px]">Services</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                        <li><a href="#">SEO for Business</a></li>
+                        <li><a href="#">UI Design</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-[#25373F] mb-[15px]">Legal</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="Trams_Conditions.html">Terms & Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/libs/carousel/home3.js"></script>
+</body>
+
+</html>

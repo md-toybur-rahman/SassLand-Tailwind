@@ -2,10 +2,12 @@
     box-shadow: 1px 10px 20px -1px rgba(173, 181, 183, 0.67);
     transition: .5s ease;
 }
+
 .blog-card {
     box-shadow: 1px 10px 20px -1px rgba(200, 203, 203, 0.67);
     transition: .5s ease;
 }
+
 .leader-card {
     box-shadow: 1px 10px 20px -1px rgba(200, 203, 203, 0.67);
     transition: .5s ease;
@@ -170,8 +172,8 @@ img {
 /* End Carousel */
 
 
-.home3-banner{
-    background-image: url('/assets/images/test.svg');
+.home3-banner {
+    background-image: url('../../assets/images/test.svg');
     background-size: cover;
     background-position: top center;
     /* background-attachment: fixed; */
@@ -179,14 +181,15 @@ img {
 
 }
 
- .home4-footer {
-    background-image: url('/assets/images/footer-bg.svg');
+.home4-footer {
+    background-image: url('../../assets/images/footer-bg.svg');
     position: relative;
     background-repeat: no-repeat;
     background-position: left bottom;
 }
- .home4-hero-section {
-    background-image: url('/assets/images/banner-bg.svg');
+
+.home4-hero-section {
+    background-image: url('/../../assets/images/banner-bg.svg');
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -194,13 +197,13 @@ img {
 }
 
 @media only screen and (max-width: 1023px) {
-    .home3-banner{
+    .home3-banner {
         height: 670px;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .home3-banner{
+    .home3-banner {
         height: 470px;
     }
 }
