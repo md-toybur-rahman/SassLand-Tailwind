@@ -124,7 +124,7 @@ img {
 }
 
 #dot-home2 .dot {
-    background-color: #E8DBFF;
+    background-color: #84661E;
     width: 9px;
     transition: background-color 0.6s ease;
     transition: width 0.6s ease;
@@ -138,11 +138,13 @@ img {
 
 #dot-home2 .active,
 .dot:hover {
-    background-color: #FF6AC2;
+    background-color: #2C2003;
     width: 15px;
 }
 
-
+/* .home2-footer-page-label:hover .home2-footer-page-ul{
+    display: block;
+} */
 /* Fading animation */
 .fade {
     animation-name: fade;
