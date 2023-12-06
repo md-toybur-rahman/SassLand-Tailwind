@@ -175,7 +175,7 @@ img {
 
 
 .home3-banner {
-    background-image: url('../../assets/images/test.svg');
+    background-image: url('../images/test.svg');
     background-size: cover;
     background-position: top center;
     /* background-attachment: fixed; */
@@ -184,14 +184,14 @@ img {
 }
 
 .home4-footer {
-    background-image: url('../../assets/images/footer-bg.svg');
+    background-image: url('../images/footer-bg.svg');
     position: relative;
     background-repeat: no-repeat;
     background-position: left bottom;
 }
 
 .home4-hero-section {
-    background-image: url('/../../assets/images/banner-bg.svg');
+    background-image: url('../images/banner-bg.svg');
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
