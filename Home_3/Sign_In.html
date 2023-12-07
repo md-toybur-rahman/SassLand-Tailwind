@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Daisyui -->
+    <link href="../assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="../assets/css/libs/google_font.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
+
+
+    <!-- Tailwind Css -->
+    <script src="../assets/js/libs/tailwind_css/tailwind_css.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body class="font-[inter] bg-[url(../assets/images/home3-banner.png)] bg-local bg-top bg-no-repeat">
+    <div>
+        <section class="">
+            <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
+                <!-- mobile menubar -->
+                <ul id="homeMenubar"
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="../Home.html">Home 1</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
+                                <li><a href="../Home3.html">Home 3</a></li>
+                                <li><a href="..//Home4.html">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="About_Us.html">About Us</a></li>
+                                <li><a href="Blog.html">Blog</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="Pricing_Plans.html">Pricing plans</a></li>
+                                <li><a href="#">Utility</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="Contact_Us.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <!-- end mobile menubar -->
+                <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
+                    <img src="../assets/images/icons/align-justify-dark.svg" alt="">
+                </div>
+                <div>
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/logo-home3.svg" alt="">
+                </div>
+                <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="../Home.html">Home 1</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
+                                <li><a href="../Home3.html">Home 3</a></li>
+                                <li><a href="..//Home4.html">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="About_Us.html">About Us</a></li>
+                                <li><a href="Blog.html">Blog</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="Pricing_Plans.html">Pricing plans</a></li>
+                                <li><a href="#">Utility</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="Contact_Us.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <div>
+                    <a href="Sign_In.html"><button
+                            class="bg-[#FE79A1] rounded-md text-white px-4 md:px-6 h-[32px] md:h-[44px] font-medium text-xs md:text-sm">Get
+                            Started
+                            Free</button></a>
+                </div>
+            </nav>
+
+        </section>
+        <!-- End Menubar and Banner Section -->
+    </div>
+
+
+
+    <!-- Top Main -->
+    <main class="max-w-[1186px] mx-auto px-5 xl:px-0 mt-[139px]">
+        <section class="flex gap-[50px] lg:gap-[117px] justify-between items-center">
+            <div class="hidden md:block max-w-[610px]">
+                <img class="w-full" src="../assets/images/sign_in_banner_home3.png" alt="">
+            </div>
+            <div class="max-w-[459px] mx-auto md:mx-0 w-full">
+                <form class="">
+                    <h1 class="text-[#2C2C44] text-[24px] md:text-[36px] mb-[42px] font-bold text-center md:text-left">Log In</h1>
+                    <div class="flex flex-col gap-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#575757]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#575757]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="mt-[15px] flex items-center gap-2">
+                        <input type="checkbox" id="" name="remember" value="remember">
+                        <label for="remember"><span class="text-sm text-[#979797] font-medium">Remember
+                                me</span></label>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-md bg-[#FE79A1] text-center w-full h-[56px] mt-[30px]">Sign
+                        In</button>
+                </form>
+                <p class="text-sm text-[#575757] font-medium mt-4 text-center">Don't have an account? <a
+                        class="font-semibold text-[#6A26DA]" href="Sign_Up.html">Create an account</a></p>
+            </div>
+        </section>
+    </main>
+    <!-- End Top Main -->
+
+
+    <!-- Footer -->
+    <footer class="px-[30px] lg:px-[100px] pt-[61px] md:pt-[140px] pb-[61px] bg-[#2E2E52] mt-[100px] md:mt-[101px]">
+        <!-- Ready to Started -->
+        <section class="max-w-[1140px] mx-auto px-5 xl:px-0 mb-[56px]">
+            <div class="flex justify-between items-center rounded-2xl flex-wrap gap-5">
+                <div>
+                    <h1 class="text-[24px] md:text-[32px] text-[#ECECFF] font-semibold mb-6">Ready to get started?</h1>
+                    <p class="text-base md:text-[20px] text-[#C8C8FF] font-medium max-w-[521px] leading-[153.5%]">Amet
+                        minim mollit non
+                        deserunt ullamco est sit aliqua sint. velit officia consequat duis enim velit mollit. </p>
+                </div>
+                <button
+                    class="bg-[#FF6AC2] text-sm md:text-base w-[263px] h-[56px] rounded-lg text-white font-semibold">Get
+                    Started</button>
+            </div>
+        </section>
+        <!-- End Ready to Started -->
+        <div
+            class="flex flex-col md:flex-row md:justify-between gap-5 max-w-[1140px] mx-auto border-t border-[#51516F] pt-[56px]">
+            <div class="max-w-[269px]">
+                <div>
+                    <img src="../assets/images/icons/footer-logo-home3.svg" alt="">
+                </div>
+                <div class="mt-6 mb-[42px]">
+                    <p class="text-xs md:text-sm text-[#C0C0FF]">With lots of unique blocks, you can easily build a page
+                        without
+                        coding. Build your next landing page.</p>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <a href="#"><img src="../assets/images/icons/Facebook-white-home-3.svg" alt=""></a>
+                    <a href="#"><img src="../assets/images/icons/twitter-white-home-3.svg" alt=""></a>
+                    <a href="#"><img src="../assets/images/icons/linkedin-white-home-3.svg" alt=""></a>
+                    <a href="#"><img src="../assets/images/icons/instagram-white-home-3.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="flex flex-wrap justify-between md:justify-start gap-8 md:gap-[55px] mt-10 md:mt-0">
+                <div>
+                    <h1 class="font-semibold text-sm text-white mb-4">Company</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#F1F1FF]">
+                        <li><a href="About_Us.html">About us</a></li>
+                        <li><a href="Contact_Us.html">Contact us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-white mb-4">Product</h1>
+                    <ul class="flex flex-col gap-[18px] text-xs md:text-sm text-[#F1F1FF]">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-white mb-[25px]">Services</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#F1F1FF]">
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Content Writing</a></li>
+                        <li><a href="#">SEO for Business</a></li>
+                        <li><a href="#">UI Design</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-semibold text-sm text-white mb-[15px]">Legal</h1>
+                    <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#F1F1FF]">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="Trams_Conditions.html">Terms & Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

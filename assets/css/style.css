@@ -13,6 +13,11 @@
     transition: .5s ease;
 }
 
+.home3-pricing-plans-middle-card {
+    box-shadow: 0px 5px 15px -5px #404072;
+    transition: .5s ease;
+}
+
 .love_us_card {
     box-shadow: 1px 10px 20px -1px rgba(173, 181, 183, 0.67);
     transition: .5s ease;
@@ -23,6 +28,19 @@
     transition: .5s ease;
 }
 
+.home3-pricing-plans-cards-background {
+    background-image: linear-gradient(
+        #FFFFFF 0%,
+            #FFFFFF 20%,
+            #FFFFFF 20%,
+            #FFFFFF 38%,
+            #2E2E52 38%,
+            #2E2E52 60%,
+            #2E2E52 80%,
+            #2E2E52 80%,
+            #2E2E52 100%);
+    background-size: cover;
+}
 
 /* Carousel */
 
