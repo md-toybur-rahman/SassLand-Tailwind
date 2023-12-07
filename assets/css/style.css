@@ -197,14 +197,13 @@ img {
 /* End Carousel */
 
 
-.home3-banner {
+/* .home3-banner {
     background-image: url('../images/test.svg');
     background-size: cover;
     background-position: top center;
-    /* background-attachment: fixed; */
     height: 970px;
 
-}
+} */
 
 .home4-footer {
     background-image: url('../images/footer-bg.svg');
