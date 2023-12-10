@@ -6,41 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <!-- Daisyui -->
-    <link href="assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="assets/css/libs/google_font.css">
+    <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
 
     <!-- Tailwind Css -->
-    <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
+    <script src="../assets/js/libs/tailwind_css/tailwind_css.js"></script>
 
     <title>Document</title>
 </head>
 
 <body class="font-[inter]">
     <div class="">
-        <section class="bg-[url('assets/images/Home4_banner.png')] bg-cover">
-            <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
+        <section>
+            <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between bg-white">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#242221]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
-                                <li><a href="Home.html">Home 1</a></li>
-                                <li><a href="Home2.html">Home 2</a></li>
-                                <li><a href="Home3.html">Home 3</a></li>
+                                <li><a href="../Home.html">Home 1</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
+                                <li><a href="../Home3.html">Home 3</a></li>
                             </ul>
                         </div>
                     </li>
@@ -49,19 +49,19 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
-                                <li><a href="Home_4/About_Us.html">About Us</a></li>
+                                <li><a href="About_Us.html">About Us</a></li>
                                 <li><a href="#">Account</a></li>
-                                <li><a href="Home_4/Pricing_Plans.html">Pricing plans</a></li>
+                                <li><a href="Pricing_Plans.html">Pricing plans</a></li>
                                 <li><a href="#">Utility</a></li>
-                                <li><a href="Home_4/Gallery.html">Gallery</a></li>
-                                <li><a href="Home_4/404.html">404</a></li>
-                                <li><a href="Home_4/Contact_Us.html">Contact us</a></li>
-                                <li><a href="Home_4/Blog.html">Blog</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="Contact_Us.html">Contact us</a></li>
+                                <li><a href="Blog.html">Blog</a></li>
                             </ul>
                         </div>
                     </li>
@@ -70,8 +70,8 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
@@ -84,25 +84,25 @@
                 </ul>
                 <!-- end mobile menubar -->
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
-                    <img src="assets/images/icons/align-justify-dark.svg" alt="">
+                    <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
                 <div class="flex items-center gap-1">
-                    <img class="w-[100px] md:w-auto" src="assets/images/icons/home4-logo.svg" alt="">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/home4-logo2.svg" alt="">
                 </div>
-                <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
+                <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#242221]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
-                                <li><a href="Home.html">Home 1</a></li>
-                                <li><a href="Home2.html">Home 2</a></li>
-                                <li><a href="Home3.html">Home 3</a></li>
+                                <li><a href="../Home.html">Home 1</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
+                                <li><a href="../Home3.html">Home 3</a></li>
                             </ul>
                         </div>
                     </li>
@@ -111,19 +111,19 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
-                                <li><a href="Home_4/About_Us.html">About Us </a></li>
+                                <li><a href="About_Us.html">About Us </a></li>
                                 <li><a href="#">Account</a></li>
-                                <li><a href="Home_4/Pricing_Plans.html">Pricing plans</a></li>
+                                <li><a href="Pricing_Plans.html">Pricing plans</a></li>
                                 <li><a href="#">Utility</a></li>
-                                <li><a href="Home_4/Gallery.html">Gallery</a></li>
-                                <li><a href="Home_4/404.html">404</a></li>
-                                <li><a href="Home_4/Contact_Us.html">Contact us</a></li>
-                                <li><a href="Home_4/Blog.html">Blog</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="Contact_Us.html">Contact us</a></li>
+                                <li><a href="Blog.html">Blog</a></li>
                             </ul>
                         </div>
                     </li>
@@ -132,8 +132,8 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
@@ -146,58 +146,43 @@
                 </ul>
                 <div class="flex items-center gap-2">
                     <a class="text-[#BDBCBC] text-sm" href="Sign_Up.html">Sign up</a>
-                    <div class="w-[2px] h-[13px] bg-[#4E4B4A]"></div>
+                    <div class="w-[2px] h-[13px] bg-[#EAE9E9]"></div>
                     <a class="text-[#BDBCBC] text-sm" href="Sign_In.html">Log in</a>
                 </div>
             </nav>
-            <!-- Banner Section -->
-            <section class="pt-[87px] pb-[195px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">
-                <div class="flex flex-col items-center justify-center w-full">
-                    <div class="max-w-[613px] text-center">
-                        <p
-                            class="text-sm font-medium max-w-[238px] py-[7px] mx-auto bg-white/[7%] border border-white/[12%] rounded-full text-white">
-                            Announcing Our Beta Product</p>
-                        <h1 class="font-bold text-white text-[36px] lg:text-[57px] leading-[72px] mb-9 mt-10">Transform
-                            Your Website with
-                            Sass</h1>
-                        <p class="text-sm md:text-base lg:text-[20px] font-medium leading-[36px] text-[#BAD0E5] mb-9">
-                            Clarity gives
-                            you
-                            the blocks & components you need to create a truly professional website, landing page or
-                            admin panel for SaaS</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 items-center justify-center">
-                        <button
-                            class="bg-[#E35C30] rounded-full text-white px-6 md:px-[35px] py-3 md:py-[15px] font-medium text-xs md:text-sm">Get
-                            Started
-                            Free</button>
-                        <button
-                            class="bg-transparent border border-[#FFFBFA] rounded-full text-white px-8 md:px-[45px] py-3 md:py-[15px] font-medium text-xs md:text-sm">Demo</button>
-                    </div>
-                </div>
-            </section>
-            <!-- End Banner Section -->
         </section>
         <!-- End Menubar and Banner Section -->
     </div>
+    <!-- Banner Section -->
+    <section
+        class="py-[50px] md:py-[88px] lg:flex items-center justify-between px-5 md:px-0 bg-[url('../assets/images/Banner-of-home4.png')] bg-cover">
+        <div class="flex flex-col items-center justify-center w-full">
+            <div class="max-w-[746px] text-center">
+                <h1 class="font-bold text-[#E35C30] text-[34px] lg:text-[36px] leading-[72px] mb-6">About Us</h1>
+                <p class="text-sm md:text-sm lg:text-base font-medium leading-[24px] text-[#FFF5F2]">
+                    We partner closely with the most progressive companies in the world to improve their customer
+                    support operations. As consumers, we all have our own version of that one call to customer support.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Section -->
 
-    <section>
-        <div class="bg-[#FEF8F7] h-[300px] flex items-center justify-center">
-            <div class=" flex flex-wrap items-center justify-center lg:justify-between gap-6 max-w-[1010px] w-full mx-auto px-10 md:px-0">
-                <div class="text-center">
-                    <h1 class="text-[48px] md:text-[85px] text-[#F9C242] font-bold mb-4">53K</h1>
-                    <p class="text-sm md:text-[18px] text-[#A09C9B]">Cool Number</p>
-                </div>
-                <div class="w-[1px] h-[104px] bg-[#E8E8E9]"></div>
-                <div class="text-center">
-                    <h1 class="text-[48px] md:text-[85px] text-[#F9C242] font-bold mb-4">10K</h1>
-                    <p class="text-sm md:text-[18px] text-[#A09C9B]">Projects Done</p>
-                </div>
-                <div class="w-[1px] h-[104px] bg-[#E8E8E9]"></div>
-                <div class="text-center">
-                    <h1 class="text-[48px] md:text-[85px] text-[#F9C242] font-bold mb-4">120</h1>
-                    <p class="text-sm md:text-[18px] text-[#A09C9B]">Cool Number</p>
-                </div>
+    <section class="mt-[152px]">
+        <div class="flex items-center justify-center relative"> 
+            <!-- bg-[url(../assets/images/helping-background.png)] bg-no-repeat bg-local bg-right w-full -->
+            <div class="absolute right-0 -top-[64px]">
+                <img src="../assets/images/helping-background.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-[#262729] text-[24px] md:text-[36px] font-bold leading-[50.5px] max-w-[640px]">Helping businesses deliver exceptional buyer experiences.</h1>
+                <p class="mt-6 text-[#676769] text-base md:text-[20px] font-medium leading-[32px] max-w-[554px]">We partner closely with the most progressive companies in the world to improve their.</p>
+                <button class="mt-[42px] w-[201px] h-[56px] font-semibold text-white rounded-full bg-[#E35C30]">
+                    Get Started Free
+                </button>
+            </div>
+            <div>
+                <img src="../assets/images/Helping-image.png" alt="">
             </div>
         </div>
     </section>
@@ -213,7 +198,7 @@
             <!-- <div class="flex flex-col items-center md:grid grid-cols-3 gap-[22px]"> -->
             <div class="flex items-center gap-[44px] flex-wrap justify-center">
                 <div class="px-[24px] pt-[68px] pb-[44px] max-w-[343px] bg-white border border-[#EDEDED] rounded-2xl">
-                    <img class="mb-8 max-w-[126px]" src="assets/images/icons/Designer1-home4.svg" alt="">
+                    <img class="mb-8 max-w-[126px]" src="../assets/images/icons/Designer1-home4.svg" alt="">
                     <h1 class="text-lg md:text-2xl font-semibold text-[#14202D] mb-6">Design & Vreatives</h1>
                     <p class="text-sm md:text-base text-[#74889C] leading-[22.7px] mb-[52px]">Amet minim mollit non
                         deserunt ullamco est
@@ -223,7 +208,7 @@
                 </div>
                 <div
                     class="ps-[24px] pe-[27px] pt-[70px] pb-[44px] max-w-[343px] bg-white border border-[#EDEDED] rounded-2xl">
-                    <img class="mb-7 max-w-[126px]" src="assets/images/icons/Designer2-home4.svg" alt="">
+                    <img class="mb-7 max-w-[126px]" src="../assets/images/icons/Designer2-home4.svg" alt="">
                     <h1 class="text-lg md:text-2xl font-semibold text-[#14202D] mb-4">Team Accounts</h1>
                     <p class="text-sm md:text-base text-[#74889C] mb-[27px]">Amet minim mollit non deserunt ullamco est
                         sit aliqua dolor do amet sint velit of a </p>
@@ -232,7 +217,7 @@
                 </div>
                 <div
                     class="ps-[24px] pe-[27px] pt-[70px] pb-[44px] max-w-[343px] bg-white border border-[#EDEDED] rounded-2xl">
-                    <img class="mb-7 max-w-[126px]" src="assets/images/icons/Designer3-home4.svg" alt="">
+                    <img class="mb-7 max-w-[126px]" src="../assets/images/icons/Designer3-home4.svg" alt="">
                     <h1 class="text-lg md:text-2xl font-semibold text-[#14202D] mb-4">Branding</h1>
                     <p class="text-sm md:text-base text-[#74889C] mb-[27px]">Amet minim mollit non deserunt ullamco est
                         sit aliqua dolor do amet sint velit of a </p>
@@ -249,7 +234,7 @@
         <section
             class="flex flex-wrap md:flex-nowrap items-center justify-center lg:justify-between gap-[86px] mt-[100px] md:mt-[150px]">
             <div>
-                <img src="assets/images/Sleek-slider-image.png" alt="">
+                <img src="../assets/images/Sleek-slider-image.png" alt="">
             </div>
             <div class="max-w-[553px]">
                 <div class="mb-6">
@@ -259,17 +244,17 @@
                 </div>
                 <div class="flex flex-col gap-6">
                     <div class="flex items-center gap-2">
-                        <img src="assets/images/icons/mini-check.svg" alt="">
+                        <img src="../assets/images/icons/mini-check.svg" alt="">
                         <p class="font-medium text-sm md:text-base text-[#4E5B69]">Quickly add photos, icons, logos, and
                             videos.</p>
                     </div>
                     <div class="flex items-center gap-2">
-                        <img src="assets/images/icons/mini-check.svg" alt="">
+                        <img src="../assets/images/icons/mini-check.svg" alt="">
                         <p class="font-medium text-sm md:text-base text-[#4E5B69]">Build layouts with shortcuts and
                             smart tools.</p>
                     </div>
                     <div class="flex items-center gap-2">
-                        <img src="assets/images/icons/mini-check.svg" alt="">
+                        <img src="../assets/images/icons/mini-check.svg" alt="">
                         <p class="font-medium text-sm md:text-base text-[#4E5B69]">Collaborate with others in real time.
                         </p>
                     </div>
@@ -296,12 +281,12 @@
                     Sassland</h1>
                 <p class="text-[#14202D] text-xs md:text-sm flex items-center gap-2">Excellent <span
                         class="text-[#E35C30] text-xs md:text-sm">4.5 out of 5</span> <img
-                        src="assets/images/icons/green-star.svg" alt=""> Trustpilot</p>
+                        src="../assets/images/icons/green-star.svg" alt=""> Trustpilot</p>
             </div>
             <div>
                 <div class="flex flex-wrap items-center gap-6 mb-6">
                     <div
-                        class="md:h-[348px] w-[705px] bg-[url('assets/images/testimonials1.svg')] bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
+                        class="md:h-[348px] w-[705px] bg-[url('../assets/images/testimonials1.svg')] bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
                         <div>
                             <h1 class="text-lg md:text-[24px] leading-[36px] text-white">“The platform has been able to
                                 accommodate our
@@ -311,11 +296,11 @@
                             <div class="flex items-end justify-between mt-[13px]">
                                 <div class="flex items-center gap-[10px]">
                                     <div
-                                        class="bg-[url('assets/images/profile.jpg')] min-w-[40px] md:min-w-[50px] h-[40px] md:h-[50px] rounded-full bg-cover">
+                                        class="bg-[url('../assets/images/profile.jpg')] min-w-[40px] md:min-w-[50px] h-[40px] md:h-[50px] rounded-full bg-cover">
                                     </div>
                                     <p class="text-base md:text-[20px] text-[#E2E2E2]">Hunter A., Head of Growth</p>
                                 </div>
-                                <img class="w-10 md:w-auto" src="assets/images/icons/play.svg" alt="">
+                                <img class="w-10 md:w-auto" src="../assets/images/icons/play.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -337,18 +322,18 @@
                                 Fellas
                                 Saves 25 hours
                                 a Month </p>
-                            <img class="w-full md:w-auto" src="assets/images/testimonials2.svg" alt="">
+                            <img class="w-full md:w-auto" src="../assets/images/testimonials2.svg" alt="">
                         </div>
                     </div>
                     <div
                         class="md:h-[367px] w-full md:w-[716px] px-5 md:px-[60px] py-5 md:py-[42px] rounded-2xl border border-[#E5E8EC]">
                         <div>
                             <div class="flex items-center gap-1">
-                                <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
-                                <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
+                                <img class="w-[30px] md:w-[42px]" src="../assets/images/icons/brown-star.svg" alt="">
+                                <img class="w-[30px] md:w-[42px]" src="../assets/images/icons/brown-star.svg" alt="">
+                                <img class="w-[30px] md:w-[42px]" src="../assets/images/icons/brown-star.svg" alt="">
+                                <img class="w-[30px] md:w-[42px]" src="../assets/images/icons/brown-star.svg" alt="">
+                                <img class="w-[30px] md:w-[42px]" src="../assets/images/icons/brown-star.svg" alt="">
                             </div>
                             <p class="text-[#2E2E52] font-semibold text-lg md:text-[28px] mt-[10px]">“The platform has
                                 been able to
@@ -357,7 +342,7 @@
                                 a variety of event types throughout the year.”</p>
                             <div class="flex items-center gap-2 mt-[35px]">
                                 <div
-                                    class="bg-[url('assets/images/profile.jpg')] min-w-[52px] min-h-[52px] md:min-w-[52px] md:min-h-[52px] rounded-full bg-cover">
+                                    class="bg-[url('../assets/images/profile.jpg')] min-w-[52px] min-h-[52px] md:min-w-[52px] md:min-h-[52px] rounded-full bg-cover">
                                 </div>
                                 <p class="text-base text-[#6B6B6B]">Hunter A., Head of Growth</p>
                             </div>
@@ -373,12 +358,12 @@
             class="flex items-center justify-center mt-[50px] lg:mt-[89px] px-5 border-t border-[#E9E0DE] pt-[42px]">
             <div>
                 <div class="flex flex-wrap items-center justify-center gap-[30px] md:gap-[86px]">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/git-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/evernote-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/zendesk-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/kayako-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/intercom-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/treehouse-dark.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/git-dark.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/evernote-dark.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/zendesk-dark.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/kayako-dark.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/intercom-dark.svg" alt="">
+                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/treehouse-dark.svg" alt="">
                 </div>
             </div>
         </section>
@@ -415,23 +400,23 @@
                         <h1 class="text-[#14202D] text-sm md:text-base font-semibold mb-[10px]">Creator includes:</h1>
                         <ul class="flex flex-col gap-[13.82px] text-[#77818B]">
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-normal text-xs md:text-[13px]">Includes 1 seat</h1>
                             </li>
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-normal text-xs md:text-[13px]">1 Brand voice</h1>
                             </li>
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-normal text-xs md:text-[13px]">50+ Templates</h1>
                             </li>
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-noraml text-xs md:text-[13px]">Access SEO mode</h1>
                             </li>
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-normal text-xs md:text-[13px]">Use AI everywhere with browser
                                     extension</h1>
                             </li>
@@ -463,23 +448,23 @@
                             </h1>
                             <ul class="flex flex-col gap-[16.7px] text-[#77818B]">
                                 <li class="flex items-center gap-2">
-                                    <img class="w-[17px] h-[18px]" src="assets/images/icons/mini-check.svg" alt="">
+                                    <img class="w-[17px] h-[18px]" src="../assets/images/icons/mini-check.svg" alt="">
                                     <h1 class="font-normal text-xs md:text-[15px]">Includes 1 seat</h1>
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <img class="w-[17px] h-[18px]" src="assets/images/icons/mini-check.svg" alt="">
+                                    <img class="w-[17px] h-[18px]" src="../assets/images/icons/mini-check.svg" alt="">
                                     <h1 class="font-normal text-xs md:text-[15px]">1 Brand voice</h1>
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <img class="w-[17px] h-[18px]" src="assets/images/icons/mini-check.svg" alt="">
+                                    <img class="w-[17px] h-[18px]" src="../assets/images/icons/mini-check.svg" alt="">
                                     <h1 class="font-normal text-xs md:text-[15px]">50+ Templates</h1>
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <img class="w-[17px] h-[18px]" src="assets/images/icons/mini-check.svg" alt="">
+                                    <img class="w-[17px] h-[18px]" src="../assets/images/icons/mini-check.svg" alt="">
                                     <h1 class="font-noraml text-xs md:text-[15px]">Access SEO mode</h1>
                                 </li>
                                 <li class="flex items-center gap-2">
-                                    <img class="w-[17px] h-[18px]" src="assets/images/icons/mini-check.svg" alt="">
+                                    <img class="w-[17px] h-[18px]" src="../assets/images/icons/mini-check.svg" alt="">
                                     <h1 class="font-normal text-xs md:text-[15px]">Use AI everywhere with browser
                                         extension</h1>
                                 </li>
@@ -507,23 +492,23 @@
                         <h1 class="text-[#14202D] text-sm md:text-base font-semibold mb-[10px]">Creator includes:</h1>
                         <ul class="flex flex-col gap-[13.82px] text-[#77818B]">
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-normal text-xs md:text-[13px]">Includes 1 seat</h1>
                             </li>
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-normal text-xs md:text-[13px]">1 Brand voice</h1>
                             </li>
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-normal text-xs md:text-[13px]">50+ Templates</h1>
                             </li>
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-noraml text-xs md:text-[13px]">Access SEO mode</h1>
                             </li>
                             <li class="flex items-center gap-2">
-                                <img src="assets/images/icons/mini-check.svg" alt="">
+                                <img src="../assets/images/icons/mini-check.svg" alt="">
                                 <h1 class="font-normal text-xs md:text-[13px]">Use AI everywhere with browser
                                     extension</h1>
                             </li>
@@ -620,7 +605,7 @@
         <div class="flex flex-col md:flex-row md:justify-between gap-5 my-[56px]">
             <div class="max-w-[269px]">
                 <div class="">
-                    <img class="w-[143px]" src="assets/images/icons/home4-logo.svg" alt="">
+                    <img class="w-[143px]" src="../assets/images/icons/home4-logo.svg" alt="">
                 </div>
                 <div class="mt-6 mb-[42px]">
                     <p class="text-sm md:text-base text-white">With lots of unique blocks, you can easily build a
@@ -641,7 +626,8 @@
                             Started</button>
                     </div>
                 </div>
-                <div class="flex flex-wrap md:flex-nowrap justify-between md:justify-start gap-10 md:gap-[55px] mt-10 md:mt-0">
+                <div
+                    class="flex flex-wrap md:flex-nowrap justify-between md:justify-start gap-10 md:gap-[55px] mt-10 md:mt-0">
                     <div>
                         <h1 class="font-semibold text-base text-white mb-4">Company</h1>
                         <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
@@ -690,7 +676,7 @@
 
 
 
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
