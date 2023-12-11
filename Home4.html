@@ -16,14 +16,15 @@
 
 
     <!-- Tailwind Css -->
-    <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script>
+    <!-- <script src="assets/js/libs/tailwind_css/tailwind_css.js"></script> -->
+    <link rel="stylesheet" href="assets/css/libs/tailwind.css">
 
     <title>Document</title>
 </head>
 
 <body class="font-[inter]">
     <div class="">
-        <section class="bg-[url('assets/images/Home4_banner.png')] bg-cover">
+        <section class="home4-banner bg-cover">
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
@@ -41,6 +42,7 @@
                                 <li><a href="Home.html">Home 1</a></li>
                                 <li><a href="Home2.html">Home 2</a></li>
                                 <li><a href="Home3.html">Home 3</a></li>
+                                <li><a href="Home4.html">Home 4</a></li>
                             </ul>
                         </div>
                     </li>
@@ -103,6 +105,7 @@
                                 <li><a href="Home.html">Home 1</a></li>
                                 <li><a href="Home2.html">Home 2</a></li>
                                 <li><a href="Home3.html">Home 3</a></li>
+                                <li><a href="Home4.html">Home 4</a></li>
                             </ul>
                         </div>
                     </li>
@@ -183,7 +186,8 @@
 
     <section>
         <div class="bg-[#FEF8F7] h-[300px] flex items-center justify-center">
-            <div class=" flex flex-wrap items-center justify-center lg:justify-between gap-6 max-w-[1010px] w-full mx-auto px-10 md:px-0">
+            <div
+                class=" flex flex-wrap items-center justify-center lg:justify-between gap-6 max-w-[1010px] w-full mx-auto px-10 md:px-0">
                 <div class="text-center">
                     <h1 class="text-[48px] md:text-[85px] text-[#F9C242] font-bold mb-4">53K</h1>
                     <p class="text-sm md:text-[18px] text-[#A09C9B]">Cool Number</p>
@@ -301,7 +305,7 @@
             <div>
                 <div class="flex flex-wrap items-center gap-6 mb-6">
                     <div
-                        class="md:h-[348px] w-[705px] bg-[url('assets/images/testimonials1.svg')] bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
+                        class="md:h-[348px] w-[705px] home4-testimonials bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
                         <div>
                             <h1 class="text-lg md:text-[24px] leading-[36px] text-white">“The platform has been able to
                                 accommodate our
@@ -311,7 +315,7 @@
                             <div class="flex items-end justify-between mt-[13px]">
                                 <div class="flex items-center gap-[10px]">
                                     <div
-                                        class="bg-[url('assets/images/profile.jpg')] min-w-[40px] md:min-w-[50px] h-[40px] md:h-[50px] rounded-full bg-cover">
+                                        class="profile min-w-[40px] md:min-w-[50px] h-[40px] md:h-[50px] rounded-full bg-cover">
                                     </div>
                                     <p class="text-base md:text-[20px] text-[#E2E2E2]">Hunter A., Head of Growth</p>
                                 </div>
@@ -357,7 +361,7 @@
                                 a variety of event types throughout the year.”</p>
                             <div class="flex items-center gap-2 mt-[35px]">
                                 <div
-                                    class="bg-[url('assets/images/profile.jpg')] min-w-[52px] min-h-[52px] md:min-w-[52px] md:min-h-[52px] rounded-full bg-cover">
+                                    class="profile min-w-[52px] min-h-[52px] md:min-w-[52px] md:min-h-[52px] rounded-full bg-cover">
                                 </div>
                                 <p class="text-base text-[#6B6B6B]">Hunter A., Head of Growth</p>
                             </div>
@@ -641,7 +645,8 @@
                             Started</button>
                     </div>
                 </div>
-                <div class="flex flex-wrap md:flex-nowrap justify-between md:justify-start gap-10 md:gap-[55px] mt-10 md:mt-0">
+                <div
+                    class="flex flex-wrap md:flex-nowrap justify-between md:justify-start gap-10 md:gap-[55px] mt-10 md:mt-0">
                     <div>
                         <h1 class="font-semibold text-base text-white mb-4">Company</h1>
                         <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">

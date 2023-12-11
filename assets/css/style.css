@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 .features-card:hover {
     box-shadow: 1px 10px 20px -1px rgba(173, 181, 183, 0.67);
     transition: .5s ease;
@@ -165,9 +171,44 @@ img {
     width: 15px;
 }
 
-/* .home2-footer-page-label:hover .home2-footer-page-ul{
-    display: block;
-} */
+
+
+
+/* Background Images */
+.home1-banner{
+    background-image: url('../images/home1-banner.svg');
+}
+.profile{
+    background-image: url('../images/profile.jpg');
+}
+.profile2{
+    background-image: url('../images/man.jpg');
+}
+.profile3{
+    background-image: url('../images/profile2.jpg');
+}
+.home2-banner{
+    background-image: url('../images/home2bg.png');
+}
+.home2-frame{
+    background-image: url('../images/Frame23.svg');
+}
+.home3-banner{
+    background-image: url('../images/Rectangle35.svg');
+}
+.home4-banner{
+    background-image: url('../images/Home4_banner.png');
+}
+.home4-banner2{
+    background-image: url('../images/Banner-of-home4.png');
+}
+.home4-testimonials{
+    background-image: url('../images/testimonials1.svg');
+}
+
+
+
+
 /* Fading animation */
 .fade {
     animation-name: fade;
