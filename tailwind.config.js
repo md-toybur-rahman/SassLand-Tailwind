@@ -3,7 +3,8 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     fontFamily: {
-      'inter': ['Inter', 'sans-serif']
+      'inter': ['Inter', 'sans-serif'],
+      'plex': ['IBM Plex Mono', 'sans-serif']
     },
     extend: {
       colors: {
