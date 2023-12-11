@@ -193,8 +193,26 @@ img {
 .home2-frame{
     background-image: url('../images/Frame23.svg');
 }
+.home2-about-bg{
+    background-image: url('../images/home2-about-get-started.png');
+}
+.home2-sign-bg{
+    background-image: url('../images/sign-in-banner-home2.png');
+}
+.home2-blog-bg{
+    background-image: url('../images/blog-description-bg-home2.png');
+}
 .home3-banner{
     background-image: url('../images/Rectangle35.svg');
+}
+.home3-banner2{
+    background-image: (url('../images/home3-banner.png'));
+}
+.home3-blog{
+    background-image: url('../images/blog-details-cover-home3.png');
+}
+.home3-gallery{
+    background-image: url('../images/gallery-banner-home3.png');
 }
 .home4-banner{
     background-image: url('../images/Home4_banner.png');
@@ -204,6 +222,9 @@ img {
 }
 .home4-testimonials{
     background-image: url('../images/testimonials1.svg');
+}
+.home4-about{
+    background-image: url('../images/home4-aboutus-last-section.png');
 }
 
 
