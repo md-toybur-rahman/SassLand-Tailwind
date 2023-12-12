@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Daisyui -->
+    <link href="../assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="../assets/css/libs/google_font.css">
+
+
+    <!-- Tailwind Css -->
+    <!-- <link rel="stylesheet" href="../assets/css/libs/tailwind.css"> -->
+    <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
+
+    <title>Document</title>
+</head>
+
+<body class="font-[inter]">
+    <div class="">
+        <section>
+            <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between bg-white">
+                <!-- mobile menubar -->
+                <ul id="homeMenubar"
+                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
+                                <li><a href="../Home.html">Home 1</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
+                                <li><a href="../Home3.html">Home 3</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
+                                <li><a href="About_Us.html">About Us</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="Pricing_Plans.html">Pricing plans</a></li>
+                                <li><a href="#">Utility</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="Contact_Us.html">Contact us</a></li>
+                                <li><a href="Blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <!-- end mobile menubar -->
+                <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
+                    <img src="../assets/images/icons/align-justify-dark.svg" alt="">
+                </div>
+                <div class="flex items-center gap-1">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/home4-logo2.svg" alt="">
+                </div>
+                <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#242221]">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="../Home.html">Home 1</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
+                                <li><a href="../Home3.html">Home 3</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="About_Us.html">About Us </a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="Pricing_Plans.html">Pricing plans</a></li>
+                                <li><a href="#">Utility</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="404.html">404</a></li>
+                                <li><a href="Contact_Us.html">Contact us</a></li>
+                                <li><a href="Blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <div class="flex items-center gap-2">
+                    <a id="sign-up-text" class="text-[#BDBCBC] text-sm cursor-pointer hover:text-[#262729]"
+                        onclick="handleSignUp()">Sign up</a>
+                    <div class="w-[2px] h-[13px] bg-[#EAE9E9]"></div>
+                    <a id="sign-in-text" class="text-[#BDBCBC] text-sm cursor-pointer hover:text-[#262729]"
+                        onclick="handleSignIn()">Log in</a>
+                </div>
+            </nav>
+        </section>
+        <!-- End Menubar and Banner Section -->
+    </div>
+
+
+
+    <!-- Sign Up -->
+    <section id="sign-up" class="fixed z-10 w-full hidden">
+        <div onclick="handleHiddenModal()" class="blur-bg z-0">
+        </div>
+        <div class="absolute top-5 right-0 me-6 md:me-[70px] xl:me-[150px] ">
+            <div class="w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
+                <form class="">
+                    <h1 class="text-[#262729] text-[24px] mb-[46px] font-bold text-center md:text-left">
+                        SIGN UP TODAY</h1>
+                    <div class="flex flex-col gap-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">First & Last Name</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="text" placeholder="First & Last Name">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Confirm Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-full bg-[#E35C30] text-center w-full h-[56px] mt-[41px]">Create
+                        An Account</button>
+                </form>
+                <p class="text-sm text-[#B6B6B6] font-medium mt-4 text-center">Already have an account? <a
+                        class="font-semibold text-[#E35C30] cursor-pointer" onclick="handleSignIn()">Login Now</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Log in -->
+    <section id="sign-in" class="fixed z-10 w-full hidden">
+        <div onclick="handleHiddenModal()" class="blur-bg">
+        </div>
+        <div class="absolute top-5 z-10 right-0 me-6 md:me-[70px] xl:me-[150px] ">
+            <div class="w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
+                <form class="">
+                    <h1 class="text-[#262729] text-[24px] mb-[46px] font-bold text-center md:text-left">
+                        Login</h1>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="mt-[15px] flex items-center gap-2">
+                        <input type="checkbox" id="" name="remember" value="remember">
+                        <label for="remember"><span class="text-sm text-[#575757] font-medium">Remember
+                                me</span></label>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-full bg-[#E35C30] text-center w-full h-[56px] mt-[41px]">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Login -->
+
+
+    <!-- Banner Section -->
+    <section class="py-[50px] md:py-[88px] lg:flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
+        <div class="flex flex-col items-center justify-center w-full">
+            <div class="max-w-[746px] text-center">
+                <h1 class="font-bold text-[#E35C30] text-[24px] lg:text-[36px] leading-[72px] mb-6">Pricing Plan</h1>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Section -->
+
+    <!-- Bottom Main -->
+    <main class="max-w-[1141px] mx-auto">
+
+        <!-- Team Leader -->
+        <section class="mt-[70px] md:mt-[104px] px-5 xl:px-0">
+            <div class="max-w-[640px] mx-auto text-center">
+                <h1 class="font-semibold text-[24px] md:text-[36px] text-[#454545] mb-4">Choose Your Plan Few Time.</h1>
+                <p class="text-base md:text-[20px] text-[#676769] font-medium mb-[56px] md:leading-[32px]">Everything
+                    you need to control spend and optimize finance operations, all on a single platform.</p>
+            </div>
+            <div class="flex gap-6 flex-wrap lg:flex-nowrap justify-center items-center mt-[86px]">
+                <div class="border border-[#D9D9D9] rounded-3xl w-full max-w-[361px] bg-[#FBFBFB]">
+                    <div>
+                        <div class=" mb-[42px] mt-[47px] flex items-center justify-between">
+                            <div class="ms-[47px]">
+                                <p class="text-[#212121] text-[24px] font-bold">
+                                    Standard
+                                </p>
+                                <div class="h-[3px] w-full bg-gradient-to-r from-white from-10% to-[#8F8672] to-90%">
+                                </div>
+                            </div>
+                            <div
+                                class="h-[33px] w-[91px] bg-[#E35C30] text-base font-medium text-white flex items-center justify-center">
+                                <p>SAVE 10%</p>
+                            </div>
+                        </div>
+                        <h1
+                            class="font-extrabold text-[28px] md:text-[39px] mb-6 tracking-tighter text-center text-[#262729]">
+                            <span class="text-[15px] md:text-[17px] font-medium">$ </span>15<span
+                                class="text-[15px] md:text-[17px] font-medium tracking-normal"> / Per Month</span>
+                        </h1>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-[35px] mb-[44px]">
+                        <div class="">
+                            <p class="text-base font-medium text-[#262729] text-center">Includes 1 seat</p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#262729] text-center">1 Brand voice </p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#262729] text-center">50+ Templates</p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#262729] text-center">Access SEO mode</p>
+                        </div>
+                    </div>
+                    <div class="px-[60px] mb-[36px]">
+                        <button class="h-[48px] bg-[#E35C30] text-base font-medium text-white w-full rounded-full">Get
+                            Started Now</button>
+                    </div>
+                </div>
+                <div class="border border-[#D9D9D9] rounded-3xl w-full max-w-[361px] bg-[#E35C30] overflow-hidden">
+                    <div>
+                        <div class=" mb-[42px] mt-[47px] flex items-center justify-between">
+                            <div class="ms-[47px]">
+                                <p class="text-[#FFFFFF] text-[24px] font-bold">
+                                    Luxury
+                                </p>
+                                <div
+                                    class="h-[3px] w-full bg-gradient-to-r from-[#E35C30] from-10% to-[#F3B7A3] to-90%">
+                                </div>
+                            </div>
+                            <div
+                                class="h-[24px] w-[210px] bg-white text-sm font-semibold text-[#2C2003] flex items-center justify-center rotate-45 -mr-10 -mt-1">
+                                <p>Recommended</p>
+                            </div>
+                        </div>
+                        <h1
+                            class="font-extrabold text-[28px] md:text-[39px] mb-6 tracking-tighter text-center text-[#FFFFFF]">
+                            <span class="text-[15px] md:text-[17px] font-medium">$ </span>15<span
+                                class="text-[15px] md:text-[17px] font-medium tracking-normal"> / Per Month</span>
+                        </h1>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-[35px] mb-[44px]">
+                        <div class="">
+                            <p class="text-base font-medium text-[#FFFFFF] text-center">Includes 1 seat</p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#FFFFFF] text-center">1 Brand voice </p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#FFFFFF] text-center">50+ Templates</p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#FFFFFF] text-center">Access SEO mode</p>
+                        </div>
+                    </div>
+                    <div class="px-[60px] mb-[36px]">
+                        <button class="h-[48px] bg-white text-base font-medium text-[#2C2003] w-full rounded-full">Get
+                            Started Now</button>
+                    </div>
+                </div>
+
+                <div class="border border-[#D9D9D9] rounded-3xl w-full max-w-[361px] bg-[#FBFBFB]">
+                    <div>
+                        <div class=" mb-[42px] mt-[47px] flex items-center justify-between">
+                            <div class="ms-[47px]">
+                                <p class="text-[#212121] text-[24px] font-bold">
+                                    Standard
+                                </p>
+                                <div class="h-[3px] w-full bg-gradient-to-r from-white from-10% to-[#8F8672] to-90%">
+                                </div>
+                            </div>
+                            <div
+                                class="h-[33px] w-[91px] bg-[#E35C30] text-base font-medium text-white flex items-center justify-center">
+                                <p>SAVE 10%</p>
+                            </div>
+                        </div>
+                        <h1
+                            class="font-extrabold text-[28px] md:text-[39px] mb-6 tracking-tighter text-center text-[#262729]">
+                            <span class="text-[15px] md:text-[17px] font-medium">$ </span>15<span
+                                class="text-[15px] md:text-[17px] font-medium tracking-normal"> / Per Month</span>
+                        </h1>
+                    </div>
+                    <div class="flex flex-col items-center justify-center gap-[35px] mb-[44px]">
+                        <div class="">
+                            <p class="text-base font-medium text-[#262729] text-center">Includes 1 seat</p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#262729] text-center">1 Brand voice </p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#262729] text-center">50+ Templates</p>
+                        </div>
+                        <div class="">
+                            <p class="text-base font-medium text-[#262729] text-center">Access SEO mode</p>
+                        </div>
+                    </div>
+                    <div class="px-[60px] mb-[36px]">
+                        <button class="h-[48px] bg-[#E35C30] text-base font-medium text-white w-full rounded-full">Get
+                            Started Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About us main -->
+    </main>
+    <!-- End Bottom Main -->
+
+
+    <!-- Ready to get started -->
+    <section
+        class="bg-[#E35C30] h-[300px] sm:h-[237px] lg:px-[71px] px-5 xl:px-0 flex items-center justify-center mt-[100px] md:mt-[124px] mx-0 md:mx-8 lg:mx-[77px] md:rounded-full">
+        <div
+            class="mx-auto max-w-[1142px] w-full flex flex-wrap xl:flex-nowrap md:gap-6 xl:gap-[133px] items-center justify-center">
+            <div class="max-w-[505px]">
+                <h1 class="text-[20px] md:text-[24px] font-semibold text-white mb-6">Ready to get started?</h1>
+                <p class="text-sm md:text-base text-[#EDEDED] font-medium leading-[153.5%]">Amet minim mollit non
+                    deserunt ullamco est
+                    sit
+                    aliqua sint. velit officia consequat.</p>
+            </div>
+            <div class="rounded-md max-w-[496px] mt-7 md:mt-0">
+                <div class="flex flex-wrap sm:flex-nowrap items-center gap-2">
+                    <div class="h-[56px] w-[333px] flex items-center bg-[#ED987D] rounded-full px-6">
+                        <input id="home4-ready-input" class="outline-none text-xs md:text-sm font-medium bg-transparent text-white" type="email"
+                            placeholder="email address">
+                    </div>
+                    <button
+                        class="h-[56px] w-[163px] bg-[#33302F] text-sm md:text-base font-semibold text-white rounded-full">Subscribe
+                        now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Ready to get Started -->
+
+
+
+    <!-- Footer -->
+    <footer class="mt-[60px] pt-[50px] md:pt-[94px] px-[30px] lg:px-[150px] pb-[24px] bg-[#33302F]">
+        <div class="flex flex-col md:flex-row md:justify-between gap-5 my-[56px]">
+            <div class="max-w-[269px]">
+                <div class="">
+                    <img class="w-[143px]" src="../assets/images/icons/home4-logo.svg" alt="">
+                </div>
+                <div class="mt-6 mb-[42px]">
+                    <p class="text-sm md:text-base text-white">With lots of unique blocks, you can easily build a
+                        page
+                        without
+                        coding. Build your next landing page.</p>
+                </div>
+            </div>
+            <div>
+                <div class="mb-[42px]">
+                    <h1 class="font-semibold text-white text-[20px] md:text-[24px]">Sign up for our newsletter</h1>
+                    <div
+                        class="p-[6px] border border-[#CED2DA] rounded-md max-w-[553px] lg:w-full flex justify-between items-center mt-6 bg-[#FFFFFF]">
+                        <input class="outline-none text-xs md:text-sm font-medium px-2" type="email"
+                            placeholder="what's your work email?">
+                        <button
+                            class="py-2 md:py-[14px] w-[100px] md:w-[149px] bg-[#E35C30] text-sm md:text-base font-medium text-white rounded-md">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-wrap md:flex-nowrap justify-between md:justify-start gap-10 md:gap-[55px] mt-10 md:mt-0">
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-4">Company</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="Home_4/About_Us.html">About us</a></li>
+                            <li><a href="Home_4/Contact_Us.html">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-4">Product</h1>
+                        <ul class="flex flex-col gap-[18px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-[25px]">Services</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Content Writing</a></li>
+                            <li><a href="#">SEO for Business</a></li>
+                            <li><a href="#">UI Design</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-[15px]">Legal</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="Trams_Conditions.html">Terms & Conditions</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex text-sm items-center justify-center mt-[68px]">
+            <p class="text-xs md:text-sm text-[#E8F3FF]">Copyright@ 2023 Sassland. All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

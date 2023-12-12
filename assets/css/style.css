@@ -258,6 +258,10 @@ img {
     box-shadow: -2px 21px 15px -8px rgba(0,0,0,0.28);
 }
 
+#home4-ready-input::placeholder{
+    color: white;
+}
+
 /* Fading animation */
 .fade {
     animation-name: fade;
