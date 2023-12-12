@@ -24,6 +24,11 @@
     transition: .5s ease;
 }
 
+.accordion-card {
+    box-shadow: 1px 10px 20px -1px rgba(200, 203, 203, 0.67);
+    transition: .5s ease;
+}
+
 .love_us_card {
     box-shadow: 1px 10px 20px -1px rgba(173, 181, 183, 0.67);
     transition: .5s ease;
@@ -239,6 +244,9 @@ img {
 
 .home4-blog {
     background-image: url('../images//home4-blog.png');
+}
+.home4-faq-bg{
+    background-image: url('../images/home4-faq-bg.png');
 }
 
 /* End Banner */
