@@ -73,12 +73,50 @@ function accordionHandler (accordion) {
 
 function handleSignUp () {
     const signUp = document.getElementById('sign-up');
+    const signIn = document.getElementById('sign-in');
+    const signUpText = document.getElementById('sign-up-text');
+    const signInText = document.getElementById('sign-in-text');
+
+    if(!signIn.classList.contains('hidden')){
+        signIn.classList.add('hidden');
+        signInText.classList.remove('text-[#262729]');
+        signInText.classList.add('text-[#BDBCBC]');
+    }
 
     if(signUp.classList.contains('hidden')){
         signUp.classList.remove('hidden');
+        signUpText.classList.remove('text-[#BDBCBC]');
+        signUpText.classList.add('text-[#262729]');
     }
     else{
         signUp.classList.add('hidden');
+        signUpText.classList.remove('text-[#262729]');
+        signUpText.classList.add('text-[#BDBCBC]');
+    }
+
+}
+function handleSignIn () {
+    const signUp = document.getElementById('sign-up');
+    const signIn = document.getElementById('sign-in');
+    const signUpText = document.getElementById('sign-up-text');
+    const signInText = document.getElementById('sign-in-text');
+
+    if(!signUp.classList.contains('hidden')){
+        signUp.classList.add('hidden');
+        signUpText.classList.remove('text-[#262729]');
+        signUpText.classList.add('text-[#BDBCBC]');
+    }
+
+    if(signIn.classList.contains('hidden')){
+        signIn.classList.remove('hidden');
+        signInText.classList.remove('text-[#BDBCBC]');
+        signInText.classList.add('text-[#262729]');
+    }
+    else{
+        signIn.classList.add('hidden');
+        signInText.classList.remove('text-[#262729]');
+        signInText.classList.add('text-[#BDBCBC]');
+
     }
 
 }

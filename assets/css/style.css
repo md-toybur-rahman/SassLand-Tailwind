@@ -254,7 +254,8 @@ img {
     height: 100vh;
     width: 100%;
     opacity: 0.2;
-
+    position: absolute;
+    /* top: -80px; */
 }
 
 .home4-signup-container{

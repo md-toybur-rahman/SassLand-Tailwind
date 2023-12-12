@@ -1679,6 +1679,10 @@ video {
   width: 363px;
 }
 
+.w-\[368px\] {
+  width: 368px;
+}
+
 .w-\[3px\] {
   width: 3px;
 }
@@ -1738,10 +1742,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[368px\] {
-  width: 368px;
 }
 
 .min-w-\[125px\] {
@@ -5492,6 +5492,8 @@ img {
   height: 100vh;
   width: 100%;
   opacity: 0.2;
+  position: absolute;
+  /* top: -80px; */
 }
 
 .home4-signup-container{
@@ -5606,6 +5608,11 @@ img {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-\[\#262729\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(38 39 41 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {

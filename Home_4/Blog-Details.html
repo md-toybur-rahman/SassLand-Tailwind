@@ -21,10 +21,10 @@
     <title>Document</title>
 </head>
 
-<body class="font-[inter]">
+<body id="container" class="font-[inter]">
     <div class="">
         <section>
-            <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between bg-white">
+            <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
                     class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
@@ -147,9 +147,11 @@
                     <li class="p-2"><a href="#">Support</a></li>
                 </ul>
                 <div class="flex items-center gap-2">
-                    <a class="text-[#BDBCBC] text-sm" onclick="handleSignUp()">Sign up</a>
+                    <a id="sign-up-text" class="text-[#BDBCBC] text-sm cursor-pointer hover:text-[#262729]"
+                        onclick="handleSignUp()">Sign up</a>
                     <div class="w-[2px] h-[13px] bg-[#EAE9E9]"></div>
-                    <a class="text-[#BDBCBC] text-sm" href="Sign_In.html">Log in</a>
+                    <a id="sign-in-text" class="text-[#BDBCBC] text-sm cursor-pointer hover:text-[#262729]"
+                        onclick="handleSignIn()">Log in</a>
                 </div>
             </nav>
         </section>
@@ -157,9 +159,9 @@
     </div>
 
 
-    <section id="sign-up" class="absolute w-full hidden">
+    <section id="sign-up" class="fixed w-full hidden">
         <div class="blur-bg z-0">
-        </div>        
+        </div>
         <div class="absolute top-5 z-10 right-0 px-6 md:px-[70px] xl:px-[150px] ">
             <div class="w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
                 <form class="">
@@ -202,10 +204,49 @@
                         An Account</button>
                 </form>
                 <p class="text-sm text-[#B6B6B6] font-medium mt-4 text-center">Already have an account? <a
-                        class="font-semibold text-[#E35C30]" href="Sign_In.html">Login Now</a></p>
+                        class="font-semibold text-[#E35C30] cursor-pointer" onclick="handleSignIn()">Login Now</a></p>
             </div>
         </div>
     </section>
+
+    <!-- Log in -->
+    <section id="sign-in" class="fixed w-full hidden">
+        <div class="blur-bg z-0">
+        </div>
+        <div class="absolute top-5 z-10 right-0 px-6 md:px-[70px] xl:px-[150px] ">
+            <div class="w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
+                <form class="">
+                    <h1 class="text-[#262729] text-[24px] mb-[46px] font-bold text-center md:text-left">
+                        Login</h1>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="mt-[15px] flex items-center gap-2">
+                        <input type="checkbox" id="" name="remember" value="remember">
+                        <label for="remember"><span class="text-sm text-[#575757] font-medium">Remember
+                                me</span></label>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-full bg-[#E35C30] text-center w-full h-[56px] mt-[41px]">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Login -->
 
     <!-- Bottom Main -->
     <main class="max-w-[1141px] mx-auto">

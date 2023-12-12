@@ -148,9 +148,11 @@
                     <li class="p-2"><a href="#">Support</a></li>
                 </ul>
                 <div class="flex items-center gap-2">
-                    <a class="text-[#BDBCBC] text-sm" href="Sign_Up.html">Sign up</a>
+                    <a id="sign-up-text" class="text-[#BDBCBC] text-sm cursor-pointer hover:text-[#262729]"
+                        onclick="handleSignUp()">Sign up</a>
                     <div class="w-[2px] h-[13px] bg-[#EAE9E9]"></div>
-                    <a class="text-[#BDBCBC] text-sm" href="Sign_In.html">Log in</a>
+                    <a id="sign-in-text" class="text-[#BDBCBC] text-sm cursor-pointer hover:text-[#262729]"
+                        onclick="handleSignIn()">Log in</a>
                 </div>
             </nav>
         </section>
@@ -169,6 +171,8 @@
         </div>
     </section>
     <!-- End Banner Section -->
+
+    
 
     <section class="mt-[50px] md:mt-[152px]">
         <div class="flex flex-wrap md:flex-nowrap items-center justify-center relative px-5 xl:px-0">
