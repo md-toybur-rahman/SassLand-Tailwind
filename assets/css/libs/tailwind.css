@@ -685,6 +685,10 @@ video {
   top: 4rem;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .top-\[37px\] {
   top: 37px;
 }
@@ -699,6 +703,14 @@ video {
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .z-\[1\] {
@@ -1027,6 +1039,10 @@ video {
   margin-top: 131px;
 }
 
+.mt-\[136px\] {
+  margin-top: 136px;
+}
+
 .mt-\[139px\] {
   margin-top: 139px;
 }
@@ -1117,6 +1133,10 @@ video {
 
 .mt-\[35px\] {
   margin-top: 35px;
+}
+
+.mt-\[41px\] {
+  margin-top: 41px;
 }
 
 .mt-\[42px\] {
@@ -1718,6 +1738,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[368px\] {
+  width: 368px;
 }
 
 .min-w-\[125px\] {
@@ -3602,90 +3626,6 @@ video {
   background-color: rgb(255 255 255 / 7%);
 }
 
-.bg-\[url\(\'\.\.\/assets\/images\/Banner-of-home4\.png\'\)\] {
-  background-image: url('../assets/images/Banner-of-home4.png');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/gallery-banner-home3\.png\'\)\] {
-  background-image: url('../assets/images/gallery-banner-home3.png');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/home2-about-get-started\.png\'\)\] {
-  background-image: url('../assets/images/home2-about-get-started.png');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/home4-aboutus-last-section\.png\'\)\] {
-  background-image: url('../assets/images/home4-aboutus-last-section.png');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/man\.jpg\'\)\] {
-  background-image: url('../assets/images/man.jpg');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/profile\.jpg\'\)\] {
-  background-image: url('../assets/images/profile.jpg');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/profile2\.jpg\'\)\] {
-  background-image: url('../assets/images/profile2.jpg');
-}
-
-.bg-\[url\(\'\.\.\/assets\/images\/testimonials1\.svg\'\)\] {
-  background-image: url('../assets/images/testimonials1.svg');
-}
-
-.bg-\[url\(\'assets\/images\/Frame23\.svg\'\)\] {
-  background-image: url('assets/images/Frame23.svg');
-}
-
-.bg-\[url\(\'assets\/images\/Home4_banner\.png\'\)\] {
-  background-image: url('assets/images/Home4_banner.png');
-}
-
-.bg-\[url\(\'assets\/images\/home1-banner\.svg\'\)\] {
-  background-image: url('assets/images/home1-banner.svg');
-}
-
-.bg-\[url\(\'assets\/images\/home2bg\.png\'\)\] {
-  background-image: url('assets/images/home2bg.png');
-}
-
-.bg-\[url\(\'assets\/images\/man\.jpg\'\)\] {
-  background-image: url('assets/images/man.jpg');
-}
-
-.bg-\[url\(\'assets\/images\/profile\.jpg\'\)\] {
-  background-image: url('assets/images/profile.jpg');
-}
-
-.bg-\[url\(\'assets\/images\/profile2\.jpg\'\)\] {
-  background-image: url('assets/images/profile2.jpg');
-}
-
-.bg-\[url\(\'assets\/images\/testimonials1\.svg\'\)\] {
-  background-image: url('assets/images/testimonials1.svg');
-}
-
-.bg-\[url\(\.\.\/assets\/images\/blog-description-bg-home2\.png\)\] {
-  background-image: url(../assets/images/blog-description-bg-home2.png);
-}
-
-.bg-\[url\(\.\.\/assets\/images\/blog-details-cover-home3\.png\)\] {
-  background-image: url(../assets/images/blog-details-cover-home3.png);
-}
-
-.bg-\[url\(\.\.\/assets\/images\/home3-banner\.png\)\] {
-  background-image: url(../assets/images/home3-banner.png);
-}
-
-.bg-\[url\(\.\.\/assets\/images\/sign-in-banner-home2\.png\)\] {
-  background-image: url(../assets/images/sign-in-banner-home2.png);
-}
-
-.bg-\[url\(assets\/images\/Rectangle35\.svg\)\] {
-  background-image: url(assets/images/Rectangle35.svg);
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -4816,6 +4756,11 @@ video {
   color: rgb(177 177 177 / var(--tw-text-opacity));
 }
 
+.text-\[\#B6B6B6\] {
+  --tw-text-opacity: 1;
+  color: rgb(182 182 182 / var(--tw-text-opacity));
+}
+
 .text-\[\#BABAC6\] {
   --tw-text-opacity: 1;
   color: rgb(186 186 198 / var(--tw-text-opacity));
@@ -5311,7 +5256,7 @@ video {
   transition: .5s ease;
 }
 
-.home3-contact-us-card{
+.home3-contact-us-card {
   box-shadow: 1px 10px 20px -1px rgba(200, 203, 203, 0.67);
   transition: .5s ease;
 }
@@ -5327,8 +5272,7 @@ video {
 }
 
 .home3-pricing-plans-cards-background {
-  background-image: linear-gradient(
-        #FFFFFF 0%,
+  background-image: linear-gradient(#FFFFFF 0%,
             #FFFFFF 20%,
             #FFFFFF 20%,
             #FFFFFF 38%,
@@ -5467,9 +5411,93 @@ img {
   width: 15px;
 }
 
-/* .home2-footer-page-label:hover .home2-footer-page-ul{
-    display: block;
-} */
+/* Background Images */
+
+.home1-banner {
+  background-image: url('../images/home1-banner.svg');
+}
+
+.profile {
+  background-image: url('../images/profile.jpg');
+}
+
+.profile2 {
+  background-image: url('../images/man.jpg');
+}
+
+.profile3 {
+  background-image: url('../images/profile2.jpg');
+}
+
+.home2-banner {
+  background-image: url('../images/home2bg.png');
+}
+
+.home2-frame {
+  background-image: url('../images/Frame23.svg');
+}
+
+.home2-about-bg {
+  background-image: url('../images/home2-about-get-started.png');
+}
+
+.home2-sign-bg {
+  background-image: url('../images/sign-in-banner-home2.png');
+}
+
+.home2-blog-bg {
+  background-image: url('../images/blog-description-bg-home2.png');
+}
+
+.home3-banner {
+  background-image: url('../images/Rectangle35.svg');
+}
+
+.home3-banner2 {
+  background-image: (url('../images/home3-banner.png'));
+}
+
+.home3-blog {
+  background-image: url('../images/blog-details-cover-home3.png');
+}
+
+.home3-gallery {
+  background-image: url('../images/gallery-banner-home3.png');
+}
+
+.home4-banner {
+  background-image: url('../images/Home4_banner.png');
+}
+
+.home4-banner2 {
+  background-image: url('../images/Banner-of-home4.png');
+}
+
+.home4-testimonials {
+  background-image: url('../images/testimonials1.svg');
+}
+
+.home4-about {
+  background-image: url('../images/home4-aboutus-last-section.png');
+}
+
+.home4-blog {
+  background-image: url('../images//home4-blog.png');
+}
+
+/* End Banner */
+
+.blur-bg {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.2;
+}
+
+.home4-signup-container{
+  padding: 31px 24px 26px 24px;
+  box-shadow: -2px 21px 15px -8px rgba(0,0,0,0.28);
+}
 
 /* Fading animation */
 
@@ -5641,10 +5669,6 @@ img {
 
   .sm\:gap-\[10px\] {
     gap: 10px;
-  }
-
-  .sm\:bg-\[url\(\.\.\/assets\/images\/sign-in-banner-home2\.png\)\] {
-    background-image: url(../assets/images/sign-in-banner-home2.png);
   }
 
   .sm\:px-\[87px\] {
@@ -5903,6 +5927,10 @@ img {
 
   .md\:h-\[72px\] {
     height: 72px;
+  }
+
+  .md\:h-\[74px\] {
+    height: 74px;
   }
 
   .md\:h-auto {

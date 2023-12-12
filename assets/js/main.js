@@ -70,3 +70,15 @@ function accordionHandler (accordion) {
         accordionCard.classList.remove('mt-6')
      }
 }
+
+function handleSignUp () {
+    const signUp = document.getElementById('sign-up');
+
+    if(signUp.classList.contains('hidden')){
+        signUp.classList.remove('hidden');
+    }
+    else{
+        signUp.classList.add('hidden');
+    }
+
+}

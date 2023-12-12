@@ -147,7 +147,7 @@
                     <li class="p-2"><a href="#">Support</a></li>
                 </ul>
                 <div class="flex items-center gap-2">
-                    <a class="text-[#BDBCBC] text-sm" href="Sign_Up.html">Sign up</a>
+                    <a class="text-[#BDBCBC] text-sm" onclick="handleSignUp()">Sign up</a>
                     <div class="w-[2px] h-[13px] bg-[#EAE9E9]"></div>
                     <a class="text-[#BDBCBC] text-sm" href="Sign_In.html">Log in</a>
                 </div>
@@ -156,6 +156,56 @@
         <!-- End Menubar and Banner Section -->
     </div>
 
+
+    <section id="sign-up" class="absolute w-full hidden">
+        <div class="blur-bg z-0">
+        </div>        
+        <div class="absolute top-5 z-10 right-0 px-6 md:px-[70px] xl:px-[150px] ">
+            <div class="w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
+                <form class="">
+                    <h1 class="text-[#262729] text-[24px] mb-[46px] font-bold text-center md:text-left">
+                        SIGN UP TODAY</h1>
+                    <div class="flex flex-col gap-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">First & Last Name</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="text" placeholder="First & Last Name">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Confirm Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-full bg-[#E35C30] text-center w-full h-[56px] mt-[41px]">Create
+                        An Account</button>
+                </form>
+                <p class="text-sm text-[#B6B6B6] font-medium mt-4 text-center">Already have an account? <a
+                        class="font-semibold text-[#E35C30]" href="Sign_In.html">Login Now</a></p>
+            </div>
+        </div>
+    </section>
 
     <!-- Bottom Main -->
     <main class="max-w-[1141px] mx-auto">
@@ -261,9 +311,10 @@
                 <!-- End Blog Categories-->
             </section>
 
-            <section>
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-4">
+            <section class="px-5 md:px-0">
+                <div
+                    class="flex mt-5 md:mt-0 flex-wrap md:flex-nowrap gap-5 items-center justify-center md:justify-between">
+                    <div class="flex flex-wrap justify-center items-center gap-4">
                         <h1 class="font-semibold text-[18px] md:text-[24px] text-[#262729]">Tags: </h1>
                         <div class="flex items-center gap-[26px]">
                             <button
@@ -273,7 +324,7 @@
                                 Marketing</button>
                         </div>
                     </div>
-                    <div class="flex items-center gap-4">
+                    <div class="flex flex-wrap  justify-center items-center gap-4">
                         <h1 class="font-semibold text-[18px] md:text-[24px] text-[#262729]">Share: </h1>
                         <div class="flex items-center gap-[26px]">
                             <img class="w-6 h-6" src="../assets/images/icons/Facebook-home4-leader.svg" alt="">
@@ -306,12 +357,12 @@
         <!-- End About us main -->
 
 
-        <section class="mt-[104px] max-w-[505px]">
+        <section class="mt-[104px] max-w-[505px] px-5 md:px-0">
             <h1 class="text-[#262729] text-base md:text-[20px] font-bold">Comments<span>(3)</span></h1>
             <div class="mt-12 flex flex-col gap-">
                 <div>
                     <div class="flex items-start gap-2 p-6">
-                        <div class="w-[74px] h-[74px] profile3 bg-cover rounded-full">
+                        <div class="w-[74px] h-[50px] md:h-[74px] profile3 bg-cover rounded-full">
                         </div>
                         <div class="border-b border-[#E9E0DE] pb-[34px]">
                             <h1 class="text-[#646464] font-bold text-lg md:text-[22px] mb-1">Ralph Edwards</h1>
@@ -327,7 +378,7 @@
                 </div>
                 <div>
                     <div class="flex items-start gap-2 p-6">
-                        <div class="w-[74px] h-[74px] profile3 bg-cover rounded-full">
+                        <div class="w-[74px] h-[50px] md:h-[74px] profile3 bg-cover rounded-full">
                         </div>
                         <div class="border-b border-[#E9E0DE] pb-[34px]">
                             <h1 class="text-[#646464] font-bold text-lg md:text-[22px] mb-1">Ralph Edwards</h1>
@@ -343,7 +394,7 @@
                 </div>
                 <div>
                     <div class="flex items-start gap-2 p-6">
-                        <div class="w-[74px] h-[74px] profile3 bg-cover rounded-full">
+                        <div class="w-[74px] h-[50px] md:h-[74px] profile3 bg-cover rounded-full">
                         </div>
                         <div class="border-b border-[#E9E0DE] pb-[34px]">
                             <h1 class="text-[#646464] font-bold text-lg md:text-[22px] mb-1">Ralph Edwards</h1>
@@ -361,7 +412,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="mt-[136px]">
+        <section class="mt-[136px] px-5 md:px-0">
             <form class="bg-white">
                 <div class="md:grid grid-cols-5 gap-[26px]">
                     <div class="flex flex-col gap-[11px] col-span-2">

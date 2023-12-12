@@ -24,7 +24,7 @@
     transition: .5s ease;
 }
 
-.home3-contact-us-card{
+.home3-contact-us-card {
     box-shadow: 1px 10px 20px -1px rgba(200, 203, 203, 0.67);
     transition: .5s ease;
 }
@@ -40,8 +40,7 @@
 }
 
 .home3-pricing-plans-cards-background {
-    background-image: linear-gradient(
-        #FFFFFF 0%,
+    background-image: linear-gradient(#FFFFFF 0%,
             #FFFFFF 20%,
             #FFFFFF 20%,
             #FFFFFF 38%,
@@ -175,63 +174,93 @@ img {
 
 
 /* Background Images */
-.home1-banner{
+.home1-banner {
     background-image: url('../images/home1-banner.svg');
 }
-.profile{
+
+.profile {
     background-image: url('../images/profile.jpg');
 }
-.profile2{
+
+.profile2 {
     background-image: url('../images/man.jpg');
 }
-.profile3{
+
+.profile3 {
     background-image: url('../images/profile2.jpg');
 }
-.home2-banner{
+
+.home2-banner {
     background-image: url('../images/home2bg.png');
 }
-.home2-frame{
+
+.home2-frame {
     background-image: url('../images/Frame23.svg');
 }
-.home2-about-bg{
+
+.home2-about-bg {
     background-image: url('../images/home2-about-get-started.png');
 }
-.home2-sign-bg{
+
+.home2-sign-bg {
     background-image: url('../images/sign-in-banner-home2.png');
 }
-.home2-blog-bg{
+
+.home2-blog-bg {
     background-image: url('../images/blog-description-bg-home2.png');
 }
-.home3-banner{
+
+.home3-banner {
     background-image: url('../images/Rectangle35.svg');
 }
-.home3-banner2{
+
+.home3-banner2 {
     background-image: (url('../images/home3-banner.png'));
 }
-.home3-blog{
+
+.home3-blog {
     background-image: url('../images/blog-details-cover-home3.png');
 }
-.home3-gallery{
+
+.home3-gallery {
     background-image: url('../images/gallery-banner-home3.png');
 }
-.home4-banner{
+
+.home4-banner {
     background-image: url('../images/Home4_banner.png');
 }
-.home4-banner2{
+
+.home4-banner2 {
     background-image: url('../images/Banner-of-home4.png');
 }
-.home4-testimonials{
+
+.home4-testimonials {
     background-image: url('../images/testimonials1.svg');
 }
-.home4-about{
+
+.home4-about {
     background-image: url('../images/home4-aboutus-last-section.png');
 }
-.home4-blog{
+
+.home4-blog {
     background-image: url('../images//home4-blog.png');
 }
 
+/* End Banner */
 
 
+.blur-bg {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.2;
+
+}
+
+.home4-signup-container{
+    padding: 31px 24px 26px 24px;
+    box-shadow: -2px 21px 15px -8px rgba(0,0,0,0.28);
+}
 
 /* Fading animation */
 .fade {
