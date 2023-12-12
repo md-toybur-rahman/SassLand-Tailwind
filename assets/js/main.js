@@ -38,9 +38,9 @@ function handleInstallmentToggle() {
 }
 
 
-function mobileMenubarHandler (id) {
+function mobileMenubarHandler(id) {
     const menubar = document.getElementById(id);
-    if(!menubar.classList.contains('left-0')) {
+    if (!menubar.classList.contains('left-0')) {
         menubar.classList.remove('-left-[1024px]');
         menubar.classList.add('left-0');
     }
@@ -50,73 +50,91 @@ function mobileMenubarHandler (id) {
     }
 }
 
-function accordionHandler (accordion) {
+function accordionHandler(accordion) {
     const accordionSign = accordion.children[0].children[1];
-     console.log(accordionSign);
-     const accordionCard = accordion.children[1];
-     if(!accordionSign.classList.contains('rotate-45')){
-        if(accordionSign.classList.contains('accordion-collapse-sign')){
+    console.log(accordionSign);
+    const accordionCard = accordion.children[1];
+    if (!accordionSign.classList.contains('rotate-45')) {
+        if (accordionSign.classList.contains('accordion-collapse-sign')) {
             accordionSign.classList.add('rotate-45');
         }
-        else{
+        else {
             accordionSign.classList.add('rotate-90');
         }
         accordionCard.classList.remove('hidden', 'h-0');
         accordionCard.classList.add('mt-6')
-     }
-     else{
+    }
+    else {
         accordionSign.classList.remove('rotate-45');
         accordionCard.classList.add('hidden', 'h-0');
         accordionCard.classList.remove('mt-6')
-     }
+    }
 }
 
-function handleSignUp () {
+function handleSignUp() {
     const signUp = document.getElementById('sign-up');
     const signIn = document.getElementById('sign-in');
     const signUpText = document.getElementById('sign-up-text');
     const signInText = document.getElementById('sign-in-text');
 
-    if(!signIn.classList.contains('hidden')){
+    if (!signIn.classList.contains('hidden')) {
         signIn.classList.add('hidden');
         signInText.classList.remove('text-[#262729]');
         signInText.classList.add('text-[#BDBCBC]');
     }
 
-    if(signUp.classList.contains('hidden')){
+    if (signUp.classList.contains('hidden')) {
         signUp.classList.remove('hidden');
         signUpText.classList.remove('text-[#BDBCBC]');
         signUpText.classList.add('text-[#262729]');
     }
-    else{
+    else {
         signUp.classList.add('hidden');
         signUpText.classList.remove('text-[#262729]');
         signUpText.classList.add('text-[#BDBCBC]');
     }
 
 }
-function handleSignIn () {
+function handleSignIn() {
     const signUp = document.getElementById('sign-up');
     const signIn = document.getElementById('sign-in');
     const signUpText = document.getElementById('sign-up-text');
     const signInText = document.getElementById('sign-in-text');
 
-    if(!signUp.classList.contains('hidden')){
+    if (!signUp.classList.contains('hidden')) {
         signUp.classList.add('hidden');
         signUpText.classList.remove('text-[#262729]');
         signUpText.classList.add('text-[#BDBCBC]');
     }
 
-    if(signIn.classList.contains('hidden')){
+    if (signIn.classList.contains('hidden')) {
         signIn.classList.remove('hidden');
         signInText.classList.remove('text-[#BDBCBC]');
         signInText.classList.add('text-[#262729]');
     }
-    else{
+    else {
         signIn.classList.add('hidden');
         signInText.classList.remove('text-[#262729]');
         signInText.classList.add('text-[#BDBCBC]');
 
     }
 
+}
+
+function handleHiddenModal() {
+    const signUp = document.getElementById('sign-up');
+    const signIn = document.getElementById('sign-in');
+    const signUpText = document.getElementById('sign-up-text');
+    const signInText = document.getElementById('sign-in-text');
+    if (!signUp.classList.contains('hidden')) {
+        signUp.classList.add('hidden');
+        signUpText.classList.remove('text-[#262729]');
+        signUpText.classList.add('text-[#BDBCBC]');
+    }
+
+    if (!signIn.classList.contains('hidden')) {
+        signIn.classList.add('hidden');
+        signInText.classList.remove('text-[#262729]');
+        signInText.classList.add('text-[#BDBCBC]');
+    }
 }

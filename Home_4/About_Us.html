@@ -158,6 +158,100 @@
         </section>
         <!-- End Menubar and Banner Section -->
     </div>
+
+
+
+    <!-- Sign Up -->
+    <section id="sign-up" class="fixed z-10 w-full hidden">
+        <div onclick="handleHiddenModal()" class="blur-bg z-0">
+        </div>
+        <div class="absolute top-5 right-0 me-6 md:me-[70px] xl:me-[150px] ">
+            <div class="w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
+                <form class="">
+                    <h1 class="text-[#262729] text-[24px] mb-[46px] font-bold text-center md:text-left">
+                        SIGN UP TODAY</h1>
+                    <div class="flex flex-col gap-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">First & Last Name</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="text" placeholder="First & Last Name">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Confirm Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-full bg-[#E35C30] text-center w-full h-[56px] mt-[41px]">Create
+                        An Account</button>
+                </form>
+                <p class="text-sm text-[#B6B6B6] font-medium mt-4 text-center">Already have an account? <a
+                        class="font-semibold text-[#E35C30] cursor-pointer" onclick="handleSignIn()">Login Now</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Log in -->
+    <section id="sign-in" class="fixed z-10 w-full hidden">
+        <div onclick="handleHiddenModal()" class="blur-bg">
+        </div>
+        <div class="absolute top-5 z-10 right-0 me-6 md:me-[70px] xl:me-[150px] ">
+            <div class="w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
+                <form class="">
+                    <h1 class="text-[#262729] text-[24px] mb-[46px] font-bold text-center md:text-left">
+                        Login</h1>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="mt-[15px] flex items-center gap-2">
+                        <input type="checkbox" id="" name="remember" value="remember">
+                        <label for="remember"><span class="text-sm text-[#575757] font-medium">Remember
+                                me</span></label>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-full bg-[#E35C30] text-center w-full h-[56px] mt-[41px]">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Login -->
+
+
     <!-- Banner Section -->
     <section class="py-[50px] md:py-[88px] lg:flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
         <div class="flex flex-col items-center justify-center w-full">
@@ -172,11 +266,10 @@
     </section>
     <!-- End Banner Section -->
 
-    
 
     <section class="mt-[50px] md:mt-[152px]">
         <div class="flex flex-wrap md:flex-nowrap items-center justify-center relative px-5 xl:px-0">
-            <div class="absolute right-0 bottom-0 md:-top-[64px]">
+            <div class="absolute right-0 bottom-0 md:-top-[64px] z-0">
                 <img src="../assets/images/helping-background.png" alt="">
             </div>
             <div>
