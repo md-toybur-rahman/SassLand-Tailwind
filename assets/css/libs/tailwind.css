@@ -1466,6 +1466,10 @@ video {
   height: 30px;
 }
 
+.h-\[326px\] {
+  height: 326px;
+}
+
 .h-\[32px\] {
   height: 32px;
 }
@@ -4785,6 +4789,11 @@ video {
   color: rgb(119 129 139 / var(--tw-text-opacity));
 }
 
+.text-\[\#808080\] {
+  --tw-text-opacity: 1;
+  color: rgb(128 128 128 / var(--tw-text-opacity));
+}
+
 .text-\[\#828282\] {
   --tw-text-opacity: 1;
   color: rgb(130 130 130 / var(--tw-text-opacity));
@@ -4993,15 +5002,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#808080\] {
-  --tw-text-opacity: 1;
-  color: rgb(128 128 128 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -5532,6 +5532,14 @@ video {
     margin-top: 106px;
   }
 
+  .md\:mt-\[111px\] {
+    margin-top: 111px;
+  }
+
+  .md\:mt-\[113px\] {
+    margin-top: 113px;
+  }
+
   .md\:mt-\[120px\] {
     margin-top: 120px;
   }
@@ -5568,12 +5576,24 @@ video {
     margin-top: 137px;
   }
 
+  .md\:mt-\[141px\] {
+    margin-top: 141px;
+  }
+
+  .md\:mt-\[148px\] {
+    margin-top: 148px;
+  }
+
   .md\:mt-\[150px\] {
     margin-top: 150px;
   }
 
   .md\:mt-\[152px\] {
     margin-top: 152px;
+  }
+
+  .md\:mt-\[153px\] {
+    margin-top: 153px;
   }
 
   .md\:mt-\[155px\] {
@@ -5624,6 +5644,10 @@ video {
     margin-top: 201px;
   }
 
+  .md\:mt-\[203px\] {
+    margin-top: 203px;
+  }
+
   .md\:mt-\[216px\] {
     margin-top: 216px;
   }
@@ -5634,6 +5658,10 @@ video {
 
   .md\:mt-\[271px\] {
     margin-top: 271px;
+  }
+
+  .md\:mt-\[30px\] {
+    margin-top: 30px;
   }
 
   .md\:mt-\[341px\] {
@@ -5656,16 +5684,16 @@ video {
     margin-top: 79px;
   }
 
+  .md\:mt-\[83px\] {
+    margin-top: 83px;
+  }
+
   .md\:mt-\[86px\] {
     margin-top: 86px;
   }
 
   .md\:mt-\[92px\] {
     margin-top: 92px;
-  }
-
-  .md\:mt-\[141px\] {
-    margin-top: 141px;
   }
 
   .md\:block {
@@ -6032,11 +6060,6 @@ video {
   .md\:py-\[42px\] {
     padding-top: 42px;
     padding-bottom: 42px;
-  }
-
-  .md\:py-\[88px\] {
-    padding-top: 88px;
-    padding-bottom: 88px;
   }
 
   .md\:pb-\[24px\] {
