@@ -39,6 +39,30 @@
     transition: .5s ease;
 }
 
+.mini-card{
+    box-shadow: 1px 10px 20px -1px rgba(173, 181, 183, 0.67);
+    transition: .5s ease;
+}
+.white-image{
+    display: none;
+}
+.mini-card:hover{
+    box-shadow: none;
+}
+.mini-card:hover .white-image{
+    display: block;
+}
+.mini-card:hover .black-image{
+    display: none;
+}
+.mini-card:hover h5{
+    color: white;
+}
+.mini-card:hover p{
+    color: white;
+}
+
+
 .home3-pricing-plans-cards-background {
     background-image: linear-gradient(#FFFFFF 0%,
             #FFFFFF 20%,
