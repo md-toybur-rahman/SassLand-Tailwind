@@ -61,7 +61,30 @@
 .mini-card:hover p{
     color: white;
 }
-
+#home-4-contact-terms input[type=checkbox]{
+    appearance: none;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 0;
+}
+#home-4-contact-terms input[type=checkbox]:checked{
+    background-color: white;
+}
+#home-4-contact-terms input[type=checkbox]:checked::after{
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 4px;
+    top: 5px;
+    left: 3px;
+    border-left: 2.5px solid #2C2003;
+    border-bottom: 2.5px solid #2C2003;
+    transform: rotate(-45deg);
+    
+}
 
 .home3-pricing-plans-cards-background {
     background-image: linear-gradient(#FFFFFF 0%,

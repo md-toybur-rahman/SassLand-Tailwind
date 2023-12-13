@@ -1296,6 +1296,22 @@ video {
   margin-top: 9px;
 }
 
+.mt-\[\] {
+  margin-top: ;
+}
+
+.ms-\[100px\] {
+  margin-inline-start: 100px;
+}
+
+.ms-\[140px\] {
+  margin-inline-start: 140px;
+}
+
+.mt-\[108px\] {
+  margin-top: 108px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1805,6 +1821,10 @@ video {
   width: 100%;
 }
 
+.w-\[368px\] {
+  width: 368px;
+}
+
 .min-w-\[125px\] {
   min-width: 125px;
 }
@@ -2161,12 +2181,24 @@ video {
   max-width: 823px;
 }
 
+.max-w-\[890px\] {
+  max-width: 890px;
+}
+
 .max-w-\[946px\] {
   max-width: 946px;
 }
 
 .max-w-\[947px\] {
   max-width: 947px;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[11\] {
+  max-width: 11;
 }
 
 .flex-shrink {
@@ -2865,6 +2897,10 @@ video {
   gap: 97px;
 }
 
+.gap-\[110px\] {
+  gap: 110px;
+}
+
 .gap-x-4 {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
@@ -3514,6 +3550,11 @@ video {
   border-color: rgb(255 255 255 / 12%);
 }
 
+.border-\[\#FDFCFA\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(253 252 250 / var(--tw-border-opacity));
+}
+
 .bg-\[\#162126\] {
   --tw-bg-opacity: 1;
   background-color: rgb(22 33 38 / var(--tw-bg-opacity));
@@ -3704,6 +3745,11 @@ video {
 
 .bg-white\/\[7\%\] {
   background-color: rgb(255 255 255 / 7%);
+}
+
+.bg-\[\#2C2003\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(44 32 3 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -5039,6 +5085,15 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#B9B5AC\] {
+  --tw-text-opacity: 1;
+  color: rgb(185 181 172 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -5748,6 +5803,10 @@ video {
     margin-top: 92px;
   }
 
+  .md\:mt-\[416px\] {
+    margin-top: 416px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -5872,6 +5931,10 @@ video {
     max-width: 750px;
   }
 
+  .md\:max-w-\[890px\] {
+    max-width: 890px;
+  }
+
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -5966,6 +6029,10 @@ video {
 
   .md\:gap-\[86px\] {
     gap: 86px;
+  }
+
+  .md\:gap-\[50px\] {
+    gap: 50px;
   }
 
   .md\:rounded-full {
@@ -6540,6 +6607,10 @@ video {
 
   .lg\:gap-\[97px\] {
     gap: 97px;
+  }
+
+  .lg\:gap-\[110px\] {
+    gap: 110px;
   }
 
   .lg\:px-0 {
