@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Daisyui -->
+    <link href="../assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="../assets/css/libs/google_font.css">
+
+
+    <!-- Tailwind Css -->
+    <!-- <link rel="stylesheet" href="../assets/css/libs/tailwind.css"> -->
+    <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
+
+    <title>Document</title>
+</head>
+
+<body class="font-[inter]">
+    <div class="">
+        <section>
+            <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between bg-white">
+                <!-- mobile menubar -->
+                <ul id="homeMenubar"
+                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
+                                <li><a href="../Home.html">Home 1</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
+                                <li><a href="../Home3.html">Home 3</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
+                                <li><a href="About_Us.html">About Us</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="Pricing_Plans.html">Pricing plans</a></li>
+                                <li><a href="#">Utility</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="FAQ.html">FAQ</a></li>
+                                <li><a href="Contact_Us.html">Contact us</a></li>
+                                <li><a href="Blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                        alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <!-- end mobile menubar -->
+                <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
+                    <img src="../assets/images/icons/align-justify-dark.svg" alt="">
+                </div>
+                <div class="flex items-center gap-1">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/home4-logo2.svg" alt="">
+                </div>
+                <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#242221]">
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Home </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="../Home.html">Home 1</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
+                                <li><a href="../Home3.html">Home 3</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Pages </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="About_Us.html">About Us </a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="Pricing_Plans.html">Pricing plans</a></li>
+                                <li><a href="#">Utility</a></li>
+                                <li><a href="Gallery.html">Gallery</a></li>
+                                <li><a href="FAQ.html">FAQ</a></li>
+                                <li><a href="Contact_Us.html">Contact us</a></li>
+                                <li><a href="Blog.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown dropdown-hover">
+                            <label tabindex="0" class="">
+                                <div class="flex items-center gap-1">
+                                    <a href="#" class="">Components </a>
+                                    <img class="p-2 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
+                                </div>
+                            </label>
+                            <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                                <li><a href="#">Components 1</a></li>
+                                <li><a href="#">Components 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="p-2"><a href="#">Support</a></li>
+                </ul>
+                <div class="flex items-center gap-2">
+                    <a id="sign-up-text" class="text-[#BDBCBC] text-sm cursor-pointer hover:text-[#262729]"
+                        onclick="handleSignUp()">Sign up</a>
+                    <div class="w-[2px] h-[13px] bg-[#EAE9E9]"></div>
+                    <a id="sign-in-text" class="text-[#BDBCBC] text-sm cursor-pointer hover:text-[#262729]"
+                        onclick="handleSignIn()">Log in</a>
+                </div>
+            </nav>
+        </section>
+        <!-- End Menubar and Banner Section -->
+    </div>
+
+
+
+    <!-- Sign Up -->
+    <section id="sign-up" class="fixed z-10 w-full hidden">
+        <div onclick="handleHiddenModal()" class="blur-bg z-0">
+        </div>
+        <div class="absolute top-5 right-0 me-6 md:me-[70px] xl:me-[150px] ">
+            <div class="sm:w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
+                <form class="">
+                    <h1 class="text-[#262729] text-[24px] mb-[46px] font-bold text-center md:text-left">
+                        SIGN UP TODAY</h1>
+                    <div class="flex flex-col gap-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">First & Last Name</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="text" placeholder="First & Last Name">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Confirm Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-full bg-[#E35C30] text-center w-full h-[56px] mt-[41px]">Create
+                        An Account</button>
+                </form>
+                <p class="text-sm text-[#B6B6B6] font-medium mt-4 text-center">Already have an account? <a
+                        class="font-semibold text-[#E35C30] cursor-pointer" onclick="handleSignIn()">Login Now</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Log in -->
+    <section id="sign-in" class="fixed z-10 w-full hidden">
+        <div onclick="handleHiddenModal()" class="blur-bg">
+        </div>
+        <div class="absolute top-5 z-10 right-0 me-6 md:me-[70px] xl:me-[150px] ">
+            <div class="sm:w-[368px] mx-auto md:mx-0 bg-[#FBFBFB] rounded-lg home4-signup-container">
+                <form class="">
+                    <h1 class="text-[#262729] text-[24px] mb-[46px] font-bold text-center md:text-left">
+                        Login</h1>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Email</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[11px] mt-[11px]">
+                        <label>
+                            <span class="text-base font-medium text-[#262729]">Password</span>
+                        </label>
+                        <div class="border border-[#CED2DA] rounded-lg px-3 h-[56px] flex items-center bg-white">
+                            <input class="outline-none" type="password" placeholder="Your Password">
+                        </div>
+                    </div>
+                    <div class="mt-[15px] flex items-center gap-2">
+                        <input type="checkbox" id="" name="remember" value="remember">
+                        <label for="remember"><span class="text-sm text-[#575757] font-medium">Remember
+                                me</span></label>
+                    </div>
+                    <button
+                        class="text-base font-medium text-white rounded-full bg-[#E35C30] text-center w-full h-[56px] mt-[41px]">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Login -->
+
+
+    <!-- Banner Section -->
+    <section class="py-[50px] md:py-[88px] lg:flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
+        <div class="flex flex-col items-center justify-center w-full">
+            <div class="max-w-[640px] text-center">
+                <h1 class="font-bold text-[#E35C30] text-[36px] lg:text-[57px] leading-[72px] mb-10">Terms & Conditions</h1>
+                <p class="text-sm md:text-base font-medium text-[#676769] text-center leading-[24px]">By accessing and placing an order with UXTheme, you confirm that you are in agreement with and bound by the terms and conditions</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Section -->
+
+    <!-- Bottom Main -->
+    <main class="max-w-[1138px] mx-auto">
+
+        <!-- Team Leader -->
+        <section class="mt-[30px] md:mt-[30px] px-5 xl:px-0">
+            <p class="max-w-[1043px] text-sm md:text-base leading-[24px] font-medium text-[#676769]">By accessing and placing an order with UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained in the Terms Of Use outlined below. These terms apply to the entire website and any email or other type of communication between you and UXTheme. Under no circumstances shall UXTheme team be liable for any direct, indirect, special, incidental or consequential damages, including, but not limited to, loss of data or profit, arising out of the use, or the inability to use, the materials on this site, even if UXTheme team or an authorized representative has been advised of the possibility of such damages. If your use of materials from this site results in the need for servicing, repair or correction of equipment or data, you assume any costs thereof. UXTheme will not be responsible for any outcome that may occur during the course of usage of our resources.</p>
+
+
+            <div>
+                <div class="mt-10 md:mt-[83px]">
+                    <p class="font-semibold text-[#454545] text-sm md:text-base">1.Our Website</p>
+                    <p class="max-w-[1043px] text-sm md:text-base leading-[24px] font-medium text-[#676769] mt-6">By accessing and placing an order with UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained in the Terms Of Use outlined below. These terms apply to</p>
+                </div>
+                <div class="mt-10 md:mt-[83px]">
+                    <p class="font-semibold text-[#454545] text-sm md:text-base">2.Data You Provide to Us</p>
+                    <p class="max-w-[1043px] text-sm md:text-base leading-[24px] font-medium text-[#676769] mt-6">By accessing and placing an order with UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained in the Terms Of Use outlined below. These terms apply to</p>
+                </div>
+                <div class="mt-10 md:mt-[83px]">
+                    <p class="font-semibold text-[#454545] text-sm md:text-base">3. How We Get Data About You</p>
+                    <p class="max-w-[1043px] text-sm md:text-base leading-[24px] font-medium text-[#676769] mt-6">By accessing and placing an order with UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained in the Terms Of Use outlined below. These terms apply to</p>
+                </div>
+                <div class="mt-10 md:mt-[83px]">
+                    <p class="font-semibold text-[#454545] text-sm md:text-base">4. What We Use Your Data For</p>
+                    <p class="max-w-[1043px] text-sm md:text-base leading-[24px] font-medium text-[#676769] mt-6">By accessing and placing an order with UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained in the Terms Of Use outlined below. These terms apply to</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- End About us main -->
+    </main>
+    <!-- End Bottom Main -->
+
+
+    <!-- Ready to Started -->
+    <section class="rounded-2xl mt-[50px] md:mt-[111px] max-w-[1142px] mx-auto px-5 xl:px-0">
+        <div
+            class="home4-faq-bg bg-cover py-[56px] px-[71px] flex justify-between items-center rounded-2xl flex-wrap gap-5">
+            <div>
+                <h1 class="text-[24px] md:text-[36px] text-[#2C2003] font-semibold mb-4">Ready to get started?</h1>
+                <p class="text-base md:text-[20px] text-[#392904] font-medium max-w-[521px]">Amet minim mollit non
+                    deserunt ullamco est sit aliqua sint. velit officia consequat duis enim velit mollit. </p>
+            </div>
+            <button
+                class="bg-[#E35C30] text-sm md:text-base px-[54px] py-[13px] rounded-full text-white font-medium">Get
+                Started</button>
+        </div>
+    </section>
+    <!-- End Ready to Started -->
+
+
+
+    <!-- Footer -->
+    <footer class="mt-[100px] md:mt-[153px] pt-[50px] md:pt-[94px] px-[30px] lg:px-[150px] pb-[24px] bg-[#33302F]">
+        <div class="flex flex-col md:flex-row md:justify-between gap-5 my-[56px]">
+            <div class="max-w-[269px]">
+                <div class="">
+                    <img class="w-[143px]" src="../assets/images/icons/home4-logo.svg" alt="">
+                </div>
+                <div class="mt-6 mb-[42px]">
+                    <p class="text-sm md:text-base text-white">With lots of unique blocks, you can easily build a
+                        page
+                        without
+                        coding. Build your next landing page.</p>
+                </div>
+            </div>
+            <div>
+                <div class="mb-[42px]">
+                    <h1 class="font-semibold text-white text-[20px] md:text-[24px]">Sign up for our newsletter</h1>
+                    <div
+                        class="p-[6px] border border-[#CED2DA] rounded-md max-w-[553px] lg:w-full flex justify-between items-center mt-6 bg-[#FFFFFF]">
+                        <input class="outline-none text-xs md:text-sm font-medium px-2" type="email"
+                            placeholder="what's your work email?">
+                        <button
+                            class="py-2 md:py-[14px] w-[100px] md:w-[149px] bg-[#E35C30] text-sm md:text-base font-medium text-white rounded-md">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-wrap md:flex-nowrap justify-between md:justify-start gap-10 md:gap-[55px] mt-10 md:mt-0">
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-4">Company</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="Home_4/About_Us.html">About us</a></li>
+                            <li><a href="Home_4/Contact_Us.html">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-4">Product</h1>
+                        <ul class="flex flex-col gap-[18px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-[25px]">Services</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Content Writing</a></li>
+                            <li><a href="#">SEO for Business</a></li>
+                            <li><a href="#">UI Design</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-base text-white mb-[15px]">Legal</h1>
+                        <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#E7F3FF]">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="Trams_Conditions.html">Terms & Conditions</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex text-sm items-center justify-center mt-[68px]">
+            <p class="text-xs md:text-sm text-[#E8F3FF]">Copyright@ 2023 Sassland. All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
