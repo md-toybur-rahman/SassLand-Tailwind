@@ -21,7 +21,7 @@
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter] home3-banner2 bg-local bg-top bg-no-repeat">
@@ -30,13 +30,13 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -44,7 +44,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -53,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -74,7 +75,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -90,9 +91,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
-                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/logo-home3.svg" alt="">
-                </div>
+                <a href="../Home3.html">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/dark-logo.svg" alt="">
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -107,7 +108,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -164,9 +166,10 @@
 
 
     <!-- Top Main -->
-    <main class="max-w-[1186px] mx-auto px-5 xl:px-0 mt-[139px]">
+    <main class="max-w-[1186px] mx-auto overflow-hidden px-5 xl:px-0 mt-[50px] md:mt-[139px]">
         <section class="flex gap-[50px] lg:gap-[117px] justify-between items-center">
-            <div class="hidden md:block max-w-[610px]">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"
+                class="hidden md:block max-w-[610px]">
                 <img class="w-full" src="../assets/images/sign_in_banner_home3.png" alt="">
             </div>
             <div class="max-w-[459px] mx-auto md:mx-0 w-full">
@@ -296,6 +299,10 @@
 
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

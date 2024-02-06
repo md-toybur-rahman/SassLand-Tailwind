@@ -20,7 +20,7 @@
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -28,20 +28,20 @@
         <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
             <!-- mobile menubar -->
             <ul id="homeMenubar"
-                class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-white">
                 <li>
                     <div class="dropdown dropdown-hover">
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Home </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                    alt="">
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
                             </div>
                         </label>
                         <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
                             <li><a href="Home2.html">Home 2</a></li>
                             <li><a href="Home3.html">Home 3</a></li>
                             <li><a href="Home4.html">Home 4</a></li>
+                            <li><a href="Home5.html">Home 5</a></li>
                         </ul>
                     </div>
                 </li>
@@ -50,8 +50,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Pages </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                    alt="">
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
                             </div>
                         </label>
                         <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
@@ -71,8 +70,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Components </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                    alt="">
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
                             </div>
                         </label>
                         <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
@@ -87,23 +85,23 @@
             <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                 <img src="assets/images/icons/align-justify.svg" alt="">
             </div>
-            <div>
-                <img src="assets/images/icons/light-logo.svg" alt="">
-            </div>
+            <a href="index.html">
+                <img class="w-[100px] md:w-auto" src="assets/images/icons/light-logo.svg" alt="">
+            </a>
             <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
                 <li>
                     <div class="dropdown dropdown-hover">
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Home </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                    alt="">
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
                             </div>
                         </label>
                         <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
                             <li><a href="Home2.html">Home 2</a></li>
                             <li><a href="Home3.html">Home 3</a></li>
                             <li><a href="Home4.html">Home 4</a></li>
+                            <li><a href="Home5.html">Home 5</a></li>
                         </ul>
                     </div>
                 </li>
@@ -112,8 +110,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Pages </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                    alt="">
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
                             </div>
                         </label>
                         <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
@@ -133,8 +130,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Components </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
-                                    alt="">
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg" alt="">
                             </div>
                         </label>
                         <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#6A26DA] px-2">
@@ -155,14 +151,19 @@
         <!-- Banner Section -->
         <section class="pt-[51px] pb-[69px] lg:flex items-center justify-between ms-6 md:ms-[70px] xl:ms-[150px]">
             <div class="lg:max-w-[590px]">
-                <h1 class="font-bold text-white text-[36px] lg:text-[57px] mb-6">Made for people.
+                <h1
+                    class="font-bold text-white text-[24px] sm:text-[36px] lg:text-[57px] text-center md:text-start mb-6">
+                    Made for
+                    people.
                     <span class="text-[#FCB900]">Built for productivity.</span>
                 </h1>
-                <p class="text-lg md:text-xl lg:text-2xl font-medium text-[#E9EBEB] mb-12 lg:max-w-[558px]">The first
+                <p
+                    class="text-lg md:text-xl lg:text-2xl font-medium text-[#E9EBEB] text-center md:text-start mb-12 lg:max-w-[558px]">
+                    The first
                     data tool you'll
                     love. And the
                     last one you'll ever need.</p>
-                <div class="flex items-center gap-4">
+                <div class="flex flex-wrap md:flex-nowrap justify-center md:justify-start items-center gap-4">
                     <button
                         class="bg-white rounded-md text-[#25373F] w-full max-w-[236px] py-4 md:py-[18px] font-semibold text-sm md:text-base">Get
                         Started Free</button>
@@ -181,7 +182,7 @@
 
 
     <!-- Top Main -->
-    <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
+    <main class="max-w-[1142px] overflow-hidden md:overflow-visible mx-auto px-5 xl:px-0">
         <!-- Trusted Companies -->
         <section class="flex items-center justify-center mt-12 px-5">
             <div>
@@ -208,8 +209,8 @@
 
         <!-- Easy to use -->
         <section
-            class="flex flex-col items-center justify-center lg:grid grid-cols-2 gap-[97px] mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto px-5">
-            <div class="lg:max-w-[485px]">
+            class="flex flex-col items-center justify-center lg:grid grid-cols-2 gap-[97px] mt-[60px] md:mt-[120px] max-w-[1140px] overflow-hidden mx-auto px-5">
+            <div class="lg:max-w-[485px] text-center md:text-start">
                 <h1 class="font-semibold text-[24px] md:text-[36px] text-[#262729] mb-6">Simple software that is easy to
                     use</h1>
                 <p class="text-base md:text-[20px], font-medium text-[#676769] mb-12">These companies release their own
@@ -225,7 +226,7 @@
         <!-- End Easy to use -->
 
         <!-- Our Best Features -->
-        <section class="mt-[80px] md:mt-[156px] max-w-[1176px] px-5 xl:px-0">
+        <section class="mt-[80px] md:mt-[156px] max-w-[1176px] overflow-hidden px-5 xl:px-0">
             <div class="max-w-[648px] mx-auto text-center mb-12">
                 <h1 class="font-semibold text-[24px] md:text-[36px] text-[#25373F] mb-6">Our Best Features</h1>
                 <p class="font-medium text-base md:text-[20px] text-[#676769]">Everything you need to control spend and
@@ -271,14 +272,14 @@
         <!-- Love us -->
         <section
             class="flex flex-wrap items-center justify-between gap-6 md:gap-10 mt-[80px] md:mt-[156px] max-w-[1057px] px-5 xl:px-0 lg:ms-[56px]">
-            <div class="max-w-[547px]">
+            <div class="max-w-[547px] mx-auto lg:mx-0 text-center lg:text-start">
                 <h1 class="text-[24px] md:text-[36px] text-[#262729] font-bold mb-4">Hundreds of people already love us
                 </h1>
                 <p class="font-medium text-base md:text-[20px] text-[#676769]">But don't just take our word for it.</p>
             </div>
 
             <!-- Carousel -->
-            <div id="carouselContainer" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out">
+            <div id="carouselContainer" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" class="mx-auto lg:mx-0">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
                         <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
@@ -504,8 +505,7 @@
             <div class="flex flex-wrap justify-center lg:justify-end gap-x-4 gap-y-[84px]">
                 <div class="flex items-start gap-2 w-[500px] h-fit">
                     <div class="h-6 w-6 mt-1">
-                        <img class="w-full h-full" src="assets/images/icons/indeterminate_question_box.svg"
-                            alt="">
+                        <img class="w-full h-full" src="assets/images/icons/indeterminate_question_box.svg" alt="">
                     </div>
                     <div>
                         <h1 class="text-xl md:text-2xl font-semibold text-[#25373F] mb-4">Can I use Albino for my
@@ -523,8 +523,7 @@
                 </div>
                 <div class="flex items-start gap-2 w-[500px] h-fit">
                     <div class="h-6 w-6 mt-1">
-                        <img class="w-full h-full" src="assets/images/icons/indeterminate_question_box.svg"
-                            alt="">
+                        <img class="w-full h-full" src="assets/images/icons/indeterminate_question_box.svg" alt="">
                     </div>
                     <div>
                         <h1 class="text-xl md:text-2xl font-semibold text-[#25373F] mb-4">How does App help people in
@@ -538,8 +537,7 @@
                 </div>
                 <div class="flex items-start gap-2 w-[500px] h-fit">
                     <div class="h-6 w-6 mt-1">
-                        <img class="w-full h-full" src="assets/images/icons/indeterminate_question_box.svg"
-                            alt="">
+                        <img class="w-full h-full" src="assets/images/icons/indeterminate_question_box.svg" alt="">
                     </div>
                     <div>
                         <h1 class="text-xl md:text-2xl font-semibold text-[#25373F] mb-4">What happens if i go over my
@@ -552,8 +550,7 @@
                 </div>
                 <div class="flex items-start gap-2 w-[500px] h-fit">
                     <div class="h-6 w-6 mt-1">
-                        <img class="w-full h-full" src="assets/images/icons/indeterminate_question_box.svg"
-                            alt="">
+                        <img class="w-full h-full" src="assets/images/icons/indeterminate_question_box.svg" alt="">
                     </div>
                     <div>
                         <h1 class="text-xl md:text-2xl font-semibold text-[#25373F] mb-4">Can I use Albino for my
@@ -578,8 +575,8 @@
     <main class="max-w-[1137px] mx-auto">
 
         <!-- Time is Money -->
-        <section class="flex flex-wrap justify-between items-center gap-5 px-5 pt-[66px] pb-[156px]">
-            <div class="max-w-[413px]">
+        <section class="flex flex-wrap justify-center lg:justify-between items-center gap-5 px-5 pt-[66px] pb-[156px]">
+            <div class="max-w-[413px] text-center lg:text-start">
                 <h1 class="text-xl md:text-2xl font-semibold text-[#25373F] mb-3">Time is money. Save both.</h1>
                 <p class="text-sm md:text-base text-[#676769] font-normal">With lots of unique blocks, you can easily
                     build a page

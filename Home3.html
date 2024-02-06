@@ -14,11 +14,16 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/css/libs/aos.css">
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <!-- GRT Youtube Plugin CSS -->
+    <link rel="stylesheet" href="assets/css/libs/grt-youtube-popup.css">
+
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -29,13 +34,13 @@
                 <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                     <!-- mobile menubar -->
                     <ul id="homeMenubar"
-                        class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                        class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-white">
                         <li>
                             <div class="dropdown dropdown-hover">
                                 <label tabindex="0" class="">
                                     <div class="flex items-center gap-1">
                                         <a href="#" class="">Home </a>
-                                        <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
+                                        <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
                                             alt="">
                                     </div>
                                 </label>
@@ -43,6 +48,7 @@
                                     <li><a href="Home.html">Home 1</a></li>
                                     <li><a href="Home2.html">Home 2</a></li>
                                     <li><a href="Home4.html">Home 4</a></li>
+                                    <li><a href="Home5.html">Home 5</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -51,7 +57,7 @@
                                 <label tabindex="0" class="">
                                     <div class="flex items-center gap-1">
                                         <a href="#" class="">Pages </a>
-                                        <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
+                                        <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
                                             alt="">
                                     </div>
                                 </label>
@@ -73,7 +79,7 @@
                                 <label tabindex="0" class="">
                                     <div class="flex items-center gap-1">
                                         <a href="#" class="">Components </a>
-                                        <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
+                                        <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
                                             alt="">
                                     </div>
                                 </label>
@@ -89,10 +95,9 @@
                     <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                         <img src="assets/images/icons/align-justify.svg" alt="">
                     </div>
-                    <div class="flex items-center gap-1">
-                        <img class="w-[100px] md:w-auto" src="assets/images/icons/logo.svg" alt="">
-                        <h1 class="font-bold text-xl md:text-2xl text-white">SassLand</h1>
-                    </div>
+                    <a href="index.html">
+                        <img class="w-[100px] md:w-auto" src="assets/images/icons/light-logo.svg" alt="">
+                    </a>
                     <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
                         <li>
                             <div class="dropdown dropdown-hover">
@@ -107,6 +112,7 @@
                                     <li><a href="Home.html">Home 1</a></li>
                                     <li><a href="Home2.html">Home 2</a></li>
                                     <li><a href="Home4.html">Home 4</a></li>
+                                    <li><a href="Home5.html">Home 5</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -127,7 +133,7 @@
                                     <li><a href="Home_3/Gallery.html">Gallery</a></li>
                                     <li><a href="Home_3/404.html">404</a></li>
                                     <li><a href="Home_3/Contact_Us.html">Contact us</a></li>
-                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="Home_3/Blog.html">Blog</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -174,7 +180,8 @@
                 <!-- End Banner Section -->
             </section>
             <!-- End Menubar and Banner Section -->
-            <div class="flex items-center justify-center px-[30px] lg:px-0">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0"
+                class="flex items-center justify-center px-[30px] lg:px-0">
                 <img class="w-[450px] md:w-auto" src="assets/images/Dashboard13.svg" alt="">
             </div>
         </div>
@@ -182,20 +189,23 @@
 
     <!-- Video Section -->
     <section class="mt-[60px] md:mt-[160px] mx-auto px-5">
-        <img class="w-full max-w-[1298px] mx-auto" src="assets/images/home3-video-image.png" alt="">
+        <span class="youtube-link cursor-pointer" youtubeid="xcJtL7QggTI">
+            <img class="w-full max-w-[1298px] mx-auto" src="assets/images/home3-video-image.png" alt="">
+        </span>
     </section>
     <!-- End Video Section -->
 
     <!-- Top Main -->
-    <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
+    <main class="max-w-[1142px] mx-auto overflow-hidden md:overflow-visible px-5 xl:px-0">
 
         <!-- Top Slack -->
         <section class="flex flex-wrap md:flex-nowrap items-center gap-[69px] mt-[100px] md:mt-[156px]">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0">
                 <img src="assets/images/Group 402.svg" alt="">
             </div>
             <div>
-                <h1 class="font-semibold text-[#212121] text-[36px] lg:text-[57px] mb-6 max-w-[553px]">Top Slack Tips To
+                <h1 class="font-semibold text-[#212121] text-[24px] sm:text-[36px] lg:text-[57px] mb-6 max-w-[553px]">
+                    Top Slack Tips To
                     Boost Productivity</h1>
                 <p class="font-medium text-base md:text-[20px] text-[#000000] max-w-[461px] mb-12">Amet minim mollit non
                     deserunt ullamco est sit aliqua dolor do amet sint velit of a officia</p>
@@ -208,7 +218,7 @@
 
         <!-- Our Best Features -->
         <section class="mt-[80px] md:mt-[106px] max-w-[1176px] px-5 xl:px-0">
-            <div class="mx-auto mb-[96px]">
+            <div class="mx-auto mb-[96px] text-center max-w-[507px]">
                 <h1 class="font-semibold text-2xl md:text-[36px] text-[#000000] mb-4">Our Best Features</h1>
                 <p class="font-medium text-sm md:text-base text-[#000000]">Everything you need to control spend and
                     optimize
@@ -216,7 +226,8 @@
             </div>
             <!-- <div class="flex flex-col items-center md:grid grid-cols-3 gap-[22px]"> -->
             <div class="flex items-center gap-[78px] flex-wrap justify-center">
-                <div class="max-w-[327px] flex gap-6 justify-between">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400"
+                    class="max-w-[327px] flex gap-6 justify-between">
                     <div class="w-[84px] h-[84px]">
                         <img class="h-full w-full" src="assets/images/icons/home3-design-icon.svg" alt="">
                     </div>
@@ -230,7 +241,8 @@
                             href="#">Get Started <img src="assets/images/icons/pink-arrow.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="max-w-[327px] flex gap-6 justify-between">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200"
+                    class="max-w-[327px] flex gap-6 justify-between">
                     <div class="w-[84px] h-[84px]">
                         <img class="h-full w-full" src="assets/images/icons/home3-account-icon.svg" alt="">
                     </div>
@@ -244,7 +256,8 @@
                             href="#">Get Started <img src="assets/images/icons/pink-arrow.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="max-w-[327px] flex gap-6 justify-between">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                    class="max-w-[327px] flex gap-6 justify-between">
                     <div class="w-[84px] h-[84px]">
                         <img class="h-full w-full" src="assets/images/icons/home3-varient-icon.svg" alt="">
                     </div>
@@ -271,7 +284,7 @@
             <h1 class="text-2xl md:text-[36px] text-white font-semibold mb-6">Our Subscription Packages</h1>
             <div onclick="handleInstallmentToggle()" class="mt-8 flex items-center justify-center gap-6">
                 <h1 id="monthly" class="text-white text-sm font-semibold">Monthly</h1>
-                <div class="w-9 relative">
+                <div class="w-9 relative cursor-pointer">
                     <div class="w-full h-3 border-4 rounded-full">
                         <div id="installmentToggle"
                             class="h-[19px] w-[19px] border-4 rounded-full bg-[#2E2E52] absolute -top-1 left-0"></div>
@@ -281,7 +294,8 @@
             </div>
         </div>
         <div class="mt-[82px] flex items-center gap-6 flex-wrap justify-center">
-            <div class="bg-white rounded-2xl w-[361px] px-[40px] pt-[42px] pb-[34px]">
+            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200"
+                class="bg-white rounded-2xl w-[361px] px-[40px] pt-[42px] pb-[34px]">
                 <div class="mb-[56px]">
                     <h1 class="font-extrabold text-[30px] md:text-[47px] tracking-tighter text-[#1F1F38]"><span
                             class="text-sm font-bold">$ </span>99<span class="text-sm font-bold tracking-normal">
@@ -326,7 +340,8 @@
                     </p>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl w-[361px] px-[40px] pt-[42px] pb-[34px]">
+            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400"
+                class="bg-white rounded-2xl w-[361px] px-[40px] pt-[42px] pb-[34px]">
                 <div class="mb-[56px]">
                     <h1 class="font-extrabold text-[30px] md:text-[47px] tracking-tighter text-[#1F1F38]"><span
                             class="text-sm font-bold">$ </span>99<span class="text-sm font-bold tracking-normal">
@@ -371,7 +386,8 @@
                     </p>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl w-[361px] px-[40px] pt-[42px] pb-[34px]">
+            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600"
+                class="bg-white rounded-2xl w-[361px] px-[40px] pt-[42px] pb-[34px]">
                 <div class="mb-[56px]">
                     <h1 class="font-extrabold text-[30px] md:text-[47px] tracking-tighter text-[#1F1F38]"><span
                             class="text-sm font-bold">$ </span>99<span class="text-sm font-bold tracking-normal">
@@ -422,7 +438,7 @@
 
 
     <!-- Bottom Main -->
-    <main class="max-w-[1137px] mx-auto">
+    <main class="max-w-[1137px] mx-auto overflow-hidden md:overflow-visible px-5">
         <!-- What Customers Saying Section -->
         <section class="mt-[166px]">
             <h1 class=" text-[24px] md:text-[36px] text-[#262729] font-semibold max-w-[947px] mx-auto text-center">
@@ -431,7 +447,8 @@
                 need to control spend and optimize finance operations, all on a single platform.</p>
 
             <div class="mt-[56px] flex flex-wrap lg:flex-nowrap items-center gap-6 justify-center">
-                <div class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                    class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
                     <div class="flex items-start gap-2">
                         <div class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
                         </div>
@@ -453,7 +470,8 @@
                             accommodate our growth and a variety of event types throughout the year.”</p>
                     </div>
                 </div>
-                <div class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200"
+                    class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
                     <div class="flex items-start gap-2">
                         <div class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
                         </div>
@@ -475,7 +493,8 @@
                             accommodate our growth and a variety of event types throughout the year.”</p>
                     </div>
                 </div>
-                <div class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400"
+                    class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
                     <div class="flex items-start gap-2">
                         <div class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
                         </div>
@@ -503,15 +522,21 @@
 
         <section class="flex items-center justify-center mt-[56px]">
             <div class="flex flex-wrap items-end justify-center gap-[45px]">
-                <img src="assets/images/icons/Frame-home3.svg" alt="">
-                <img src="assets/images/icons/xpo-home3.svg" alt="">
-                <img src="assets/images/icons/yum-home3.svg" alt="">
-                <img src="assets/images/icons/loading-home3.svg" alt="">
-                <img src="assets/images/icons/land-home3.svg" alt="">
-                <img src="assets/images/icons/apple-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0"
+                    src="assets/images/icons/Frame-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100"
+                    src="assets/images/icons/xpo-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200"
+                    src="assets/images/icons/yum-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300"
+                    src="assets/images/icons/loading-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400"
+                    src="assets/images/icons/land-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500"
+                    src="assets/images/icons/apple-home3.svg" alt="">
             </div>
             <!-- End What Customers Saying Section -->
-
+        </section>
     </main>
     <!-- End Bottom Main -->
 
@@ -599,7 +624,7 @@
                     <h1 class="font-semibold text-sm text-[#25373F] mb-[15px]">Legal</h1>
                     <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="Trams_Conditions.html">Terms & Conditions</a></li>
+                        <li><a href="Home_3/Trams_Conditions.html">Terms & Conditions</a></li>
                         <li><a href="#">Return Policy</a></li>
                     </ul>
                 </div>
@@ -613,6 +638,21 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/libs/home3-carousel.js"></script>
+    <script src="assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/libs/grt-youtube-popup.js"></script>
+
+    <!-- Initialize GRT Youtube Popup plugin -->
+    <script>
+        // Demo video 1
+        $(".youtube-link").grtyoutube({
+            autoPlay: true,
+            theme: "dark"
+        });
+    </script>
 </body>
 
 </html>

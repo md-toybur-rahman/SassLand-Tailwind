@@ -22,18 +22,34 @@ function handleInstallmentToggle() {
     if (!installmentToggle.classList.contains('right-0')) {
         installmentToggle.classList.remove('left-0');
         installmentToggle.classList.add('right-0');
-        monthly.classList.remove('text-white');
-        monthly.classList.add('text-[#BABAC6]');
-        yearly.classList.remove('text-[#BABAC6]');
-        yearly.classList.add('text-white');
+        if(!installmentToggle.classList.contains('border-[#FF6036]')){
+            monthly.classList.remove('text-white');
+            monthly.classList.add('text-[#BABAC6]');
+            yearly.classList.remove('text-[#BABAC6]');
+            yearly.classList.add('text-white');
+        }
+        else{
+            monthly.classList.remove('text-[#FF6036]');
+            monthly.classList.add('text-[#7C7C7C]');
+            yearly.classList.remove('text-[#7C7C7C]');
+            yearly.classList.add('text-[#FF6036]');
+        }
     }
     else {
         installmentToggle.classList.remove('right-0');
         installmentToggle.classList.add('left-0');
-        yearly.classList.remove('text-white');
-        yearly.classList.add('text-[#BABAC6]');
-        monthly.classList.remove('text-[#BABAC6]');
-        monthly.classList.add('text-white');
+        if(!installmentToggle.classList.contains('border-[#FF6036]')) {
+            yearly.classList.remove('text-white');
+            yearly.classList.add('text-[#BABAC6]');
+            monthly.classList.remove('text-[#BABAC6]');
+            monthly.classList.add('text-white');
+        }
+        else{
+            yearly.classList.remove('text-[#FF6036]');
+            yearly.classList.add('text-[#7C7C7C]');
+            monthly.classList.remove('text-[#7C7C7C]');
+            monthly.classList.add('text-[#FF6036]');
+        }
     }
 }
 
@@ -52,20 +68,28 @@ function mobileMenubarHandler(id) {
 
 function accordionHandler(accordion) {
     const accordionSign = accordion.children[0].children[1];
-    console.log(accordionSign);
     const accordionCard = accordion.children[1];
     if (!accordionSign.classList.contains('rotate-45')) {
-        if (accordionSign.classList.contains('accordion-collapse-sign')) {
-            accordionSign.classList.add('rotate-45');
-        }
-        else {
-            accordionSign.classList.add('rotate-90');
-        }
+        accordionSign.classList.add('rotate-45');
         accordionCard.classList.remove('hidden', 'h-0');
         accordionCard.classList.add('mt-6')
     }
     else {
         accordionSign.classList.remove('rotate-45');
+        accordionCard.classList.add('hidden', 'h-0');
+        accordionCard.classList.remove('mt-6')
+    }
+}
+function accordionHandler180(accordion) {
+    const accordionSign = accordion.children[0].children[1];
+    const accordionCard = accordion.children[1];
+    if (!accordionSign.classList.contains('rotate-180')) {
+        accordionSign.classList.add('rotate-180');
+        accordionCard.classList.remove('hidden', 'h-0');
+        accordionCard.classList.add('mt-6')
+    }
+    else {
+        accordionSign.classList.remove('rotate-180');
         accordionCard.classList.add('hidden', 'h-0');
         accordionCard.classList.remove('mt-6')
     }
@@ -136,5 +160,35 @@ function handleHiddenModal() {
         signIn.classList.add('hidden');
         signInText.classList.remove('text-[#262729]');
         signInText.classList.add('text-[#BDBCBC]');
+    }
+}
+
+function tabHandler(currentTab, currentTabContent) {
+    const tabs = document.getElementById("tab_container");
+    const tab_items = tabs.getElementsByClassName('tab_item');
+    const tabs_content = document.getElementById('tab_content_container');
+    const tabs_content_item = tabs_content.getElementsByClassName('tab_content');
+    const current_content = document.getElementById(currentTabContent);
+    for (let i = 0; i < tab_items.length; i++) {
+        const element = tab_items[i];
+        if (element.classList.contains('border-b-2')) {
+            element.classList.remove('border-b-2');
+            element.classList.remove('border-[#FF6036]');
+        }
+    }
+    if (!currentTab.classList.contains('border-b-2')) {
+        currentTab.classList.add('border-b-2');
+        currentTab.classList.add('border-[#FF6036]');
+    }
+    for (let i = 0; i < tabs_content_item.length; i++) {
+        const element = tabs_content_item[i];
+        if (element.classList.contains('block')) {
+            element.classList.remove('block');
+            element.classList.add('hidden');
+        }
+    }
+    if (!current_content.classList.contains('block')) {
+        current_content.classList.remove('hidden');
+        current_content.classList.add('block');
     }
 }

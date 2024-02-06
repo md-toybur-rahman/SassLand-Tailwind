@@ -21,7 +21,7 @@
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -30,13 +30,13 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -44,7 +44,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -53,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -74,7 +75,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -90,9 +91,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
-                    <img src="../assets/images/icons/dark-logo.svg" alt="">
-                </div>
+                <a href="../Home.html">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/dark-logo.svg" alt="">
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -107,7 +108,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -156,12 +158,20 @@
                             Free</button></a>
                 </div>
             </nav>
+
+            <section class="pt-[50px] md:pt-[99px] mx-6 md:mx-[70px] xl:mx-[150px] text-center md:text-start">
+                <h1
+                    class="font-bold text-[#262729] text-[24px] sm:text-[36px] lg:text-[57px] mb-[50px] md:mb-[100px] lg:mb-[150px]">
+                    Blog Details.</h1>
+            </section>
+
             <!-- Banner Section -->
-            <section
-                class="pt-[50px] md:pt-[128px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">
+            <section class="lg:flex items-center justify-between px-6 md:px-[70px] xl:px-[150px]">
                 <div class="flex flex-col items-center justify-center w-full">
                     <div class="max-w-[946px] text-center">
-                        <h1 class="font-bold text-[#262729] text-[36px] lg:text-[57px] mb-14 md:leading-[85px]">How can
+                        <h1
+                            class="font-bold text-[#262729] text-[24px] sm:text-[36px] lg:text-[57px] mb-7 md:mb-14 md:leading-[85px]">
+                            How can
                             SaaS companies boost user engagements video marketing?</h1>
                         <p class="text-sm md:text-base lg:text-[20px] font-medium text-[#676769] md:leading-[32px]">We
                             partner
@@ -178,14 +188,14 @@
 
 
     <!-- Top Main -->
-    <main class="max-w-[1156px] mx-auto px-5 xl:px-0">
+    <main class="max-w-[1156px] overflow-hidden md:overflow-visible mx-auto px-5 xl:px-0">
 
-
+        <!-- Blog Details Section -->
         <section>
-            <div data-aos="fade-in" data-aos-duration="1000" class="mt-[131px]">
+            <div data-aos="fade-in" data-aos-duration="2000" class="mt-[50px] md:mt-[131px]">
                 <img src="../assets/images/blog-details.svg" alt="">
             </div>
-            <div class="mt-[102px]">
+            <div class="mt-[50px] md:mt-[102px]">
                 <p class="text-sm md:text-base text-[#646464]">At this point, you need to consider which platforms to
                     publish the content on. Beyond publishing to
                     your brand website or embedding in marketing emails, video content can be posted on a best variety
@@ -202,16 +212,21 @@
                 </p>
             </div>
         </section>
+        <!-- End Blog Details Section -->
 
+        <!-- Quote Section -->
         <section>
-            <div class="px-[97px] py-[34px] bg-[#6A26DA] mt-20">
+            <div class="px-5 md:px-[97px] py-[34px] bg-[#6A26DA] mt-20">
                 <img src="../assets/images/icons/qutation.svg" alt="">
                 <p class="text-base md:text-lg font-medium text-white mt-4">“The best free way for SaaS companies to
                     start leveraging video is using free social media tools like Facebook Live or Instagram,” said
                     Caneva. </p>
             </div>
         </section>
+        <!-- End Quote Section -->
 
+
+        <!-- Management Quote -->
         <section>
             <div class="border border-[#C9C9C9] rounded-lg mt-[104px]">
                 <p class="text-sm md:text-base text-[#646464] p-6">At this point, you need to consider which platforms
@@ -230,7 +245,7 @@
 
                 <hr class="border-t border-[#DEDEDE] ms-6">
                 <div class="flex items-center gap-2 p-6">
-                    <div class="w-[74px] h-[74px] profile3 bg-cover rounded-full">
+                    <div class="min-w-[50px] min-h-[50px] md:w-[74px] md:h-[74px] profile3 bg-cover rounded-full">
                     </div>
                     <div>
                         <h1 class="text-[#262729] font-bold text-lg md:text-[22px] mb-1">Ralph Edwards</h1>
@@ -239,60 +254,63 @@
                 </div>
             </div>
         </section>
+        <!-- End Management Quote -->
 
+        <!-- Comment Section -->
         <section class="mt-[104px] max-w-[505px]">
             <h1 class="text-[#262729] text-base md:text-[20px] font-bold">Comments<span>(3)</span></h1>
             <div class="mt-12 flex flex-col gap-8">
                 <div>
                     <div class="flex items-start gap-2 p-6">
-                        <div class="w-[74px] h-[74px] profile3 bg-cover rounded-full">
+                        <div class="min-w-[50px] min-h-[50px] md:w-[74px] md:h-[74px] profile3 bg-cover rounded-full">
                         </div>
                         <div>
                             <h1 class="text-[#262729] font-bold text-lg md:text-[22px] mb-1">Ralph Edwards</h1>
                             <p class="text-xs md:text-sm font-bold">15 Jan, 2020</p>
                             <p class="text-sm md:text-base text-[#646464] mt-4">Lorem ipsum dolor sit amet, consectetuer
                                 adipiscing elit</p>
-                            <div class="flex items-center gap-1 mt-4">
+                            <a href="#" class="flex items-center gap-1 mt-4">
                                 <img src="../assets/images/icons/quickreply.svg" alt="">
                                 <p class="text-[#6A26DA] text-base font-semibold">Replay</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="flex items-start gap-2 p-6">
-                        <div class="w-[74px] h-[74px] profile3 bg-cover rounded-full">
+                        <div class="min-w-[50px] min-h-[50px] md:w-[74px] md:h-[74px] profile3 bg-cover rounded-full">
                         </div>
                         <div>
                             <h1 class="text-[#262729] font-bold text-lg md:text-[22px] mb-1">Ralph Edwards</h1>
                             <p class="text-xs md:text-sm font-bold">15 Jan, 2020</p>
                             <p class="text-sm md:text-base text-[#646464] mt-4">Lorem ipsum dolor sit amet, consectetuer
                                 adipiscing elit</p>
-                            <div class="flex items-center gap-1 mt-4">
+                            <a href="#" class="flex items-center gap-1 mt-4">
                                 <img src="../assets/images/icons/quickreply.svg" alt="">
                                 <p class="text-[#6A26DA] text-base font-semibold">Replay</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="flex items-start gap-2 p-6">
-                        <div class="w-[74px] h-[74px] profile3 bg-cover rounded-full">
+                        <div class="min-w-[50px] min-h-[50px] md:w-[74px] md:h-[74px] profile3 bg-cover rounded-full">
                         </div>
                         <div>
                             <h1 class="text-[#262729] font-bold text-lg md:text-[22px] mb-1">Ralph Edwards</h1>
                             <p class="text-xs md:text-sm font-bold">15 Jan, 2020</p>
                             <p class="text-sm md:text-base text-[#646464] mt-4">Lorem ipsum dolor sit amet, consectetuer
                                 adipiscing elit</p>
-                            <div class="flex items-center gap-1 mt-4">
+                            <a href="#" class="flex items-center gap-1 mt-4">
                                 <img src="../assets/images/icons/quickreply.svg" alt="">
                                 <p class="text-[#6A26DA] text-base font-semibold">Replay</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- End Comment Section -->
 
         <!-- Contact Section -->
         <section class="mt-[102px]">
@@ -338,7 +356,7 @@
                         <span class="text-base font-medium text-[#575757]">Message</span>
                     </label>
                     <div class="border border-[#CED2DA] rounded-lg px-3 py-4 bg-white">
-                        <textarea class="resize-none w-full h-[138px]" name="" id=""></textarea>
+                        <textarea class="resize-none w-full h-[138px] outline-none" name="" id=""></textarea>
                     </div>
                 </div>
 

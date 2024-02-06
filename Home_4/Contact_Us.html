@@ -14,12 +14,13 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
 
     <!-- Tailwind Css -->
-    <!-- <link rel="stylesheet" href="../assets/css/libs/tailwind.css"> -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -28,13 +29,13 @@
             <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between bg-white">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-white">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -43,6 +44,7 @@
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
                                 <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -51,7 +53,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -72,7 +74,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -88,9 +90,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div class="flex items-center gap-1">
+                <a href="../Home4.html" class="flex items-center gap-1">
                     <img class="w-[100px] md:w-auto" src="../assets/images/icons/home4-logo2.svg" alt="">
-                </div>
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#242221]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -106,6 +108,7 @@
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
                                 <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -253,10 +256,12 @@
 
 
     <!-- Banner Section -->
-    <section class="h-[326px] lg:flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
+    <section class="h-[290px] md:h-[326px] flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="max-w-[640px] text-center">
-                <h1 class="font-bold text-[#E35C30] text-[36px] lg:text-[57px] leading-[72px] mb-10">Contact Us</h1>
+                <h1
+                    class="font-bold text-[#E35C30] text-[24px] sm:text-[36px] lg:text-[57px] leading-[72px] mb-4 md:mb-10">
+                    Contact Us</h1>
 
             </div>
         </div>
@@ -271,8 +276,8 @@
             <h1 class="font-semibold text-[24px] md:text-[36px] text-[#262729] text-center mb-[61px]">Get In Touch With
                 Us
             </h1>
-            <div class="flex items-center justify-center gap-6">
-                <div
+            <div class="flex flex-wrap items-center justify-center gap-6">
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
                     class="w-[171px] h-[119px] flex items-center justify-center px-5 mini-card hover:bg-[#E35C30] rounded-lg text-center">
                     <div>
                         <img class="mx-auto black-image" src="../assets/images/icons/tour-black.svg" alt="">
@@ -281,7 +286,7 @@
                         <p class="text-sm text-[#676769]">32D, Jenmark road, Franklin. USA</p>
                     </div>
                 </div>
-                <div
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
                     class="w-[171px] h-[119px] flex items-center justify-center px-5 mini-card hover:bg-[#E35C30] rounded-lg text-center">
                     <div>
                         <img class="mx-auto black-image" src="../assets/images/icons/call-black.svg" alt="">
@@ -290,7 +295,7 @@
                         <p class="text-sm text-[#676769]">+1(135) 1984 2020</p>
                     </div>
                 </div>
-                <div
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
                     class="w-[171px] h-[119px] flex items-center justify-center px-5 mini-card hover:bg-[#E35C30] rounded-lg text-center">
                     <div>
                         <img class="mx-auto black-image" src="../assets/images/icons/mail-black.svg" alt="">
@@ -307,8 +312,7 @@
 
         <!-- Contact Section -->
         <section class="mt-[83px]">
-            <form
-                class="px-6 md:px-[95px] pt-[42px] pb-8 md:pb-[56px] bg-[#FEEFED]">
+            <form class="px-6 md:px-[95px] pt-[42px] pb-8 md:pb-[56px] bg-[#FEEFED]">
                 <h1
                     class="font-semibold text-[18px] md:text-[24px] text-[#454545] text-center mb-[42px] max-w-[433px] mx-auto leading-[36px]">
                     Ready to Get Started? Fill up the form and our team contact you</h1>
@@ -353,7 +357,7 @@
                         <span class="text-base font-medium text-[#454545]">Message</span>
                     </label>
                     <div class="border border-[#D9D9D9] rounded-lg px-3 py-4 bg-white">
-                        <textarea class="resize-none w-full h-[138px]" name="" id=""></textarea>
+                        <textarea class="resize-none w-full h-[138px] outline-none" name="" id=""></textarea>
                     </div>
                 </div>
 
@@ -447,6 +451,10 @@
 
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+	<!-- Daisyui -->
+	<link href="../assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
+	<!-- Gallery Carousel -->
+	<link rel="stylesheet" href="../assets/css/libs/team_carousel.css">
+
+	<!-- Vertical Carousel -->
+	<link rel="stylesheet" href="../assets/css/libs/vertical_carousel.css">
+
+	<!-- Google Font -->
+	<link rel="stylesheet" href="../assets/css/libs/google_font.css">
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="../assets/css/libs/aos.css">
+
+	<!-- Tailwind Css -->
+	<link rel="stylesheet" href="../assets/css/libs/tailwind.css">
+
+	<title>SassLand</title>
+</head>
+
+<body class="font-[inter]">
+	<section>
+		<nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
+			<!-- mobile menubar -->
+			<ul id="homeMenubar"
+				class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#223645]">
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Home </a>
+								<img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="../Home.html">Home 1</a></li>
+							<li><a href="../Home2.html">Home 2</a></li>
+							<li><a href="../Home3.html">Home 3</a></li>
+							<li><a href="../Home4.html">Home 4</a></li>
+							<li><a href="../Home5.html">Home 5</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Pages </a>
+								<img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="About_Us.html">About us</a></li>
+							<li><a href="Services.html">Services</a></li>
+							<li><a href="Popular_Services.html">Popular Services</a></li>
+							<li><a href="Pricing_Plans.html">Pricing plans</a></li>
+							<li><a href="Contact_Us.html">Contact Us</a></li>
+							<li><a href="Blog.html">Blog</a></li>
+							<li><a href="Team.html">Team</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Components </a>
+								<img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="#">Components 1</a></li>
+							<li><a href="#">Components 2</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="p-2"><a href="#">Support</a></li>
+			</ul>
+			<!-- end mobile menubar -->
+			<div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
+				<img src="../assets/images/icons/align-justify-dark.svg" alt="">
+			</div>
+			<a href="../Home5.html" class="flex items-center gap-1">
+				<img class="w-[30px] h-[30px] md:h-auto md:w-auto" src="../assets/images/icons/Logo_5.svg" alt="">
+			</a>
+			<ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#223645]">
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Home </a>
+								<img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="../Home.html">Home 1</a></li>
+							<li><a href="../Home2.html">Home 2</a></li>
+							<li><a href="../Home3.html">Home 3</a></li>
+							<li><a href="../Home4.html">Home 4</a></li>
+							<li><a href="../Home5.html">Home 5</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Pages </a>
+								<img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="About_Us.html">About us</a></li>
+							<li><a href="Services.html">Services</a></li>
+							<li><a href="Popular_Services.html">Popular Services</a></li>
+							<li><a href="Pricing_Plans.html">Pricing plans</a></li>
+							<li><a href="Contact_Us.html">Contact Us</a></li>
+							<li><a href="Blog.html">Blog</a></li>
+							<li><a href="Team.html">Team</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Components </a>
+								<img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="#">Components 1</a></li>
+							<li><a href="#">Components 2</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="p-2"><a href="#">Support</a></li>
+			</ul>
+			<div>
+
+				<button
+					class="bg-transparent rounded-full text-[#223645] h-[30px] md:h-[48px] w-[102px] font-normal md:font-semibold text-xs md:text-sm">Log
+					in</button>
+				<button
+					class="bg-[#223645] rounded-full text-white h-[30px] md:h-[48px] w-[102px] font-normal md:font-semibold text-xs md:text-sm">Sign
+					up</button>
+			</div>
+		</nav>
+		<!-- Banner Section -->
+		<section class="home5_banner_bg_2 bg-cover h-[332px] flex items-center justify-center  mt-8 md:mt-5 lg:mt-0">
+			<h1 class="font-semibold text-[24px] md:text-[36px] text-white">Blog</h1>
+		</section>
+		<!-- End Banner Section -->
+	</section>
+	<!-- End Menubar and Banner Section -->
+
+	<main class="max-w-[1141px] mx-auto overflow-hidden md:overflow-visible">
+
+		<!-- Team Leader -->
+		<section class="mt-[59px] md:mt-[108px] px-5 xl:px-0">
+			<section class="flex flex-col items-center md:items-start md:flex-row gap-[58px]">
+				<div>
+					<div>
+						<div>
+							<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0"
+								data-aos-easing="ease-in-out" src="../assets/images/home_5_blog.png" alt="">
+						</div>
+						<div class="flex items-center gap-7 mt-11">
+							<p class="text-sm text-[#FF6036]">Design</p>
+							<p class="text-sm text-[#676769]">October 21, 2023</p>
+						</div>
+						<div class="max-w-[655px] mt-4">
+							<h1 class="font-bold text-[24px] md:text-[29px] text-[#2C2003] mb-6">Top Slack tips to boost
+								productivity</h1>
+							<p class="text-sm text-[#392904] font-medium mb-[44px] md:leading-[24px] max-w-[449px]">We
+								partner closely with the most progressive companies in the world to improve</p>
+							<a href="Blog_Details.html">
+								<button
+									class="bg-[#FF6036] w-[185px] h-[56px] text-white text-base font-semibold rounded-lg">Learn
+									More</button>
+							</a>
+						</div>
+					</div>
+					<div class="bg-[#F9DDD4] max-w-[648px] px-[34px] pt-[51px] pb-[26px] mt-[53px]">
+						<p class="text-[#383534] text-lg font-medium">“The best free way for SaaS companies to start
+							leveraging video is using free social media tools like Facebook Live or Instagram,” said
+							Caneva. </p>
+					</div>
+					<div class="mt-[83px]">
+						<div>
+							<img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0"
+								data-aos-easing="ease-in-out" src="../assets/images/home_5_blog.png" alt="">
+						</div>
+						<div class="flex items-center gap-7 mt-11">
+							<p class="text-sm text-[#FF6036]">Design</p>
+							<p class="text-sm text-[#676769]">October 21, 2023</p>
+						</div>
+						<div class="max-w-[655px] mt-4">
+							<h1 class="font-bold text-[24px] md:text-[29px] text-[#2C2003] mb-6">Top Slack tips to boost
+								productivity</h1>
+							<p class="text-sm text-[#392904] font-medium mb-[44px] md:leading-[24px] max-w-[449px]">We
+								partner closely with the most progressive companies in the world to improve</p>
+							<a href="Blog_Details.html">
+								<button
+									class="bg-[#FF6036] w-[185px] h-[56px] text-white text-base font-semibold rounded-lg">Learn
+									More</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- Blog Categories -->
+				<section class="bg-[#FDFCFA] rounded-xl px-[29px] py-[46px]">
+					<div class="lg:w-[330px] max-w-[330px]">
+						<div
+							class="max-w-[320px] h-10 border border-[#CED2DA] rounded-lg flex items-center gap-1 px-3 py-2">
+							<img src="../assets/images/icons/Search-home2-blog.svg" alt="">
+							<input class="outline-none flex-grow bg-transparent" type="text" placeholder="Search">
+						</div>
+						<div class="mt-5">
+							<h1 class="text-[24px] font-semibold text-[#2C2003]">Blog categories</h1>
+							<hr class="mt-[20px] max-w-[311px] border-t border-[#ECE8DF]">
+							<div class="mt-[22px] max-w-[300px]">
+								<div>
+									<a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies &
+										Innovations (05)</a>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</div>
+								<div class="mt-2">
+									<a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies &
+										Innovations (05)</a>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</div>
+								<div class="mt-2">
+									<a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies &
+										Innovations (05)</a>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</div>
+								<div class="mt-2">
+									<a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies &
+										Innovations (05)</a>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</div>
+								<div class="mt-2">
+									<a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies &
+										Innovations (05)</a>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</div>
+
+							</div>
+						</div>
+						<div class="mt-[44px]">
+							<h1 class="text-[24px] font-semibold text-[#2C2003]">Recent posts</h1>
+							<hr class="mt-[20px] max-w-[311px] border-t border-[#ECE8DF]">
+							<div class="mt-[22px] max-w-[319px]">
+								<a href="Blog.html">
+									<p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
+									<p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</a>
+								<a href="Blog.html" class="mt-2">
+									<p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
+									<p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</a>
+								<a href="Blog.html" class="mt-2">
+									<p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
+									<p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</a>
+								<a href="Blog.html" class="mt-2">
+									<p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
+									<p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</a>
+								<a href="Blog.html" class="mt-2">
+									<p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
+									<p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
+									<hr class="mt-2 border-t border-[#ECE8DF]">
+								</a>
+							</div>
+						</div>
+						<div class="mt-[52px]">
+							<h1 class="text-[24px] font-semibold text-[#2C2003]">Tags</h1>
+							<hr class="mt-[20px] max-w-[311px] border-t border-[#ECE8DF]">
+							<div class="mt-[20px] max-w-[286px] grid grid-cols-2 gap-x-4 gap-y-3">
+								<a href="Blog.html"><button
+										class="w-[135px] h-[40px] text-sm text-[#2C2003] border border-[#ECE8DF] rounded-lg">Digital
+										Marketing</button></a>
+								<a href="Blog.html"><button
+										class="w-[135px] h-[40px] text-sm text-[#2C2003] border border-[#ECE8DF] rounded-lg">Digital
+										Marketing</button></a>
+								<a href="Blog.html"><button
+										class="w-[135px] h-[40px] text-sm text-[#2C2003] border border-[#ECE8DF] rounded-lg">Digital
+										Marketing</button></a>
+								<a href="Blog.html"><button
+										class="w-[135px] h-[40px] text-sm text-[#2C2003] border border-[#ECE8DF] rounded-lg">Digital
+										Marketing</button></a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Blog Categories-->
+			</section>
+
+		</section>
+		<!-- End About us main -->
+
+		<section class="flex gap-2 items-center mt-[108px] font-semibold">
+			<div
+				class="h-8 w-8 flex items-center justify-center border border-[#DFE3E8] hover:border-[#E35C30] rounded-md cursor-pointer bg-[#E35C30]/[50%]">
+				<img class="rotate-180" src="../assets/images/icons/pagination-icon.svg" alt="">
+			</div>
+			<div
+				class="h-8 w-8 flex items-center justify-center border border-[#DFE3E8] hover:border-[#E35C30] rounded-md cursor-pointer">
+				1
+			</div>
+			<div
+				class="h-8 w-8 flex items-center justify-center border border-[#DFE3E8] hover:border-[#E35C30] rounded-md cursor-pointer">
+				2
+			</div>
+			<div
+				class="h-8 w-8 flex items-center justify-center border border-[#DFE3E8] hover:border-[#E35C30] rounded-md cursor-pointer">
+				...
+			</div>
+			<div
+				class="h-8 w-8 flex items-center justify-center border border-[#DFE3E8] hover:border-[#E35C30] rounded-md cursor-pointer">
+				9
+			</div>
+			<div
+				class="h-8 w-8 flex items-center justify-center border border-[#DFE3E8] hover:border-[#E35C30] rounded-md cursor-pointer">
+				10
+			</div>
+			<div
+				class="h-8 w-8 flex items-center justify-center border border-[#DFE3E8] hover:border-[#E35C30] rounded-md cursor-pointer">
+				<img src="../assets/images/icons/pagination-icon.svg" alt="">
+			</div>
+		</section>
+	</main>
+
+	<!-- End Bottom Main -->
+	<footer class="home5_footer_bg bg-cover mt-[114px] pt-[83px] pb-[56px] px-5">
+		<section class="max-w-[1140px] mx-auto">
+			<div>
+				<h1 class="text-[#223645] text-[36px] leading-[54px] text-center font-bold">Were Ready to Grow you
+					Business,
+					<br> Get Start Today!
+				</h1>
+				<div class="flex items-center justify-center">
+					<button
+						class="px-[30px] py-[13px] rounded-md text-[15px] font-semibold text-white bg-[#FF6036] mt-[52px]">Get
+						Started Now</button>
+				</div>
+				<div class="flex items-center justify-center gap-2 mt-3">
+					<div class="flex items-center gap-2">
+						<img src="../assets/images/icons/home5_star.svg" alt="">
+						<img src="../assets/images/icons/home5_star.svg" alt="">
+						<img src="../assets/images/icons/home5_star.svg" alt="">
+						<img src="../assets/images/icons/home5_star.svg" alt="">
+						<img src="../assets/images/icons/home5_half_star.svg" alt="">
+					</div>
+					<p class="text-xs text-[#223645]">4.9 out of 5</p>
+				</div>
+			</div>
+
+			<div
+				class="bg-[#223645] mt-[86px] pt-[70px] pb-[50px] px-5 rounded-lg flex flex-col items-center justify-center gap-6">
+				<div class="xl:w-[997px] flex flex-wrap gap-8 justify-between">
+					<div>
+						<p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Company</p>
+						<div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+							<a href="#">About us</a>
+							<a href="#">Contact us</a>
+							<a href="#">Careers</a>
+							<a href="#">Press</a>
+						</div>
+					</div>
+					<div>
+						<p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Product</p>
+						<div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+							<a href="#">Features</a>
+							<a href="#">Pricing</a>
+							<a href="#">News</a>
+							<a href="#">Help desk</a>
+							<a href="#">Support</a>
+						</div>
+					</div>
+					<div>
+						<p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Company</p>
+						<div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+							<a href="#">Digital Marketing</a>
+							<a href="#">Contact Writing</a>
+							<a href="#">SEO for Business</a>
+							<a href="#">UI Design</a>
+						</div>
+					</div>
+					<div>
+						<p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Newsletter</p>
+						<div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+							<p class="w-[186px]">Register now to Get Latest Uploaded on MA.</p>
+						</div>
+						<div
+							class="bg-[#1E303D] rounded-md w-[221px] border border-[#52606A] h-[56px] px-4 flex items-center justify-between mt-10">
+							<div class="flex items-center justify-between">
+								<div class="w-[105px] overflow-hidden">
+									<input class="text-sm text-[#9DA9B1] bg-transparent" type="text"
+										placeholder="Your Email">
+								</div>
+							</div>
+							<div>
+								<img src="../assets/images/icons/wpf_sent.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex items-center flex-wrap justify-between gap-5 pt-6 border-t border-[#595959] max-w-[957px] w-full px-5">
+					<p class="text-[#7C8796] text-sm">Copyright@ 2023 Multipurpose Agency all right resurved</p>
+					<div class="flex items-center gap-6">
+						<p class="text-[#717C8B] text-sm">Follow on</p>
+						<div class="flex items-center gap-4">
+							<a href="#"><img src="../assets/images/icons/Facebook5.svg" alt=""></a>
+							<a href="#"><img src="../assets/images/icons/twitter5.svg" alt=""></a>
+							<a href="#"><img src="../assets/images/icons/linkedin5.svg" alt=""></a>
+							<a href="#"><img src="../assets/images/icons/instagram5.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+
+
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/libs/gallery_carousel.js"></script>
+	<script src="../assets/js/libs/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>

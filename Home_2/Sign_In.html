@@ -14,11 +14,14 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
+
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -27,21 +30,22 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
                                 <li><a href="../Home.html">Home 1</a></li>
-                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -61,6 +65,7 @@
                                 <li><a href="#">Utility</a></li>
                                 <li><a href="Gallery.html">Gallery</a></li>
                                 <li><a href="404.html">404</a></li>
+                                <li><a href="Trams_Conditions.html">Trams & Conditions</a></li>
                                 <li class="relative contact-variation-container">
                                     <a href="#">Contact Us</a>
                                     <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
@@ -77,7 +82,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -93,24 +98,25 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
+                <a href="../Home2.html">
                     <img class="w-[100px] md:w-auto" src="../assets/images/icons/home2-logo.svg" alt="">
-                </div>
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
                                 <li><a href="../Home.html">Home 1</a></li>
-                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -119,7 +125,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -130,6 +136,7 @@
                                 <li><a href="#">Utility</a></li>
                                 <li><a href="Gallery.html">Gallery</a></li>
                                 <li><a href="404.html">404</a></li>
+                                <li><a href="Trams_Conditions.html">Trams & Conditions</a></li>
                                 <li class="relative contact-variation-container">
                                     <a href="#">Contact Us</a>
                                     <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
@@ -146,7 +153,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -172,12 +179,13 @@
 
 
     <!-- Top Main -->
-    <main class="mx-auto px-5 xl:px-0">
+    <main class="mx-auto">
         <!-- Login Section -->
-        <section class="mt-[86px]">
-            <h1 class="text-[36px] font-bold text-[#262729] text-center">Login</h1>
+        <section class="mt-[50px] md:mt-[86px]">
+            <h1 class="text-[24px] md:text-[36px] font-bold text-[#262729] text-center">Login</h1>
 
-            <section class="mt-[86px] home2-sign-bg bg-cover h-[729px] flex items-center justify-center">
+            <section
+                class="mt-[50px] md:mt-[86px] rounded-3xl overflow-hidden home2-sign-bg bg-cover h-[729px] flex items-center justify-center px-5 min-w-[295px]">
                 <div class="w-full">
                     <form
                         class="max-w-[368px] mx-auto border border-[#D9D9D9] rounded-2xl px-6 pt-6 pb-[35px] bg-[#FBFBFB]">
@@ -185,7 +193,7 @@
                             <label>
                                 <span class="text-base font-medium text-[#575757]">Email</span>
                             </label>
-                            <div class="border border-[#CED2DA] rounded-lg px-3 py-4 bg-white">
+                            <div class="border border-[#CED2DA] rounded-lg px-3 py-4 bg-white overflow-hidden">
                                 <input class="outline-none" type="email" placeholder="i.e. jonhn@tgmail.com">
                             </div>
                         </div>
@@ -193,7 +201,7 @@
                             <label>
                                 <span class="text-base font-medium text-[#575757]">Password</span>
                             </label>
-                            <div class="border border-[#CED2DA] rounded-lg px-3 py-4 bg-white">
+                            <div class="border border-[#CED2DA] rounded-lg px-3 py-4 bg-white overflow-hidden">
                                 <input class="outline-none" type="password" placeholder="Your Password">
                             </div>
                         </div>
@@ -220,20 +228,20 @@
 
     <!-- Footer -->
     <footer class="mt-[100px] md:mt-[132px] px-[30px] lg:px-[150px] pt-[50px] lg:pt-[126px] pb-[30px] lg:pb-[56px]">
-        <div class="flex flex-col md:flex-row gap-3 items-center justify-between mb-6 px-5">
+        <div class="flex flex-col md:flex-row gap-3 items-center justify-between mb-6">
             <div class="md:hidden">
                 <img src="../assets/images/icons/align-justify.svg" alt="">
             </div>
             <div class="flex items-center gap-1">
                 <img class="w-[120px] md:w-auto" src="../assets/images/icons/home2-logo.svg" alt="">
             </div>
-            <ul class="flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#25373F]">
+            <ul class="flex items-center gap-4 md:gap-6 text-[14px] font-semibold text-[#25373F]">
                 <li>
                     <div class="dropdown dropdown-hover">
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Home </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -250,7 +258,7 @@
                         <label tabindex="0" class="home2-footer-page-label">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Pages </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -278,7 +286,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Components </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>

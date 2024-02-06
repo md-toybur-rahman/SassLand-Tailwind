@@ -21,7 +21,7 @@
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter] home3-banner2 bg-local bg-top bg-no-repeat">
@@ -30,13 +30,13 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -44,7 +44,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -53,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -74,7 +75,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -90,9 +91,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
-                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/logo-home3.svg" alt="">
-                </div>
+                <a href="../Home3.html">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/dark-logo.svg" alt="">
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -107,7 +108,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -157,31 +159,23 @@
                 </div>
             </nav>
             <!-- Banner Section -->
-            <section class="mt-[88px]">
+            <section class="mt-[50px] md:mt-[88px] px-5 md:px-0">
                 <h1 class=" text-[24px] md:text-[36px] text-[#262729] font-semibold max-w-[947px] mx-auto text-center">
                     Transparent, simple pricing.
                 </h1>
                 <p class="text-sm md:text-base text-[#606086] max-w-[640px] mx-auto text-center mt-4">Everything you
                     need to control spend and optimize finance operations, all on a single platform.</p>
+            </section>
+            <!-- End Banner Section -->
+        </section>
+        <!-- End Menubar and Banner Section -->
     </div>
-    </section>
-    <!-- End Banner Section -->
-    </section>
-    <!-- End Menubar and Banner Section -->
-    </div>
 
 
-
-    <!-- Top Main -->
-    <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
-
-    </main>
-    <!-- End Top Main -->
-
-
-    <section class="mt-[86px] home3-pricing-plans-cards-background pb-[65px]">
+    <section class="mt-[50px] md:mt-[86px] home3-pricing-plans-cards-background pb-[65px] px-5 md:px-0">
         <div class="flex gap-6 flex-wrap lg:flex-nowrap justify-center items-start mt-[42px]">
-            <div class="rounded-2xl w-full max-w-[273px] h-fit">
+            <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200"
+                class="rounded-2xl w-full lg:max-w-[273px] py-8 lg:py-0 max-w-[369px] home3-pricing-plans-card bg-white lg:bg-transparent h-fit">
                 <div>
                     <p class="text-[#FF6AC2] text-[18px] font-semibold mb-4 text-center">STARTER</p>
                     <p class="text-[#606086] text-base leading-[32px] mb-6 text-center">Everything you need to control
@@ -197,8 +191,9 @@
                         Started Now</button>
                 </div>
 
-                <p class="text-white text-base font-semibold my-8 text-center">What's included</p>
-                <div class="mt-8 text-base text-white text-center flex flex-col items-center justify-center gap-6">
+                <p class="text-[#2E2E52] lg:text-white text-base font-semibold my-8 text-center">What's included</p>
+                <div
+                    class="mt-8 text-base text-[#2E2E52] lg:text-white text-center flex flex-col items-center justify-center gap-6">
 
                     <p>Includes 1 seat</p>
 
@@ -209,13 +204,14 @@
                     <p>Access SEO mode</p>
                 </div>
             </div>
-            <div class="rounded-2xl w-full py-8 max-w-[369px] home3-pricing-plans-middle-card bg-white h-fit">
-                <div class="w-full max-w-[273px] mx-auto">
+            <div data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="100"
+                class="rounded-2xl w-full py-8 max-w-[369px] home3-pricing-plans-middle-card bg-white h-fit">
+                <div class="w-full lg:max-w-[273px] mx-auto">
                     <div>
                         <p class="text-[#FF6AC2] text-[18px] font-semibold mb-4 text-center">STARTER</p>
                         <p class="text-[#606086] text-base leading-[32px] mb-6 text-center">Everything you need to
                             control
-                            spend and </p>
+                            spend and</p>
                         <h1 class="font-bold text-[50px] md:text-[77px] mb-4 tracking-tighter text-center"><span
                                 class="text-[24px] md:text-[34px] font-medium">$ </span>99<span
                                 class="text-[24px] md:text-[34px] font-bold tracking-normal"> /mo</span></h1>
@@ -223,7 +219,7 @@
                     </div>
                     <div class="mb-[43px] mt-[58px] flex items-center justify-center">
                         <button
-                            class="border border-[#FE79A1] h-[56px] bg-transparent text-base font-medium text-[#FE79A1] w-[211px] rounded-md">Get
+                            class="border border-[#FE79A1] h-[56px] text-base font-medium bg-[#FE79A1] text-white w-[211px] rounded-md">Get
                             Started Now</button>
                     </div>
 
@@ -241,7 +237,8 @@
                     </div>
                 </div>
             </div>
-            <div class="rounded-2xl w-full max-w-[273px] h-fit">
+            <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200"
+                class="rounded-2xl w-full lg:max-w-[273px] py-8 lg:py-0 max-w-[369px] home3-pricing-plans-card bg-white lg:bg-transparent h-fit">
                 <div>
                     <p class="text-[#FF6AC2] text-[18px] font-semibold mb-4 text-center">STARTER</p>
                     <p class="text-[#606086] text-base leading-[32px] mb-6 text-center">Everything you need to control
@@ -257,8 +254,9 @@
                         Started Now</button>
                 </div>
 
-                <p class="text-white text-base font-semibold my-8 text-center">What's included</p>
-                <div class="mt-8 text-base text-white text-center flex flex-col items-center justify-center gap-6">
+                <p class="text-[#2E2E52] lg:text-white text-base font-semibold my-8 text-center">What's included</p>
+                <div
+                    class="mt-8 text-base text-[#2E2E52] lg:text-white text-center flex flex-col items-center justify-center gap-6">
 
                     <p>Includes 1 seat</p>
 
@@ -272,58 +270,59 @@
         </div>
     </section>
 
-    <section class="mt-[86px] max-w-[631px] mx-auto">
+    <section class="mt-[86px] max-w-[631px] mx-auto px-5 md:px-0">
         <div class="">
             <h1 class="text-[24px] md:text-[text-36px] font-semibold text-[#262729] text-center mb-4">FAQ</h1>
-            <p class="max-w-[461px] text-[#606086] leading-[32px] mx-auto text-center text-base">Everything you need to
+            <p class="max-w-[461px] text-[#606086] leading-[24px] md:leading-[32px] mx-auto text-center text-base">
+                Everything you need to
                 control spend and optimize finance operations, all on a single platform.</p>
         </div>
         <div class="mt-[42px]">
 
             <div onclick="accordionHandler(this)" class="mb-6 cursor-pointer">
                 <div class="flex items-center justify-between bg-[#F9F9FF] border border-[#E7E9ED] p-4 rounded-md">
-                    <p class="text-base text-[#2C2003] font-semibold">Can I use Albino for my clients?</p>
+                    <p class="text-base text-[#2E2E52] font-semibold">Can I use Albino for my clients?</p>
                     <img class="accordion-collapse-sign duration-300"
                         src="../assets/images/icons/accordion-icon-home3.svg" alt="">
                 </div>
                 <div id="" class="max-w-[789px] leading-[24px] overflow-hidden px-4 h-0 hidden duration-300">
-                    <p class="text-[#676769]">With lots of unique blocks, you can easily build a page without
+                    <p class="text-[#8787A4]">With lots of unique blocks, you can easily build a page without
                         coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a
                         porta. Aliquam sagittis interdum Melisandre.</p>
                 </div>
             </div>
             <div onclick="accordionHandler(this)" class="mb-6 cursor-pointer">
                 <div class="flex items-center justify-between bg-[#F9F9FF] border border-[#E7E9ED] p-4 rounded-md">
-                    <p class="text-base text-[#2C2003] font-semibold">Can I use Albino for my clients?</p>
+                    <p class="text-base text-[#2E2E52] font-semibold">Can I use Albino for my clients?</p>
                     <img class="accordion-collapse-sign duration-300"
                         src="../assets/images/icons/accordion-icon-home3.svg" alt="">
                 </div>
                 <div id="" class="max-w-[789px] leading-[24px] overflow-hidden px-4 h-0 hidden duration-300">
-                    <p class="text-[#676769]">With lots of unique blocks, you can easily build a page without
+                    <p class="text-[#8787A4]">With lots of unique blocks, you can easily build a page without
                         coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a
                         porta. Aliquam sagittis interdum Melisandre.</p>
                 </div>
             </div>
             <div onclick="accordionHandler(this)" class="mb-6 cursor-pointer">
                 <div class="flex items-center justify-between bg-[#F9F9FF] border border-[#E7E9ED] p-4 rounded-md">
-                    <p class="text-base text-[#2C2003] font-semibold">Can I use Albino for my clients?</p>
+                    <p class="text-base text-[#2E2E52] font-semibold">Can I use Albino for my clients?</p>
                     <img class="accordion-collapse-sign duration-300"
                         src="../assets/images/icons/accordion-icon-home3.svg" alt="">
                 </div>
                 <div id="" class="max-w-[789px] leading-[24px] overflow-hidden px-4 h-0 hidden duration-300">
-                    <p class="text-[#676769]">With lots of unique blocks, you can easily build a page without
+                    <p class="text-[#8787A4]">With lots of unique blocks, you can easily build a page without
                         coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a
                         porta. Aliquam sagittis interdum Melisandre.</p>
                 </div>
             </div>
             <div onclick="accordionHandler(this)" class="mb-6 cursor-pointer">
                 <div class="flex items-center justify-between bg-[#F9F9FF] border border-[#E7E9ED] p-4 rounded-md">
-                    <p class="text-base text-[#2C2003] font-semibold">Can I use Albino for my clients?</p>
+                    <p class="text-base text-[#2E2E52] font-semibold">Can I use Albino for my clients?</p>
                     <img class="accordion-collapse-sign duration-300"
                         src="../assets/images/icons/accordion-icon-home3.svg" alt="">
                 </div>
                 <div id="" class="max-w-[789px] leading-[24px] overflow-hidden px-4 h-0 hidden duration-300">
-                    <p class="text-[#676769]">With lots of unique blocks, you can easily build a page without
+                    <p class="text-[#8787A4]">With lots of unique blocks, you can easily build a page without
                         coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis a
                         porta. Aliquam sagittis interdum Melisandre.</p>
                 </div>
@@ -411,6 +410,10 @@
 
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

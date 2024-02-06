@@ -21,7 +21,7 @@
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter] home3-banner2 bg-local bg-top bg-no-repeat">
@@ -30,13 +30,13 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -44,7 +44,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -53,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -74,7 +75,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -90,9 +91,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
-                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/logo-home3.svg" alt="">
-                </div>
+                <a href="../Home3.html">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/dark-logo.svg" alt="">
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -107,7 +108,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -157,26 +159,24 @@
                 </div>
             </nav>
             <!-- Banner Section -->
-            <section class="mt-[86px]">
+            <section class="mt-[50px] md:mt-[86px] px-5 md:px-0">
                 <h1 class=" text-[24px] md:text-[36px] text-[#262729] font-semibold max-w-[947px] mx-auto text-center">
-                    Our Subscription Packages</h1>
+                    Gallery</h1>
                 <p class="text-base md:text-[20px] text-[#606086] max-w-[640px] mx-auto text-center mt-4">Everything you
                     need to control spend and optimize finance operations, all on a single platform.</p>
             </section>
-    </div>
-    </section>
-    <!-- End Banner Section -->
-    </section>
-    <!-- End Menubar and Banner Section -->
+        </section>
+        <!-- End Menubar and Banner Section -->
     </div>
 
 
 
-    <section class="h-[396px] w-full home3-gallery bg-cover mt-[86px]">
+    <section data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+        class="h-[396px] w-full home3-gallery bg-cover bg-center mt-[50px] md:mt-[86px]">
     </section>
 
     <!-- Top Main -->
-    <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
+    <main class="max-w-[1142px] mx-auto overflow-hidden md:overflow-visible px-5 xl:px-0">
         <section class="mt-[141px]">
             <div
                 class="flex flex-wrap md:flex-nowrap gap-6 lg:gap-[50px] items-center justify-center md:justify-between">
@@ -191,7 +191,7 @@
                     <a class="text-sm md:text-base font-semibold flex items-center justify-center md:justify-start gap-4 text-[#FF6AC2] mt-4 md:mt-[50px]"
                         href="#">Read More <img src="../assets/images/icons/arrow_outward.svg" alt=""></a>
                 </div>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out">
                     <p class="text-[#676769] font-medium text-base mb-[23px] text-end">By accessing and </p>
                     <img src="../assets/images/gallery_image-home3.png" alt="">
                 </div>
@@ -211,7 +211,7 @@
                     <a class="text-sm md:text-base font-semibold flex items-center justify-center md:justify-start gap-4 text-[#FF6AC2] mt-4 md:mt-[50px]"
                         href="#">Read More <img src="../assets/images/icons/arrow_outward.svg" alt=""></a>
                 </div>
-                <div>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out">
                     <p class="text-[#676769] font-medium text-base mb-[23px]">By accessing and </p>
                     <img src="../assets/images/gallery_image-home3.png" alt="">
                 </div>
@@ -225,7 +225,8 @@
                 need to control spend and optimize finance operations, all on a single platform.</p>
 
             <div class="mt-[56px] flex flex-wrap lg:flex-nowrap items-center gap-6 justify-center">
-                <div class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
                     <div class="flex items-start gap-2">
                         <div class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
                         </div>
@@ -247,7 +248,8 @@
                             accommodate our growth and a variety of event types throughout the year.”</p>
                     </div>
                 </div>
-                <div class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
+                    class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
                     <div class="flex items-start gap-2">
                         <div class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
                         </div>
@@ -269,7 +271,8 @@
                             accommodate our growth and a variety of event types throughout the year.”</p>
                     </div>
                 </div>
-                <div class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out"
+                    class="px-[32px] py-[43px] rounded-3xl max-w-[359px] love_us_card bg-[#F8F8F9]">
                     <div class="flex items-start gap-2">
                         <div class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
                         </div>
@@ -297,12 +300,18 @@
 
         <section class="flex items-center justify-center mt-[56px]">
             <div class="flex flex-wrap items-end justify-center gap-[45px]">
-                <img src="../assets/images/icons/Frame-home3.svg" alt="">
-                <img src="../assets/images/icons/xpo-home3.svg" alt="">
-                <img src="../assets/images/icons/yum-home3.svg" alt="">
-                <img src="../assets/images/icons/loading-home3.svg" alt="">
-                <img src="../assets/images/icons/land-home3.svg" alt="">
-                <img src="../assets/images/icons/apple-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    src="../assets/images/icons/Frame-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                    src="../assets/images/icons/xpo-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
+                    src="../assets/images/icons/yum-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out"
+                    src="../assets/images/icons/loading-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out"
+                    src="../assets/images/icons/land-home3.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out"
+                    src="../assets/images/icons/apple-home3.svg" alt="">
             </div>
         </section>
 
@@ -391,6 +400,10 @@
 
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

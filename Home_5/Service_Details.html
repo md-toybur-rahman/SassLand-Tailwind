@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+	<!-- Daisyui -->
+	<link href="../assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
+	<!-- Gallery Carousel -->
+	<link rel="stylesheet" href="../assets/css/libs/team_carousel.css">
+
+	<!-- Vertical Carousel -->
+	<link rel="stylesheet" href="../assets/css/libs/vertical_carousel.css">
+
+	<!-- Google Font -->
+	<link rel="stylesheet" href="../assets/css/libs/google_font.css">
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="../assets/css/libs/aos.css">
+
+	<!-- Tailwind Css -->
+	<link rel="stylesheet" href="../assets/css/libs/tailwind.css">
+
+	 <!-- GRT Youtube Plugin CSS -->
+	 <link rel="stylesheet" href="../assets/css/libs/grt-youtube-popup.css">
+
+	<title>SassLand</title>
+</head>
+
+<body class="font-[inter]">
+	<section>
+		<nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
+			<!-- mobile menubar -->
+			<ul id="homeMenubar"
+				class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#223645]">
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Home </a>
+								<img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="../Home.html">Home 1</a></li>
+							<li><a href="../Home2.html">Home 2</a></li>
+							<li><a href="../Home3.html">Home 3</a></li>
+							<li><a href="../Home4.html">Home 4</a></li>
+							<li><a href="../Home5.html">Home 5</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Pages </a>
+								<img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="About_Us.html">About us</a></li>
+							<li><a href="Services.html">Services</a></li>
+							<li><a href="Popular_Services.html">Popular Services</a></li>
+							<li><a href="Pricing_Plans.html">Pricing plans</a></li>
+							<li><a href="Contact_Us.html">Contact Us</a></li>
+							<li><a href="Blog.html">Blog</a></li>
+							<li><a href="Team.html">Team</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Components </a>
+								<img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="#">Components 1</a></li>
+							<li><a href="#">Components 2</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="p-2"><a href="#">Support</a></li>
+			</ul>
+			<!-- end mobile menubar -->
+			<div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
+				<img src="../assets/images/icons/align-justify-dark.svg" alt="">
+			</div>
+			<a href="../Home5.html" class="flex items-center gap-1">
+				<img class="w-[30px] h-[30px] md:h-auto md:w-auto" src="../assets/images/icons/Logo_5.svg" alt="">
+			</a>
+			<ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#223645]">
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Home </a>
+								<img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="../Home.html">Home 1</a></li>
+							<li><a href="../Home2.html">Home 2</a></li>
+							<li><a href="../Home3.html">Home 3</a></li>
+							<li><a href="../Home4.html">Home 4</a></li>
+							<li><a href="../Home5.html">Home 5</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Pages </a>
+								<img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="About_Us.html">About us</a></li>
+							<li><a href="Services.html">Services</a></li>
+							<li><a href="Popular_Services.html">Popular Services</a></li>
+							<li><a href="Pricing_Plans.html">Pricing plans</a></li>
+							<li><a href="Contact_Us.html">Contact Us</a></li>
+							<li><a href="Blog.html">Blog</a></li>
+							<li><a href="Team.html">Team</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="dropdown dropdown-hover">
+						<label tabindex="0" class="">
+							<div class="flex items-center gap-1">
+								<a href="#" class="">Components </a>
+								<img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+									alt="">
+							</div>
+						</label>
+						<ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+							<li><a href="#">Components 1</a></li>
+							<li><a href="#">Components 2</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="p-2"><a href="#">Support</a></li>
+			</ul>
+			<div>
+
+				<button
+					class="bg-transparent rounded-full text-[#223645] h-[30px] md:h-[48px] w-[102px] font-normal md:font-semibold text-xs md:text-sm">Log
+					in</button>
+				<button
+					class="bg-[#223645] rounded-full text-white h-[30px] md:h-[48px] w-[102px] font-normal md:font-semibold text-xs md:text-sm">Sign
+					up</button>
+			</div>
+		</nav>
+		<!-- Banner Section -->
+		<section class="home5_banner_bg_2 bg-cover h-[332px] flex items-center justify-center  mt-8 md:mt-5 lg:mt-0">
+			<h1 class="font-semibold text-[24px] md:text-[36px] text-white">Design & vreatives</h1>
+		</section>
+		<!-- End Banner Section -->
+	</section>
+	<!-- End Menubar and Banner Section -->
+
+	<main class="max-w-[1142px] overflow-hidden md:overflow-visible mx-auto px-5 xl:px-0">
+
+		<!-- Leader in web -->
+		<section
+			class="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10 mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto px-5">
+			<div class="">
+				<h5 class="text-[#FF6036] font-semibold text-sm md:text-base mb-4">Best Features Development</h5>
+				<h1 class="font-semibold text-[24px] md:text-[28.5px] text-[#223645] mb-6 max-w-[374px]">Benefits of
+					Managed IT Services Provided</h1>
+				<p class="text-sm md:text-base text-[#4B5B67] mb-[34px] max-w-[435px]">“The platform has been able to
+					accommodate our growth and a variety of event types throughout the year.”</p>
+				<div data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+					<img src="../assets/images/best_features_dev.png" alt="">
+				</div>
+			</div>
+			<div class="">
+				<div class=" mb-8">
+					<div class="flex items-center gap-4">
+						<img src="../assets/images/icons/content_planning.svg" alt="">
+						<h3 class="text-[#223645] text-base md:text-lg font-semibold">Content Planning</h3>
+					</div>
+					<p class="text-sm md:text-base text-[#4B5B67] max-w-[460px] ps-5">“The platform has been able
+						to
+						accommodate our growth and a variety of event types throughout the year.”</p>
+				</div>
+				<div class=" mb-8">
+					<div class="flex items-center gap-4">
+						<img src="../assets/images/icons/realtime_feedback.svg" alt="">
+						<h3 class="text-[#223645] text-base md:text-lg font-semibold">Realtime Feedback</h3>
+					</div>
+					<p class="text-sm md:text-base text-[#4B5B67] max-w-[460px] ps-5">“The platform has been able
+						to
+						accommodate our growth and a variety of event types throughout the year.”</p>
+				</div>
+				<div class=" mb-8">
+					<div class="flex items-center gap-4">
+						<img src="../assets/images/icons/grouping_teams.svg" alt="">
+
+						<h3 class="text-[#223645] text-base md:text-lg font-semibold">Grouping Teams</h3>
+					</div>
+					<p class="text-sm md:text-base text-[#4B5B67] max-w-[460px] ps-5">“The platform has been able
+						to
+						accommodate our growth and a variety of event types throughout the year.”</p>
+				</div>
+				<div>
+					<div class="flex items-center gap-4">
+						<img src="../assets/images/icons/connect_with_everyone.svg" alt="">
+						<h3 class="text-[#223645] text-base md:text-lg font-semibold">Connect with Everyone</h3>
+					</div>
+					<p class="text-sm md:text-base text-[#4B5B67] max-w-[460px] ps-5">“The platform has been able
+						to
+						accommodate our growth and a variety of event types throughout the year.”</p>
+				</div>
+			</div>
+		</section>
+		<section
+			class="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10 mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto px-5">
+			<div class="">
+				<h5 class="text-[#FF6036] font-semibold text-sm md:text-base mb-4">How to Manage</h5>
+				<h1 class="font-semibold text-[24px] md:text-[28.5px] text-[#223645] mb-6 max-w-[374px]">Benefits of
+					Managed IT Services Provided</h1>
+
+				<div id="tab_container" class="border-b border-[#DEDEDE] flex items-center justify-between">
+					<div>
+						<p onclick="tabHandler(this, 'our_approach_content')"
+							class="tab_item font-semibold text-[#223645] text-base pb-4 w-fit border-b-2 border-[#FF6036] cursor-pointer">
+							Our
+							Approach</p>
+					</div>
+					<div>
+						<p onclick="tabHandler(this, 'project_goals_content')"
+							class="tab_item font-semibold text-[#223645] text-base pb-4 w-fit cursor-pointer">Project Goals
+						</p>
+					</div>
+					<div>
+						<p onclick="tabHandler(this, 'advisory_content')"
+							class="tab_item font-semibold text-[#223645] text-base pb-4 w-fit cursor-pointer">Advisory</p>
+					</div>
+				</div>
+				<div id="tab_content_container">
+					<div id="our_approach_content" class="tab_content block">
+						<p class="text-sm md:text-base text-[#4B5B67] my-10 max-w-[435px]">“The platform has been able
+							to
+							accommodate our growth and a variety of event types throughout the year.”</p>
+						<div class="flex items-center justify-between">
+							<div>
+								<div class="flex items-center gap-2 mb-4">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Efficient Sprint Planning</p>
+								</div>
+								<div class="flex items-center gap-2">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Standups and Demos</p>
+								</div>
+							</div>
+							<div>
+								<div class="flex items-center gap-2 mb-4">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Iterative Delivery Approach</p>
+								</div>
+								<div class="flex items-center gap-2">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Problem Solving</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="project_goals_content" class="tab_content hidden">
+						<p class="text-sm md:text-base text-[#4B5B67] my-10 max-w-[435px]">“The platform has been able
+							to
+							accommodate our growth and a variety of event types throughout the year.”</p>
+						<div class="flex items-center justify-between">
+
+							<div>
+								<div class="flex items-center gap-2 mb-4">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Iterative Delivery Approach</p>
+								</div>
+								<div class="flex items-center gap-2">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Problem Solving</p>
+								</div>
+							</div>
+							<div>
+								<div class="flex items-center gap-2 mb-4">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Efficient Sprint Planning</p>
+								</div>
+								<div class="flex items-center gap-2">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Standups and Demos</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="advisory_content" class="tab_content hidden">
+						<p class="text-sm md:text-base text-[#4B5B67] my-10 max-w-[435px]">“The platform has been able
+							to
+							accommodate our growth and a variety of event types throughout the year.”</p>
+						<div class="flex items-center justify-between">
+							<div>
+								<div class="flex items-center gap-2 mb-4">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Efficient Sprint Planning</p>
+								</div>
+								<div class="flex items-center gap-2">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Iterative Delivery Approach</p>
+								</div>
+							</div>
+							<div>
+								<div class="flex items-center gap-2 mb-4">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Standups and Demos</p>
+								</div>
+								<div class="flex items-center gap-2">
+									<img src="../assets/images/icons/home5_check.svg" alt="">
+									<p class="text-[#223645] text-sm font-semibold">Problem Solving</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+				<img src="../assets/images/how_to_use.png" alt="">
+			</div>
+		</section>
+		<!-- End leader in web -->
+	</main>
+
+
+	<section class="mt-[129px] md:mt-[250px] max-w-[1139px] mx-auto">
+		<div class="max-w-[944px] mx-auto mt-8 youtube-link cursor-pointer" youtubeid="xcJtL7QggTI">
+			<img src="../assets/images/Home5_our_services.png" alt="">
+		</div>
+		<div class="flex items-center justify-center px-5 mt-[56px] border-b border-[#E9EBEC]">
+			<div
+				class=" flex flex-wrap items-center justify-center lg:justify-between gap-6 max-w-[738px] w-full mx-auto px-10 md:px-0">
+				<div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+					class="text-center pb-[17px]">
+					<h1 class="text-[36px] lg:text-[48px] text-[#223645] font-bold mb-4">53K</h1>
+					<p class="text-sm md:text-[16px] text-[#A09C9B]">Cool Number</p>
+				</div>
+				<div class="w-[1px] h-[111px] bg-[#E8E8E9] hidden sm:block"></div>
+				<div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+					class="text-center pb-[17px]">
+					<h1 class="text-[36px] lg:text-[48px] text-[#223645] font-bold mb-4">10K</h1>
+					<p class="text-sm md:text-[16px] text-[#A09C9B]">Projects Done</p>
+				</div>
+				<div class="w-[1px] h-[111px] bg-[#E8E8E9] hidden sm:block"></div>
+				<div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
+					class="text-center pb-[17px]">
+					<h1 class="text-[36px] lg:text-[48px] text-[#223645] font-bold mb-4">120</h1>
+					<p class="text-sm md:text-[16px] text-[#A09C9B]">Cool Number</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<main class="max-w-[1137px] mx-auto">
+
+		<section
+			class="px-5 lg:px-0 pt-[81px] pb-[80px] mt-[128px] md:mt-[250px] max-w-[1118px] mx-auto flex flex-col md:flex-row items-center gap-20">
+			<div>
+				<div class="">
+					<h6 class="text-base text-[#FF6036] font-semibold mb-4">TESTIMONAL</h6>
+					<h1 class="max-w-[340px] text-[24px] md:text-[28.5px] font-semibold leading-[54px] text-[#223645]">
+						Why
+						Clients Love Us</h1>
+					<div class="mt-6">
+						<img src="../assets/images/about_textimonal.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="hidden sm:block sm:w-[500px] h-[300px] mt-16">
+				<div class='wrapper2'>
+					<div class='carousel2'>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='carousel__item'>
+							<div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+								<div
+									class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+								</div>
+								<div class="max-w-[245px]">
+									<div class="flex items-center gap-1">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_dark.svg" alt="">
+										<img class="w-4 md:w-auto" src="../assets/images/icons/star_light.svg" alt="">
+									</div>
+									<div>
+										<p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+											accommodate
+											our
+											growth and
+											a variety of event types throughout the year.”</p>
+										<p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- End Bottom Main -->
+	<footer class="home5_footer_bg bg-cover mt-[114px] pt-[83px] pb-[56px] px-5">
+		<section class="max-w-[1140px] mx-auto">
+			<div>
+				<h1 class="text-[#223645] text-[36px] leading-[54px] text-center font-bold">Were Ready to Grow you
+					Business,
+					<br> Get Start Today!
+				</h1>
+				<div class="flex items-center justify-center">
+					<button
+						class="px-[30px] py-[13px] rounded-md text-[15px] font-semibold text-white bg-[#FF6036] mt-[52px]">Get
+						Started Now</button>
+				</div>
+				<div class="flex items-center justify-center gap-2 mt-3">
+					<div class="flex items-center gap-2">
+						<img src="../assets/images/icons/home5_star.svg" alt="">
+						<img src="../assets/images/icons/home5_star.svg" alt="">
+						<img src="../assets/images/icons/home5_star.svg" alt="">
+						<img src="../assets/images/icons/home5_star.svg" alt="">
+						<img src="../assets/images/icons/home5_half_star.svg" alt="">
+					</div>
+					<p class="text-xs text-[#223645]">4.9 out of 5</p>
+				</div>
+			</div>
+
+			<div
+				class="bg-[#223645] mt-[86px] pt-[70px] pb-[50px] px-5 rounded-lg flex flex-col items-center justify-center gap-6">
+				<div class="xl:w-[997px] flex flex-wrap gap-8 justify-between">
+					<div>
+                        <p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Company</p>
+                        <div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+                            <a href="#">About us</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Press</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Product</p>
+                        <div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+                            <a href="#">Features</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">News</a>
+                            <a href="#">Help desk</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Company</p>
+                        <div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+                            <a href="#">Digital Marketing</a>
+                            <a href="#">Contact Writing</a>
+                            <a href="#">SEO for Business</a>
+                            <a href="#">UI Design</a>
+                        </div>
+                    </div>
+					<div>
+						<p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Newsletter</p>
+						<div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+							<p class="w-[186px]">Register now to Get Latest Uploaded on MA.</p>
+						</div>
+						<div
+							class="bg-[#1E303D] rounded-md w-[221px] border border-[#52606A] h-[56px] px-4 flex items-center justify-between mt-10">
+							<div class="flex items-center justify-between">
+								<div class="w-[105px] overflow-hidden">
+									<input class="text-sm text-[#9DA9B1] bg-transparent" type="text"
+										placeholder="Your Email">
+								</div>
+							</div>
+							<div>
+								<img src="../assets/images/icons/wpf_sent.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex items-center flex-wrap justify-between gap-5 pt-6 border-t border-[#595959] max-w-[957px] w-full px-5">
+					<p class="text-[#7C8796] text-sm">Copyright@ 2023 Multipurpose Agency all right resurved</p>
+					<div class="flex items-center gap-6">
+						<p class="text-[#717C8B] text-sm">Follow on</p>
+						<div class="flex items-center gap-4">
+							<a href="#"><img src="../assets/images/icons/Facebook5.svg" alt=""></a>
+							<a href="#"><img src="../assets/images/icons/twitter5.svg" alt=""></a>
+							<a href="#"><img src="../assets/images/icons/linkedin5.svg" alt=""></a>
+							<a href="#"><img src="../assets/images/icons/instagram5.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+
+
+	<script src="../assets/js/main.js"></script>
+	<script src="../assets/js/libs/gallery_carousel.js"></script>
+	<script src="../assets/js/libs/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	 <script src="../assets/js/libs/grt-youtube-popup.js"></script>
+ 
+	 <!-- Initialize GRT Youtube Popup plugin -->
+	 <script>
+		 // Demo video 1
+		 $(".youtube-link").grtyoutube({
+			 autoPlay: true,
+			 theme: "dark"
+		 });
+	 </script>
+</body>
+
+</html>

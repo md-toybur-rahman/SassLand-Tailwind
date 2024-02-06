@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Daisyui -->
+    <link href="assets/css/libs/daisyui.css" rel="stylesheet" type="text/css" />
+
+    <!-- Gallery Carousel -->
+    <link rel="stylesheet" href="assets/css/libs/our_services_carousel.css">
+
+    <!-- Vertical Carousel -->
+    <link rel="stylesheet" href="assets/css/libs/vertical_carousel.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="assets/css/libs/google_font.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/css/libs/aos.css">
+
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="assets/css/libs/tailwind.css">
+
+     <!-- GRT Youtube Plugin CSS -->
+     <link rel="stylesheet" href="assets/css/libs/grt-youtube-popup.css">
+
+    <title>SassLand</title>
+</head>
+
+<body class="font-[inter]">
+    <section>
+        <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
+            <!-- mobile menubar -->
+            <ul id="homeMenubar"
+                class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#223645]">
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Home </a>
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                            <li><a href="Home.html">Home 1</a></li>
+                            <li><a href="Home2.html">Home 2</a></li>
+                            <li><a href="Home3.html">Home 3</a></li>
+                            <li><a href="Home4.html">Home 4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Pages </a>
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                            <li><a href="Home_5/About_Us.html">About us</a></li>
+                            <li><a href="Home_5/Services.html">Services</a></li>
+                            <li><a href="Home_5/Popular_Services.html">Popular Services</a></li>
+                            <li><a href="Home_5/Pricing_Plans.html">Pricing plans</a></li>
+                            <li><a href="Home_5/Contact_Us.html">Contact Us</a></li>
+                            <li><a href="Home_5/Blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Components </a>
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                            <li><a href="#">Components 1</a></li>
+                            <li><a href="#">Components 2</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="p-2"><a href="#">Support</a></li>
+            </ul>
+            <!-- end mobile menubar -->
+            <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
+                <img src="assets/images/icons/align-justify-dark.svg" alt="">
+            </div>
+            <a href="index.html" class="flex items-center gap-1">
+                <img class="w-[30px] h-[30px] md:h-auto md:w-auto" src="assets/images/icons/Logo_5.svg" alt="">
+            </a>
+            <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#223645]">
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Home </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                            <li><a href="Home.html">Home 1</a></li>
+                            <li><a href="Home2.html">Home 2</a></li>
+                            <li><a href="Home3.html">Home 3</a></li>
+                            <li><a href="Home4.html">Home 4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Pages </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                            <li><a href="Home_5/About_Us.html">About us</a></li>
+                            <li><a href="Home_5/Services.html">Services</a></li>
+                            <li><a href="Home_5/Popular_Services.html">Popular Services</a></li>
+                            <li><a href="Home_5/Pricing_Plans.html">Pricing plans</a></li>
+                            <li><a href="Home_5/Contact_Us.html">Contact Us</a></li>
+                            <li><a href="Home_5/Blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown dropdown-hover">
+                        <label tabindex="0" class="">
+                            <div class="flex items-center gap-1">
+                                <a href="#" class="">Components </a>
+                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                    alt="">
+                            </div>
+                        </label>
+                        <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
+                            <li><a href="#">Components 1</a></li>
+                            <li><a href="#">Components 2</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="p-2"><a href="#">Support</a></li>
+            </ul>
+            <div>
+
+                <button
+                    class="bg-transparent rounded-full text-[#223645] h-[30px] md:h-[48px] w-[102px] font-normal md:font-semibold text-xs md:text-sm">Log
+                    in</button>
+                <button
+                    class="bg-[#223645] rounded-full text-white h-[30px] md:h-[48px] w-[102px] font-normal md:font-semibold text-xs md:text-sm">Sign
+                    up</button>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section class="px-10 mt-8 md:mt-5 lg:mt-0">
+            <div
+                class="flex items-center gap-[71px] justify-center xl:justify-between home5_banner_bg bg-cover rounded-2xl lg:h-[650px] mx-auto py-10 sm:py-0 p-4 sm:p-10 xl:px-20">
+                <div class="xl:max-w-[546px] px-5">
+                    <h1
+                        class="font-semibold text-[#223645] text-xl sm:text-[36px] lg:text-[57px] mb-6 xl:max-w-[506px] leading-[36px] sm:leading-[57px] lg:leading-[72px] text-center xl:text-start">
+                        Branding for
+                        your
+                        growth goals and creative ideas</h1>
+                    <p class="text-sm sm:text-base text-[#6C7882] text-center xl:text-start">We partner closely with the most progressive
+                        companies in the
+                        world to improve their customer support operations. As consumers</p>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-center xl:justify-start gap-4 mt-[44px]">
+                        <button
+                            class="bg-[#FF6036] rounded-lg text-white px-5 sm:px-9 py-4 md:py-[18px] font-normal md:font-semibold text-sm md:text-base">Get
+                            Started Free</button>
+                        <button
+                            class="flex items-center justify-center sm:justify-start gap-2 text-[#7E8992] font-semibold text-sm md:text-base youtube-link cursor-pointer" youtubeid="xcJtL7QggTI"><img
+                                src="assets/images//icons/Home5_play_video_icon.svg" alt="">
+                            See The Video</button>
+                    </div>
+                </div>
+                <div class="hidden xl:block pt-11">
+                    <img src="assets/images/Home_5_main_banner.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End Banner Section -->
+    </section>
+    <!-- End Menubar and Banner Section -->
+
+    <!-- Trusted Companies -->
+    <section class="mt-[70px] max-w-[967px] mx-auto">
+        <div>
+            <h1 class="text-base md:text-lg text-[#223645] font-semibold mb-8 text-center">Our Featured Partners</h1>
+            <div
+                class="flex flex-wrap items-center justify-center gap-[30px] md:gap-[56px] border-t border-b border-[#F3F4F5] py-[33px]">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/Framer.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/Reddit.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/Airbnb5.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/Tesla.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/Uber.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- End Trusted Companies -->
+
+    <!-- Top Main -->
+    <main class="max-w-[1142px] overflow-hidden md:overflow-visible mx-auto px-5 xl:px-0">
+
+        <!-- Leader in web -->
+        <section
+            class="flex flex-col items-center justify-center lg:grid grid-cols-2 gap-10 lg:gap-[97px] mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto px-5 home5_choose_us_bg bg-left bg-local">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <img src="assets/images/choose_us2.png" alt="">
+            </div>
+            <div class="lg:max-w-[485px]">
+                <h5 class="text-[#FF6036] font-semibold text-sm md:text-base mb-4">Why Choose Us</h5>
+                <h1 class="font-semibold text-[24px] md:text-[28.5px] text-[#223645] mb-6 max-w-[309px]">Few Reasons Why
+                    You
+                    Should Choose Us</h1>
+                <div class="sm:w-[553px] flex flex-wrap items-center gap-x-[65px] gap-y-6 mt-8">
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/icons/content_planning.svg" alt="">
+                        <h3 class="text-[#223645] text-base md:text-lg font-semibold">Content Planning</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/icons/grouping_teams.svg" alt="">
+                        <h3 class="text-[#223645] text-base md:text-lg font-semibold">Content Planning</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/icons/realtime_feedback.svg" alt="">
+                        <h3 class="text-[#223645] text-base md:text-lg font-semibold">Content Planning</h3>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="assets/images/icons/connect_with_everyone.svg" alt="">
+                        <h3 class="text-[#223645] text-base md:text-lg font-semibold">Content Planning</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End leader in web -->
+    </main>
+    <!-- End Top Main -->
+
+
+    <!-- Best Features -->
+    <section class="home5_our_services_bg bg-cover mt-[150px] px-5 lg:px-0 pb-[111px]">
+        <div class="pt-[84px] max-w-[1142px] mx-auto">
+            <h6 class="text-sm md:text-base text-[#FF6036] font-semibold mb-4">Our Services</h6>
+            <h1 class="text-2xl md:text-[36px] text-white font-bold mb-[56px]">What <span
+                    class="text-[#FF6036]">Services</span> Were offering</h1>
+            <div>
+                <div
+                    class="flex flex-col sm:flex-row gap-5 text-center md:text-start items-center justify-between border-b border-[#B1B7CE] py-6">
+                    <h1 class="text-[#EBE9EF] text-lg md:text-[24px] font-semibold">Customer Support</h1>
+                    <a href="Home_5/Blog_Details.html"><img src="assets/images/icons/ei_arrow-right.svg" alt=""> </a>
+                </div>
+                <div
+                    class="flex flex-col sm:flex-row gap-5 text-center md:text-start items-center justify-between border-b border-[#B1B7CE] py-6">
+                    <h1 class="text-[#EBE9EF] text-lg md:text-[24px] font-semibold">Design & vreatives</h1>
+                    <p class="max-w-[435px] text-[#E8E8F5] text-base">“The platform has been able to accommodate our
+                        growth and a variety of event types throughout the year.”</p>
+                    <a href="Home_5/Blog_Details.html"><img src="assets/images/icons/ei_arrow-right.svg" alt=""> </a>
+                </div>
+                <div
+                    class="flex flex-col sm:flex-row gap-5 text-center md:text-start items-center justify-between border-b border-[#B1B7CE] py-6">
+                    <h1 class="text-[#EBE9EF] text-lg md:text-[24px] font-semibold">Human Resources</h1>
+                    <a href="Home_5/Blog_Details.html"><img src="assets/images/icons/ei_arrow-right.svg" alt=""> </a>
+                </div>
+                <div
+                    class="flex flex-col sm:flex-row gap-5 text-center md:text-start items-center justify-between border-b border-[#B1B7CE] py-6">
+                    <h1 class="text-[#EBE9EF] text-lg md:text-[24px] font-semibold">Marketing & Communication</h1>
+                    <a href="Home_5/Blog_Details.html"><img src="assets/images/icons/ei_arrow-right.svg" alt=""> </a>
+                </div>
+                <div
+                    class="flex flex-col sm:flex-row gap-5 text-center md:text-start items-center justify-between border-b border-[#B1B7CE] py-6">
+                    <h1 class="text-[#EBE9EF] text-lg md:text-[24px] font-semibold">Design & vreatives</h1>
+                    <a href="Home_5/Blog_Details.html"><img src="assets/images/icons/ei_arrow-right.svg" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Best Features -->
+
+    <section class="mt-[129px] max-w-[1139px] mx-auto">
+        <div class="flex flex-col items-center justify-center">
+            <h6 class="text-sm md:text-base text-[#FF6036] font-semibold mb-4">Company Fun Fact</h6>
+            <h1
+                class="max-w-[450px] text-[24px] md:text-[36px] font-semibold leading-[54px] text-[#223645] text-center">
+                Design and
+                Development across all platforms</h1>
+        </div>
+        <div class="max-w-[944px] mx-auto mt-8 youtube-link cursor-pointer" youtubeid="xcJtL7QggTI">
+            <img src="assets/images/Home5_our_services.png" alt="">
+        </div>
+        <div class="flex items-center justify-center px-5 mt-[56px] border-b border-[#E9EBEC]">
+            <div
+                class=" flex flex-wrap items-center justify-center lg:justify-between gap-6 max-w-[738px] w-full mx-auto px-10 md:px-0">
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    class="text-center pb-[17px]">
+                    <h1 class="text-[36px] lg:text-[48px] text-[#223645] font-bold mb-4">53K</h1>
+                    <p class="text-sm md:text-[16px] text-[#A09C9B]">Cool Number</p>
+                </div>
+                <div class="w-[1px] h-[111px] bg-[#E8E8E9] hidden sm:block"></div>
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                    class="text-center pb-[17px]">
+                    <h1 class="text-[36px] lg:text-[48px] text-[#223645] font-bold mb-4">10K</h1>
+                    <p class="text-sm md:text-[16px] text-[#A09C9B]">Projects Done</p>
+                </div>
+                <div class="w-[1px] h-[111px] bg-[#E8E8E9] hidden sm:block"></div>
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
+                    class="text-center pb-[17px]">
+                    <h1 class="text-[36px] lg:text-[48px] text-[#223645] font-bold mb-4">120</h1>
+                    <p class="text-sm md:text-[16px] text-[#A09C9B]">Cool Number</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home5_case_studies_bg bg-cover px-5 lg:px-0 pt-[81px] pb-[80px] mt-[128px]">
+        <div class="flex flex-col items-center justify-center">
+            <h6 class="text-base text-[#FF6036] font-semibold mb-4">Our Services</h6>
+            <h1
+                class="max-w-[450px] text-[24px] md:text-[36px] font-semibold leading-[54px] text-[#223645] text-center">
+                Design and
+                Development across all platforms</h1>
+        </div>
+        <section class="wrapper mt-[50px] md:mt-[86px] mx-auto">
+            <div class="carousel">
+                <div class="card blog-card overflow-hidden">
+                    <div class="flex flex-col md:flex-row md:items-center gap-6 w-[235px] md:w-[523px]">
+                        <div class="w-[235px]:h-full rounded-xl overflow-hidden">
+                            <img class="w-full h-full" src="assets/images/Home5_Case_studies_1.png" alt="">
+                        </div>
+                        <div class="max-w-[226px] p-3 md:p-0">
+                            <div>
+                                <h1 class="font-semibold text-[17.57px] leading-[26.4px]">With lots of unique blocks,
+                                    you
+                                    can easily build.</h1>
+                                <p class="mt-[17px] text-[11.71px] leading-[17.6px] text-[#949494]">With lots of unique
+                                    blocks, you can easily build a page without .</p>
+                                <div class="flex items-center gap-2 mt-[30px]">
+                                    <button
+                                        class="text-[#768494] text-[10.25px] px-3 py-[2px] border border-[#C1C1C1] rounded-sm">Software</button>
+                                    <button
+                                        class="text-[#768494] text-[10.25px] px-3 py-[2px] border border-[#C1C1C1] rounded-sm">Sass</button>
+                                </div>
+                                <div class="pt-[18px] mt-[18.3px] border-t border-[#676769] max-w-[215px]">
+                                    <p class="text-[10.25px] font-semibold leading-[17.6px] text-[#949494]">
+                                        Client name</p>
+                                    <h5 class="text-[11.71px] text-[#505050] font-semibold mt-1">Hardlay Khan</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card blog-card overflow-hidden">
+                    <div class="flex flex-col md:flex-row md:items-center gap-6 w-[235px] md:w-[523px]">
+                        <div class="w-[235px]:h-full rounded-xl overflow-hidden">
+                            <img class="w-full h-full" src="assets/images/Home5_Case_studies_1.png" alt="">
+                        </div>
+                        <div class="max-w-[226px] p-3 md:p-0">
+                            <div>
+                                <h1 class="font-semibold text-[17.57px] leading-[26.4px]">With lots of unique blocks,
+                                    you
+                                    can easily build.</h1>
+                                <p class="mt-[17px] text-[11.71px] leading-[17.6px] text-[#949494]">With lots of unique
+                                    blocks, you can easily build a page without .</p>
+                                <div class="flex items-center gap-2 mt-[30px]">
+                                    <button
+                                        class="text-[#768494] text-[10.25px] px-3 py-[2px] border border-[#C1C1C1] rounded-sm">Software</button>
+                                    <button
+                                        class="text-[#768494] text-[10.25px] px-3 py-[2px] border border-[#C1C1C1] rounded-sm">Sass</button>
+                                </div>
+                                <div class="pt-[18px] mt-[18.3px] border-t border-[#676769] max-w-[215px]">
+                                    <p class="text-[10.25px] font-semibold leading-[17.6px] text-[#949494]">
+                                        Client name</p>
+                                    <h5 class="text-[11.71px] text-[#505050] font-semibold mt-1">Hardlay Khan</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card blog-card overflow-hidden">
+                    <div class="flex flex-col md:flex-row md:items-center gap-6 w-[235px] md:w-[523px]">
+                        <div class="w-[235px]:h-full rounded-xl overflow-hidden">
+                            <img class="w-full h-full" src="assets/images/Home5_Case_studies_1.png" alt="">
+                        </div>
+                        <div class="max-w-[226px] p-3 md:p-0">
+                            <div>
+                                <h1 class="font-semibold text-[17.57px] leading-[26.4px]">With lots of unique blocks,
+                                    you
+                                    can easily build.</h1>
+                                <p class="mt-[17px] text-[11.71px] leading-[17.6px] text-[#949494]">With lots of unique
+                                    blocks, you can easily build a page without .</p>
+                                <div class="flex items-center gap-2 mt-[30px]">
+                                    <button
+                                        class="text-[#768494] text-[10.25px] px-3 py-[2px] border border-[#C1C1C1] rounded-sm">Software</button>
+                                    <button
+                                        class="text-[#768494] text-[10.25px] px-3 py-[2px] border border-[#C1C1C1] rounded-sm">Sass</button>
+                                </div>
+                                <div class="pt-[18px] mt-[18.3px] border-t border-[#676769] max-w-[215px]">
+                                    <p class="text-[10.25px] font-semibold leading-[17.6px] text-[#949494]">
+                                        Client name</p>
+                                    <h5 class="text-[11.71px] text-[#505050] font-semibold mt-1">Hardlay Khan</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+
+    <!-- Bottom Main -->
+    <main class="max-w-[1137px] mx-auto">
+
+        <section
+            class="px-5 lg:px-0 pt-[81px] pb-[80px] mt-[128px] max-w-[1118px] mx-auto flex flex-col md:flex-row items-center gap-20">
+            <div>
+                <div class="">
+                    <h6 class="text-base text-[#FF6036] font-semibold mb-4">TESTIMONAL</h6>
+                    <h1 class="max-w-[340px] text-[24px] md:text-[28.5px] font-semibold leading-[54px] text-[#223645]">
+                        Why
+                        Clients Love Us</h1>
+                    <div class="mt-6">
+                        <img src="assets/images/about_textimonal.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hidden sm:block sm:w-[500px] h-[300px] mt-16">
+                <div class='wrapper2'>
+                    <div class='carousel2'>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='carousel__item'>
+                            <div class="p-6 rounded-2xl flex gap-[17px] max-w-[382px] love_us_card">
+                                <div
+                                    class="profile2 min-w-[50px] md:min-w-[72px] h-[50px] md:h-[72px] rounded-full bg-cover">
+                                </div>
+                                <div class="max-w-[245px]">
+                                    <div class="flex items-center gap-1">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_dark.svg" alt="">
+                                        <img class="w-4 md:w-auto" src="assets/images/icons/star_light.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <p class="text-[#676769] text-xs md:text-sm py-2">“The platform has been able to
+                                            accommodate
+                                            our
+                                            growth and
+                                            a variety of event types throughout the year.”</p>
+                                        <p class="text-[11px] text-[#879295]">Hunter A., Head of Growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col md:flex-row gap-7 md:items-end justify-between px-5">
+            <div class="mt-[86px] md:w-[588px] px-5 md:px-0">
+                <div class="text-center md:text-start">
+                    <h6 class="text-base text-[#FF6036] font-semibold mb-4">FAQ</h6>
+                    <h1
+                        class="max-w-[340px] mx-auto md:mx-0 text-[24px] md:text-[28.5px] font-semibold leading-[54px] text-[#223645]">
+                        Frequently Asked Questions</h1>
+                </div>
+                <div class="mt-[42px]">
+                    <div onclick="accordionHandler180(this)" class="border border-[#E7E9ED] rounded-xl  py-5 mb-4 cursor-pointer">
+                        <div class="flex items-center justify-between px-6">
+                            <p class="text-base text-[#2C2003] font-semibold">Can I use Albino for my clients?</p>
+                            <div
+                                class="h-6 w-6 flex items-center justify-center rounded-full bg-[#E7E7E8] duration-300">
+                                <img src="assets/images/icons/accordion-arrow.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="max-w-[789px] leading-[24px] mt-5 pt-5 border-t border-[#D9DCDF] h-0 overflow-hidden hidden px-6">
+                            <p class="text-[#676769]">With lots of unique blocks, you can easily build a page without
+                                coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis
+                                a
+                                porta. Aliquam sagittis interdum Melisandre.</p>
+                        </div>
+                    </div>
+                    <div onclick="accordionHandler180(this)" class="border border-[#E7E9ED] rounded-xl  py-5 mb-4 cursor-pointer">
+                        <div class="flex items-center justify-between px-6">
+                            <p class="text-base text-[#2C2003] font-semibold">Can I use Albino for my clients?</p>
+                            <div
+                                class="h-6 w-6 flex items-center justify-center rounded-full bg-[#E7E7E8] duration-300">
+                                <img src="assets/images/icons/accordion-arrow.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="max-w-[789px] leading-[24px] mt-5 pt-5 border-t border-[#D9DCDF] h-0 overflow-hidden hidden px-6">
+                            <p class="text-[#676769]">With lots of unique blocks, you can easily build a page without
+                                coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis
+                                a
+                                porta. Aliquam sagittis interdum Melisandre.</p>
+                        </div>
+                    </div>
+                    <div onclick="accordionHandler180(this)" class="border border-[#E7E9ED] rounded-xl  py-5 mb-4 cursor-pointer">
+                        <div class="flex items-center justify-between px-6">
+                            <p class="text-base text-[#2C2003] font-semibold">Can I use Albino for my clients?</p>
+                            <div
+                                class="h-6 w-6 flex items-center justify-center rounded-full bg-[#E7E7E8] duration-300">
+                                <img src="assets/images/icons/accordion-arrow.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="max-w-[789px] leading-[24px] mt-5 pt-5 border-t border-[#D9DCDF] h-0 overflow-hidden hidden px-6">
+                            <p class="text-[#676769]">With lots of unique blocks, you can easily build a page without
+                                coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis
+                                a
+                                porta. Aliquam sagittis interdum Melisandre.</p>
+                        </div>
+                    </div>
+                    <div onclick="accordionHandler180(this)" class="border border-[#E7E9ED] rounded-xl  py-5 mb-4 cursor-pointer">
+                        <div class="flex items-center justify-between px-6">
+                            <p class="text-base text-[#2C2003] font-semibold">Can I use Albino for my clients?</p>
+                            <div
+                                class="h-6 w-6 flex items-center justify-center rounded-full bg-[#E7E7E8] duration-300">
+                                <img src="assets/images/icons/accordion-arrow.svg" alt="">
+                            </div>
+                        </div>
+                        <div
+                            class="max-w-[789px] leading-[24px] mt-5 pt-5 border-t border-[#D9DCDF] h-0 overflow-hidden hidden px-6">
+                            <p class="text-[#676769]">With lots of unique blocks, you can easily build a page without
+                                coding. Build your next landing page. Integer ut Oberyn massa. Sed feugiat vitae turpis
+                                a
+                                porta. Aliquam sagittis interdum Melisandre.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <img src="assets/images/Home5_FAQ.png" alt="">
+            </div>
+        </section>
+        <section class="mt-[150px]">
+            <div class="flex flex-col items-center justify-center">
+                <h6 class="text-sm md:text-base text-[#FF6036] font-semibold mb-4">Our Blogs</h6>
+                <h1
+                    class="max-w-[450px] text-[24px] md:text-[28.5px] font-semibold leading-[54px] text-[#223645] text-center">
+                    Why Our Clients Love Us?</h1>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center lg:items-stretch mt-[50px] gap-8">
+                <div class="p-6 rounded-xl max-w-[490px] blog-card flex flex-col gap-6 sm:gap-[42px]">
+                    <div class="w-full sm:w-[442px] sm:h-[305px]">
+                        <img src="assets/images/home5_client_1.png" alt="">
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <p class="text-[#676769] text-sm font-semibold">Business</p>
+                            <p class="text-[#676769] text-sm font-semibold">October 30,2022</p>
+                        </div>
+                        <h1 class="text-[24px] font-semibold text-[#2C2003] mt-4">Create Stunning websites Like a Pro
+                            with Taypo</h1>
+                        <p class="text-[#959595] text-base mt-2">We partner closely with the most progressive companies
+                            in the world to improve We partner closely with the most progressive </p>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-between">
+                    <div
+                        class="p-6 rounded-xl max-w-[490px] md:max-w-[618px] blog-card flex flex-col md:flex-row items-end gap-8">
+                        <div class="w-full sm:w-[442px] h-[305px] md:w-[229px] md:h-[234px]">
+                            <img class="w-full h-full" src="assets/images/home5_client_2.png" alt="">
+                        </div>
+                        <div class="md:max-w-[310px]">
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#676769] text-sm font-semibold">Business</p>
+                                <p class="text-[#676769] text-sm font-semibold">October 30,2022</p>
+                            </div>
+                            <h1 class="text-[24px] font-semibold text-[#2C2003] mt-4">Create Stunning websites Like a
+                                Pro with Taypo</h1>
+                            <p class="text-[#959595] text-base mt-2">We partner closely with the most progressive
+                                companies in the world to improve We partner closely with the most progressive </p>
+                        </div>
+                    </div>
+                    <div
+                        class="p-6 rounded-xl max-w-[490px] md:max-w-[618px] blog-card flex flex-col md:flex-row items-end gap-8">
+                        <div class="w-full sm:w-[442px] h-[305px] md:w-[229px] md:h-[234px]">
+                            <img class="w-full h-full" src="assets/images/home5_client_2.png" alt="">
+                        </div>
+                        <div class="md:max-w-[310px]">
+                            <div class="flex items-center justify-between">
+                                <p class="text-[#676769] text-sm font-semibold">Business</p>
+                                <p class="text-[#676769] text-sm font-semibold">October 30,2022</p>
+                            </div>
+                            <h1 class="text-[24px] font-semibold text-[#2C2003] mt-4">Create Stunning websites Like a
+                                Pro with Taypo</h1>
+                            <p class="text-[#959595] text-base mt-2">We partner closely with the most progressive
+                                companies in the world to improve We partner closely with the most progressive </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- End Bottom Main -->
+    <footer class="home5_footer_bg bg-cover mt-[114px] pt-[83px] pb-[56px] px-5">
+        <section class="max-w-[1140px] mx-auto">
+            <div>
+                <h1 class="text-[#223645] text-[36px] leading-[54px] text-center font-bold">Were Ready to Grow you
+                    Business,
+                    <br> Get Start Today!
+                </h1>
+                <div class="flex items-center justify-center">
+                    <button
+                        class="px-[30px] py-[13px] rounded-md text-[15px] font-semibold text-white bg-[#FF6036] mt-[52px]">Get
+                        Started Now</button>
+                </div>
+                <div class="flex items-center justify-center gap-2 mt-3">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/images/icons/home5_star.svg" alt="">
+                        <img src="assets/images/icons/home5_star.svg" alt="">
+                        <img src="assets/images/icons/home5_star.svg" alt="">
+                        <img src="assets/images/icons/home5_star.svg" alt="">
+                        <img src="assets/images/icons/home5_half_star.svg" alt="">
+                    </div>
+                    <p class="text-xs text-[#223645]">4.9 out of 5</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-[#223645] mt-[86px] pt-[70px] pb-[50px] px-5 rounded-lg flex flex-col items-center justify-center gap-6">
+                <div class="xl:w-[997px] flex flex-wrap gap-8 justify-between">
+                    <div>
+                        <p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Company</p>
+                        <div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+                            <a href="#">About us</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Press</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Product</p>
+                        <div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+                            <a href="#">Features</a>
+                            <a href="#">Pricing</a>
+                            <a href="#">News</a>
+                            <a href="#">Help desk</a>
+                            <a href="#">Support</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Company</p>
+                        <div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+                            <a href="#">Digital Marketing</a>
+                            <a href="#">Contact Writing</a>
+                            <a href="#">SEO for Business</a>
+                            <a href="#">UI Design</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="pb-4 border-b border-[#51516F] text-white w-[105px] text-sm">Newsletter</p>
+                        <div class="text-[#B6C1D1] mt-6 flex flex-col gap-6 text-sm">
+                            <p class="w-[186px]">Register now to Get Latest Uploaded on MA.</p>
+                        </div>
+                        <div
+                            class="bg-[#1E303D] rounded-md w-[221px] border border-[#52606A] h-[56px] px-4 flex items-center justify-between mt-10">
+                            <div class="flex items-center justify-between">
+                                <div class="w-[105px] overflow-hidden">
+                                    <input class="text-sm text-[#9DA9B1] bg-transparent" type="text"
+                                        placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div>
+                                <img src="assets/images/icons/wpf_sent.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex items-center flex-wrap justify-between gap-5 pt-6 border-t border-[#595959] max-w-[957px] w-full px-5">
+                    <p class="text-[#7C8796] text-sm">Copyright@ 2023 Multipurpose Agency all right resurved</p>
+                    <div class="flex items-center gap-6">
+                        <p class="text-[#717C8B] text-sm">Follow on</p>
+                        <div class="flex items-center gap-4">
+                            <a href="#"><img src="assets/images/icons/Facebook5.svg" alt=""></a>
+                            <a href="#"><img src="assets/images/icons/twitter5.svg" alt=""></a>
+                            <a href="#"><img src="assets/images/icons/linkedin5.svg" alt=""></a>
+                            <a href="#"><img src="assets/images/icons/instagram5.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/libs/gallery_carousel.js"></script>
+    <script src="assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src="assets/js/libs/grt-youtube-popup.js"></script>
+ 
+     <!-- Initialize GRT Youtube Popup plugin -->
+     <script>
+         // Demo video 1
+         $(".youtube-link").grtyoutube({
+             autoPlay: true,
+             theme: "dark"
+         });
+     </script>
+</body>
+
+</html>

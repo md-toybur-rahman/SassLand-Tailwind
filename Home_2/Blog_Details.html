@@ -14,11 +14,14 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
+
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -27,21 +30,22 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
                                 <li><a href="../Home.html">Home 1</a></li>
-                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -61,6 +65,7 @@
                                 <li><a href="#">Utility</a></li>
                                 <li><a href="Gallery.html">Gallery</a></li>
                                 <li><a href="404.html">404</a></li>
+                                <li><a href="Trams_Conditions.html">Trams & Conditions</a></li>
                                 <li class="relative contact-variation-container">
                                     <a href="#">Contact Us</a>
                                     <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
@@ -77,7 +82,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -93,24 +98,25 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
+                <a href="../Home2.html">
                     <img class="w-[100px] md:w-auto" src="../assets/images/icons/home2-logo.svg" alt="">
-                </div>
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
                                 <li><a href="../Home.html">Home 1</a></li>
-                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -119,7 +125,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -130,6 +136,7 @@
                                 <li><a href="#">Utility</a></li>
                                 <li><a href="Gallery.html">Gallery</a></li>
                                 <li><a href="404.html">404</a></li>
+                                <li><a href="Trams_Conditions.html">Trams & Conditions</a></li>
                                 <li class="relative contact-variation-container">
                                     <a href="#">Contact Us</a>
                                     <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
@@ -146,7 +153,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -172,23 +179,24 @@
 
 
     <!-- Top Main -->
-    <main class="max-w-[1142px] mx-auto px-5 xl:px-0 mt-[50px]">
+    <main class="max-w-[1142px] overflow-hidden md:overflow-visible mx-auto px-5 mt-0 md:mt-[50px]">
         <section class="flex flex-wrap md:flex-nowrap justify-center items-start gap-10 md:gap-[25px] xl:gap-[32px]">
 
 
             <!-- Innovative Solutions -->
-            <section class="bg-[#FFFCF6] p-8 pb-[85px]">
-                <h1 class="font-bold text-[#2C2003] text-[36px]">Our mission is to transform the design</h1>
+            <section class="bg-[#FFFCF6] overflow-hidden pt-4 px-4 md:pt-8 md:px-8 pb-[85px]">
+                <h1 class="font-bold text-[#2C2003] text-[36px] text-center md:text-start">Our mission is to transform
+                    the design</h1>
 
-                <div class="mt-[32px] flex items-center gap-2">
+                <div class="mt-[32px] flex items-center justify-center md:justify-start gap-2">
                     <div class="profile2 min-w-[50px] md:min-w-[52px] h-[50px] md:h-[52px] rounded-full bg-cover">
                     </div>
                     <p class="text-[14px] text-[#FFB200]">Hunter A., Head of Growth</p>
                 </div>
-                <div class="mt-[64px]">
+                <div data-aos="fade-in" data-aos-duration="2000" class="mt-[30px] md:mt-[64px]">
                     <img src="../assets/images/blog-details-home2.png" alt="">
                 </div>
-                <div class="mt-[44px]">
+                <div class="mt-6 md:mt-[44px]">
                     <p class="text-[#646464] ">At this point, you need to consider which platforms to publish the
                         content on. Beyond publishing to your brand website or embedding in marketing emails, video
                         content can be posted on a best variety of social media platforms. <br> <br>
@@ -201,7 +209,8 @@
                         she believes, also value video content more than other content. Telling engagi stories through
                         videos, therefore, could generate greater leads on these platforms than </p>
                 </div>
-                <div class="mt-[64px] h-[158px] home2-blog-bg bg-cover rounded-2xl ps-[31px] pe-[10px] pt-[51px]">
+                <div
+                    class="mt-[64px] h-auto md:h-[158px] home2-blog-bg bg-cover rounded-2xl px-5 py-10 md:px-0 md:py-0 md:ps-[31px] md:pe-[10px] md:pt-[51px]">
                     <h1 class="font-medium text-[#2C2003] leading-[27px] text-lg">“The best free way for SaaS companies
                         to start leveraging video is using free social media tools like Facebook Live or Instagram,”
                         said Caneva. </h1>
@@ -215,15 +224,22 @@
                 </div>
                 <div class="flex gap-3 md:gap-[18px] items-end mt-6">
                     <div class="flex flex-col items-end gap-3 md:gap-[18px]">
-                        <img src="../..//assets/images/Rectangle46.png" alt="">
-                        <img class="w-[100px] md:w-[156px]" src="../..//assets/images/Rectangle47.png" alt="">
+                        <img data-aos="fade-down-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-delay="0" src="../../assets/images/Rectangle46.png" alt="">
+                        <img data-aos="fade-up-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-delay="0" class="w-[100px] md:w-[156px]" src="../../assets/images/Rectangle47.png"
+                            alt="">
                     </div>
                     <div>
-                        <img src="../..//assets/images/Rectangle45.png" alt="">
+                        <img data-aos="fade-in" data-aos-duration="2000" src="../../assets/images/Rectangle45.png"
+                            alt="">
                     </div>
                     <div class="flex flex-col gap-[6px] md:gap-[10px]">
-                        <img class="w-[100px] md:w-[156px]" src="../..//assets/images/Rectangle48.png" alt="">
-                        <img src="../..//assets/images/Rectangle49.png" alt="">
+                        <img data-aos="fade-down-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-delay="0" class="w-[100px] md:w-[156px]" src="../../assets/images/Rectangle48.png"
+                            alt="">
+                        <img data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-delay="0" src="../../assets/images/Rectangle49.png" alt="">
                     </div>
                 </div>
             </section>
@@ -242,23 +258,23 @@
                         <hr class="mt-[20px] max-w-[311px] border-t border-[#ECE8DF]">
                         <div class="mt-[22px] max-w-[300px]">
                             <div>
-                                <p class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</p>
+                                <a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</a>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
                             </div>
                             <div class="mt-2">
-                                <p class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</p>
+                                <a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</a>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
                             </div>
                             <div class="mt-2">
-                                <p class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</p>
+                                <a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</a>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
                             </div>
                             <div class="mt-2">
-                                <p class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</p>
+                                <a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</a>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
                             </div>
                             <div class="mt-2">
-                                <p class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</p>
+                                <a href="Blog.html" class="text-[#676769] text-sm">Marketing Strategies & Innovations (05)</a>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
                             </div>
 
@@ -268,31 +284,31 @@
                         <h1 class="text-[24px] font-semibold text-[#2C2003]">Recent posts</h1>
                         <hr class="mt-[20px] max-w-[311px] border-t border-[#ECE8DF]">
                         <div class="mt-[22px] max-w-[319px]">
-                            <div>
+                            <a href="Blog.html">
                                 <p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
                                 <p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
-                            </div>
-                            <div class="mt-2">
+                            </a>
+                            <a href="Blog.html" class="mt-2">
                                 <p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
                                 <p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
-                            </div>
-                            <div class="mt-2">
+                            </a>
+                            <a href="Blog.html" class="mt-2">
                                 <p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
                                 <p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
-                            </div>
-                            <div class="mt-2">
+                            </a>
+                            <a href="Blog.html" class="mt-2">
                                 <p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
                                 <p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
-                            </div>
-                            <div class="mt-2">
+                            </a>
+                            <a href="Blog.html" class="mt-2">
                                 <p class="text-[#676769] text-base">Don’t Count on Freeto Win You Customers</p>
                                 <p class="text-[#B1B1B1] text-sm">July 02, 2021</p>
                                 <hr class="mt-2 border-t border-[#ECE8DF]">
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="mt-[52px]">
@@ -318,10 +334,10 @@
             <!-- End Blog Categories-->
         </section>
 
-        <section class="mt-[156px]">
+        <section class="mt-[70px] md:mt-[156px]">
             <h1 class="text-[24px] font-bold text-[#2C2003] text-center lg:text-start">Related Posts</h1>
-            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-[34px] mt-[42px]">
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0"
+            <div class="flex flex-wrap lg:flex-nowrap items-center justify-center gap-[34px] mt-[42px] pb-10">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0"
                     class="card px-[9px] pt-[9px] pb-[30px] blog-card rounded-lg max-w-[364px]">
                     <div class="h-[196px] rounded-lg">
                         <img class="w-full h-full overflow-hidden" src="../assets/images/home2-blog-img.png" alt="">
@@ -339,7 +355,7 @@
                         </a>
                     </div>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0"
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200"
                     class="card px-[9px] pt-[9px] pb-[30px] blog-card rounded-lg max-w-[364px]">
                     <div class="h-[196px] rounded-lg">
                         <img class="w-full h-full overflow-hidden" src="../assets/images/home2-blog-img.png" alt="">
@@ -357,7 +373,7 @@
                         </a>
                     </div>
                 </div>
-                <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="0"
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400"
                     class="card px-[9px] pt-[9px] pb-[30px] blog-card rounded-lg max-w-[364px]">
                     <div class="h-[196px] rounded-lg">
                         <img class="w-full h-full overflow-hidden" src="../assets/images/home2-blog-img.png" alt="">
@@ -383,20 +399,20 @@
 
     <!-- Footer -->
     <footer class="mt-[100px] md:mt-[132px] px-[30px] lg:px-[150px] pt-[50px] lg:pt-[126px] pb-[30px] lg:pb-[56px]">
-        <div class="flex flex-col md:flex-row gap-3 items-center justify-between mb-6 px-5">
+        <div class="flex flex-col md:flex-row gap-3 items-center justify-between mb-6">
             <div class="md:hidden">
                 <img src="../assets/images/icons/align-justify.svg" alt="">
             </div>
             <div class="flex items-center gap-1">
                 <img class="w-[120px] md:w-auto" src="../assets/images/icons/home2-logo.svg" alt="">
             </div>
-            <ul class="flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#25373F]">
+            <ul class="flex items-center gap-4 md:gap-6 text-[14px] font-semibold text-[#25373F]">
                 <li>
                     <div class="dropdown dropdown-hover">
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Home </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -404,7 +420,7 @@
                             <li><a href="../Home.html">Home 1</a></li>
                             <li><a href="../Home2.html">Home 2</a></li>
                             <li><a href="../Home3.html">Home 3</a></li>
-                            <li><a href="..//Home4.html">Home 4</a></li>
+                            <li><a href="../Home4.html">Home 4</a></li>
                         </ul>
                     </div>
                 </li>
@@ -413,7 +429,7 @@
                         <label tabindex="0" class="home2-footer-page-label">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Pages </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -441,7 +457,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Components </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -472,6 +488,10 @@
 
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

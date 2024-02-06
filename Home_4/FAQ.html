@@ -14,12 +14,13 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
 
     <!-- Tailwind Css -->
-    <!-- <link rel="stylesheet" href="../assets/css/libs/tailwind.css"> -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -28,13 +29,13 @@
             <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between bg-white">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-white">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -43,6 +44,7 @@
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
                                 <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -51,7 +53,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -72,7 +74,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -88,9 +90,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div class="flex items-center gap-1">
+                <a href="../Home4.html" class="flex items-center gap-1">
                     <img class="w-[100px] md:w-auto" src="../assets/images/icons/home4-logo2.svg" alt="">
-                </div>
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#242221]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -106,6 +108,7 @@
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
                                 <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -253,10 +256,10 @@
 
 
     <!-- Banner Section -->
-    <section class="h-[326px] lg:flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
+    <section class="h-[290px] md:h-[326px] flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="max-w-[746px] text-center">
-                <h1 class="font-bold text-[#E35C30] text-[24px] lg:text-[36px] leading-[72px] mb-6">FAQs</h1>
+                <h1 class="font-bold text-[#E35C30] text-[24px] lg:text-[36px] leading-[72px] mb-4 md:mb-6">FAQs</h1>
             </div>
         </div>
     </section>
@@ -267,20 +270,20 @@
 
         <!-- Team Leader -->
         <section class="mt-[60px] md:mt-[60px] px-5 xl:px-0">
-            <div class="flex items-center justify-center gap-6">
-                <div
+            <div class="flex flex-wrap items-center justify-center gap-6">
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
                     class="w-[171px] h-[119px] py-6 flex items-end justify-center px-5 mini-card hover:bg-[#E35C30] rounded-lg text-center">
                     <div>
                         <p class="text-base text-[#676769] font-medium">Getting Started</p>
                     </div>
                 </div>
-                <div
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
                     class="w-[171px] h-[119px] py-6 flex items-end justify-center px-5 mini-card hover:bg-[#E35C30] rounded-lg text-center">
                     <div>
                         <p class="text-base text-[#676769] font-medium">Pricing & Planes</p>
                     </div>
                 </div>
-                <div
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
                     class="w-[171px] h-[119px] py-6 flex items-end justify-center px-5 mini-card hover:bg-[#E35C30] rounded-lg text-center">
                     <div>
                         <p class="text-base text-[#676769] font-medium">Sales Question</p>
@@ -381,7 +384,7 @@
     <!-- Ready to Started -->
     <section class="rounded-2xl mt-[50px] md:mt-[120px] max-w-[1142px] mx-auto px-5 xl:px-0">
         <div
-            class="home4-faq-bg bg-cover py-[56px] px-[71px] flex justify-between items-center rounded-2xl flex-wrap gap-5">
+            class="home4-faq-bg bg-cover py-[56px] px-5 md:px-[71px] flex justify-between items-center rounded-2xl flex-wrap gap-5">
             <div>
                 <h1 class="text-[24px] md:text-[36px] text-[#2C2003] font-semibold mb-4">Ready to get started?</h1>
                 <p class="text-base md:text-[20px] text-[#392904] font-medium max-w-[521px]">Amet minim mollit non
@@ -473,6 +476,10 @@
 
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

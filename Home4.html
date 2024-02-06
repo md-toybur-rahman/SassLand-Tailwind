@@ -14,11 +14,16 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/css/libs/aos.css">
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+     <!-- GRT Youtube Plugin CSS -->
+     <link rel="stylesheet" href="assets/css/libs/grt-youtube-popup.css">
+
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -27,13 +32,13 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-white">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -41,7 +46,7 @@
                                 <li><a href="Home.html">Home 1</a></li>
                                 <li><a href="Home2.html">Home 2</a></li>
                                 <li><a href="Home3.html">Home 3</a></li>
-                                <li><a href="Home4.html">Home 4</a></li>
+                                <li><a href="Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,7 +55,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -71,7 +76,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -85,11 +90,11 @@
                 </ul>
                 <!-- end mobile menubar -->
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
-                    <img src="assets/images/icons/align-justify-dark.svg" alt="">
+                    <img src="assets/images/icons/align-justify.svg" alt="">
                 </div>
-                <div class="flex items-center gap-1">
+                <a href="index.html" class="flex items-center gap-1">
                     <img class="w-[100px] md:w-auto" src="assets/images/icons/home4-logo.svg" alt="">
-                </div>
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-white">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -104,7 +109,7 @@
                                 <li><a href="Home.html">Home 1</a></li>
                                 <li><a href="Home2.html">Home 2</a></li>
                                 <li><a href="Home3.html">Home 3</a></li>
-                                <li><a href="Home4.html">Home 4</a></li>
+                                <li><a href="Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -255,13 +260,16 @@
 
 
             <!-- Banner Section -->
-            <section class="pt-[87px] pb-[195px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">
+            <section
+                class="pt-[50px] md:pt-[87px] pb-[100px] md:pb-[195px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">
                 <div class="flex flex-col items-center justify-center w-full">
                     <div class="max-w-[613px] text-center">
                         <p
                             class="text-sm font-medium max-w-[238px] py-[7px] mx-auto bg-white/[7%] border border-white/[12%] rounded-full text-white">
                             Announcing Our Beta Product</p>
-                        <h1 class="font-bold text-white text-[36px] lg:text-[57px] leading-[72px] mb-9 mt-10">Transform
+                        <h1
+                            class="font-bold text-white text-[24px] sm:text-[36px] lg:text-[57px] leading-[72px] mb-9 mt-10">
+                            Transform
                             Your Website with
                             Sass</h1>
                         <p class="text-sm md:text-base lg:text-[20px] font-medium leading-[36px] text-[#BAD0E5] mb-9">
@@ -286,28 +294,31 @@
     </div>
 
     <section>
-        <div class="bg-[#FEF8F7] h-[300px] flex items-center justify-center">
+        <div class="bg-[#FEF8F7] h-[300px] flex items-center justify-center px-5">
             <div
                 class=" flex flex-wrap items-center justify-center lg:justify-between gap-6 max-w-[1010px] w-full mx-auto px-10 md:px-0">
-                <div class="text-center">
-                    <h1 class="text-[48px] md:text-[85px] text-[#F9C242] font-bold mb-4">53K</h1>
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    class="text-center">
+                    <h1 class="text-[48px] lg:text-[85px] text-[#F9C242] font-bold mb-4">53K</h1>
                     <p class="text-sm md:text-[18px] text-[#A09C9B]">Cool Number</p>
                 </div>
                 <div class="w-[1px] h-[104px] bg-[#E8E8E9]"></div>
-                <div class="text-center">
-                    <h1 class="text-[48px] md:text-[85px] text-[#F9C242] font-bold mb-4">10K</h1>
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                    class="text-center">
+                    <h1 class="text-[48px] lg:text-[85px] text-[#F9C242] font-bold mb-4">10K</h1>
                     <p class="text-sm md:text-[18px] text-[#A09C9B]">Projects Done</p>
                 </div>
                 <div class="w-[1px] h-[104px] bg-[#E8E8E9]"></div>
-                <div class="text-center">
-                    <h1 class="text-[48px] md:text-[85px] text-[#F9C242] font-bold mb-4">120</h1>
+                <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
+                    class="text-center">
+                    <h1 class="text-[48px] lg:text-[85px] text-[#F9C242] font-bold mb-4">120</h1>
                     <p class="text-sm md:text-[18px] text-[#A09C9B]">Cool Number</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Top Main -->
-    <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
+    <main class="max-w-[1142px] mx-auto overflow-hidden md:overflow-visible px-5 xl:px-0">
 
         <!-- Our Best Features -->
         <section class="mt-[80px] md:mt-[106px] max-w-[1176px] px-5 xl:px-0">
@@ -317,7 +328,8 @@
             </div>
             <!-- <div class="flex flex-col items-center md:grid grid-cols-3 gap-[22px]"> -->
             <div class="flex items-center gap-[44px] flex-wrap justify-center">
-                <div class="px-[24px] pt-[68px] pb-[44px] max-w-[343px] bg-white border border-[#EDEDED] rounded-2xl">
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    class="px-[24px] pt-[68px] pb-[44px] max-w-[343px] bg-white border border-[#EDEDED] rounded-2xl">
                     <img class="mb-8 max-w-[126px]" src="assets/images/icons/Designer1-home4.svg" alt="">
                     <h1 class="text-lg md:text-2xl font-semibold text-[#14202D] mb-6">Design & Vreatives</h1>
                     <p class="text-sm md:text-base text-[#74889C] leading-[22.7px] mb-[52px]">Amet minim mollit non
@@ -326,7 +338,7 @@
                     <a class="text-xs md:text-sm py-[11px] rounded-full border border-[#E35C30] font-normal flex items-center justify-center text-[#E35C30] max-w-[273px]"
                         href="#">Get Started</a>
                 </div>
-                <div
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
                     class="ps-[24px] pe-[27px] pt-[70px] pb-[44px] max-w-[343px] bg-white border border-[#EDEDED] rounded-2xl">
                     <img class="mb-7 max-w-[126px]" src="assets/images/icons/Designer2-home4.svg" alt="">
                     <h1 class="text-lg md:text-2xl font-semibold text-[#14202D] mb-4">Team Accounts</h1>
@@ -335,7 +347,7 @@
                     <a class="text-xs md:text-sm py-[11px] rounded-full border border-[#E35C30] font-normal flex items-center justify-center text-[#E35C30] max-w-[273px]"
                         href="#">Get Started</a>
                 </div>
-                <div
+                <div data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out"
                     class="ps-[24px] pe-[27px] pt-[70px] pb-[44px] max-w-[343px] bg-white border border-[#EDEDED] rounded-2xl">
                     <img class="mb-7 max-w-[126px]" src="assets/images/icons/Designer3-home4.svg" alt="">
                     <h1 class="text-lg md:text-2xl font-semibold text-[#14202D] mb-4">Branding</h1>
@@ -354,7 +366,8 @@
         <section
             class="flex flex-wrap md:flex-nowrap items-center justify-center lg:justify-between gap-[86px] mt-[100px] md:mt-[150px]">
             <div>
-                <img src="assets/images/Sleek-slider-image.png" alt="">
+                <img data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    src="assets/images/Sleek-slider-image.png" alt="">
             </div>
             <div class="max-w-[553px]">
                 <div class="mb-6">
@@ -390,7 +403,7 @@
 
 
     <!-- Bottom Main -->
-    <main class="max-w-[1137px] mx-auto">
+    <main class="max-w-[1137px] mx-auto overflow-hidden md:overflow-visible">
         <!-- Testimonials Section -->
         <section class="px-5 lg:px-0 mt-[100px] md:mt-[156px]">
             <div class="flex flex-col items-center justify-center mb-[98px]">
@@ -406,7 +419,7 @@
             <div>
                 <div class="flex flex-wrap items-center gap-6 mb-6">
                     <div
-                        class="md:h-[348px] w-[705px] home4-testimonials bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
+                        class="md:h-[348px] w-full xl:w-[705px] home4-testimonials bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
                         <div>
                             <h1 class="text-lg md:text-[24px] leading-[36px] text-white">“The platform has been able to
                                 accommodate our
@@ -420,15 +433,15 @@
                                     </div>
                                     <p class="text-base md:text-[20px] text-[#E2E2E2]">Hunter A., Head of Growth</p>
                                 </div>
-                                <img class="w-10 md:w-auto" src="assets/images/icons/play.svg" alt="">
+                                <img class="w-10 md:w-auto youtube-link cursor-pointer" youtubeid="xcJtL7QggTI" src="assets/images/icons/play.svg" alt="">
                             </div>
                         </div>
                     </div>
                     <div
-                        class="md:h-[348px] w-full md:w-[407px] bg-[#E35C30] rounded-2xl md:ps-[28px] md:pe-[71px] md:pb-[28px] p-5 md:p-0 flex items-end">
+                        class="md:h-[348px] w-full xl:w-[407px] bg-[#E35C30] rounded-2xl md:ps-[28px] md:pe-[71px] md:pb-[28px] p-5 md:p-0 flex items-center xl:items-end justify-center xl:justify-start">
                         <div>
-                            <h1 class="font-semibold text-[50px] md:text-[73px] text-white">98%</h1>
-                            <p class="font-semibold text-lg md:text-[24px] leading-[36px] text-white max-w-[230px]">of
+                            <h1 class="font-semibold text-[50px] md:text-[73px] text-white text-center xl:text-start">98%</h1>
+                            <p class="font-semibold text-lg md:text-[24px] leading-[36px] text-white xl:max-w-[230px] text-center xl:text-start">of
                                 customers recommend sassland
                                 services</p>
                         </div>
@@ -436,17 +449,17 @@
                 </div>
                 <div class="flex flex-wrap gap-6">
                     <div
-                        class="w-full md:w-[397px] md:h-[367px] bg-[#343130] rounded-2xl md:ps-[33px] md:pe-[25px] md:pb-[24px] p-5 md:p-0 flex items-center md:items-end justify-center md:justify-start">
+                        class="w-full xl:w-[397px] md:h-[367px] bg-[#343130] rounded-2xl md:ps-[33px] md:pe-[25px] md:pb-[24px] p-5 md:p-0 flex items-center xl:items-end justify-center xl:justify-start">
                         <div>
                             <p class="font-semibold text-lg md:text-[26px] text-white leading-[36px] mb-12">How Christos
                                 Fellas
                                 Saves 25 hours
                                 a Month </p>
-                            <img class="w-full md:w-auto" src="assets/images/testimonials2.svg" alt="">
+                            <img class="w-full md:w-auto mx-auto xl:mx-0" src="assets/images/testimonials2.svg" alt="">
                         </div>
                     </div>
                     <div
-                        class="md:h-[367px] w-full md:w-[716px] px-5 md:px-[60px] py-5 md:py-[42px] rounded-2xl border border-[#E5E8EC]">
+                        class="md:h-[367px] w-full xl:w-[716px] px-5 md:px-[60px] py-5 md:py-[42px] rounded-2xl border border-[#E5E8EC]">
                         <div>
                             <div class="flex items-center gap-1">
                                 <img class="w-[30px] md:w-[42px]" src="assets/images/icons/brown-star.svg" alt="">
@@ -478,12 +491,18 @@
             class="flex items-center justify-center mt-[50px] lg:mt-[89px] px-5 border-t border-[#E9E0DE] pt-[42px]">
             <div>
                 <div class="flex flex-wrap items-center justify-center gap-[30px] md:gap-[86px]">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/git-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/evernote-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/zendesk-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/kayako-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/intercom-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="assets/images/icons/treehouse-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="assets/images/icons/git-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="assets/images/icons/evernote-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="assets/images/icons/zendesk-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="assets/images/icons/kayako-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="assets/images/icons/intercom-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="assets/images/icons/treehouse-dark.svg" alt="">
                 </div>
             </div>
         </section>
@@ -500,7 +519,8 @@
                     customer support.</p>
             </div>
             <div class="mt-[82px] flex items-end gap-[50px] lg:gap-[74px] flex-wrap justify-center">
-                <div class="bg-[#FEFBFA] border border-[#E5E8EC] rounded-2xl w-[313px] ps-[24px] pe-[18px] py-[34px]">
+                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    class="bg-[#FEFBFA] border border-[#E5E8EC] rounded-2xl w-[313px] ps-[24px] pe-[18px] py-[34px]">
                     <div class="mb-6">
                         <h1 class="text-[24px] font-bold text-[#14202D] mb-2">Business</h1>
                         <p class="text-xs md:text-sm text-[#6F7A85]">Everything you need to control spend and optimize
@@ -543,7 +563,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="bg-[#FEFBFA] border border-[#E5E8EC] rounded-2xl w-[363px] home4-middle-subscription-card">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    class="bg-[#FEFBFA] border border-[#E5E8EC] rounded-2xl w-[363px] home4-middle-subscription-card">
                     <div class="h-[23px] bg-[#E35C30] rounded-t-2xl"></div>
                     <div class="ps-[24px] pe-[18px] pt-[15px] pb-[34px]">
                         <div class="mb-6">
@@ -592,7 +613,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#FEFBFA] border border-[#E5E8EC] rounded-2xl w-[313px] ps-[24px] pe-[18px] py-[34px]">
+                <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    class="bg-[#FEFBFA] border border-[#E5E8EC] rounded-2xl w-[313px] ps-[24px] pe-[18px] py-[34px]">
                     <div class="mb-6">
                         <h1 class="text-[24px] font-bold text-[#14202D] mb-2">Business</h1>
                         <p class="text-xs md:text-sm text-[#6F7A85]">Everything you need to control spend and optimize
@@ -797,6 +819,21 @@
 
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src="assets/js/libs/grt-youtube-popup.js"></script>
+ 
+     <!-- Initialize GRT Youtube Popup plugin -->
+     <script>
+         // Demo video 1
+         $(".youtube-link").grtyoutube({
+             autoPlay: true,
+             theme: "dark"
+         });
+     </script>
 </body>
 
 </html>

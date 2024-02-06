@@ -14,11 +14,14 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
+
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -27,13 +30,13 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -41,7 +44,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -71,7 +75,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -87,9 +91,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
-                    <img src="../assets/images/icons/dark-logo.svg" alt="">
-                </div>
+                <a href="../Home.html">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/dark-logo.svg" alt="">
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -104,7 +108,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -161,9 +166,10 @@
     <!-- Top Main -->
     <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
         <!-- Sign Up Section -->
-        <section class="mt-[102px]">
-            <h1 class="text-[36px] font-bold text-[#262729] text-center">Sign Up</h1>
-            <p class="text-[20px] font-medium text-[#676769] mt-4 mb-[34px] text-center">To get started, you need to
+        <section class="mt-[50px] md:mt-[102px]">
+            <h1 class="text-[24px] md:text-[36px] font-bold text-[#262729] text-center">Sign Up</h1>
+            <p class="text-base md:text-[20px] font-medium text-[#676769] mt-4 mb-[34px] text-center">To get started,
+                you need to
                 sign in here.</p>
 
             <form class="max-w-[368px] mx-auto border border-[#D9D9D9]  px-6 pt-6 pb-[35px] bg-[#FBFBFB]">
@@ -236,7 +242,7 @@
                     <a href="#"><img src="../assets/images/icons/violet-instagram.svg" alt=""></a>
                 </div>
             </div>
-            <div class="flex justify-between md:justify-start md:gap-[55px] mt-10 md:mt-0">
+            <div class="flex flex-wrap justify-between md:justify-start gap-8 md:gap-[55px] mt-10 md:mt-0">
                 <div>
                     <h1 class="font-semibold text-sm text-[#25373F] mb-4">Company</h1>
                     <ul class="flex flex-col gap-[6px] text-xs md:text-sm text-[#676769]">

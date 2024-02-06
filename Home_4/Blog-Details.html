@@ -14,27 +14,30 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
+
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
-<body id="container" class="font-[inter]">
+<body id="container" class="font-[inter] bg-[#F8F8FA]">
     <div class="">
         <section>
             <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#33302F]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-1 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
@@ -42,6 +45,7 @@
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
                                 <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,8 +54,8 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-1 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
@@ -71,8 +75,8 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
-                                        alt="">
+                                    <img class="p-1 cursor-pointer"
+                                        src="../assets/images/icons/arrow_drop_down-deep-blue.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-[#33302F] px-2">
@@ -87,9 +91,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div class="flex items-center gap-1">
+                <a href="../Home4.html" class="flex items-center gap-1">
                     <img class="w-[100px] md:w-auto" src="../assets/images/icons/home4-logo2.svg" alt="">
-                </div>
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#242221]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -105,6 +109,7 @@
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
                                 <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -259,18 +264,22 @@
                 <div>
                     <div>
                         <div>
-                            <img src="../assets/images/Blog-image1.png" alt="">
+                            <img data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0"
+                                data-aos-easing="ease-in-out" src="../assets/images/Blog-image1.png" alt="">
                         </div>
                         <div class="flex flex-wrap items-center gap-y-2 gap-x-6 mt-5">
-                            <div class="flex items-center gap-1">
+                            <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0"
+                                data-aos-easing="ease-in-out" class="flex items-center gap-1">
                                 <img src="../assets/images/icons/calendar_clock.svg" alt="">
                                 <p class="text-sm text-[#EC9E85]">July 21, 2023</p>
                             </div>
-                            <div class="flex items-center gap-1">
+                            <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200"
+                                data-aos-easing="ease-in-out" class="flex items-center gap-1">
                                 <img src="../assets/images/icons/account_circle.svg" alt="">
                                 <p class="text-sm text-[#EC9E85]">John Smith</p>
                             </div>
-                            <div class="flex items-center gap-1">
+                            <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400"
+                                data-aos-easing="ease-in-out" class="flex items-center gap-1">
                                 <img src="../assets/images/icons/add_comment.svg" alt="">
                                 <p class="text-sm text-[#EC9E85]">2 Comments</p>
                             </div>
@@ -297,7 +306,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="mt-[72px] max-w-[648px] h-[158px] home4-blog bg-cover px-8 pt-[51px]">
+                    <div class="mt-[72px] max-w-[648px] md:h-[158px] home4-blog bg-cover px-8 pt-[51px] pb-5">
                         <h1 class="font-medium text-white leading-[27px] text-lg">“The best free way for SaaS companies
                             to start leveraging video is using free social media tools like Facebook Live or Instagram,”
                             said Caneva. </h1>
@@ -315,11 +324,11 @@
                 <div class="">
                     <div class="lg:w-[330px] max-w-[330px]">
                         <div
-                            class="max-w-[330px] h-[56px] border border-[#F2F2F0] rounded-lg flex items-center gap-1 px-3 py-2">
+                            class="max-w-[330px] h-[56px] border border-[#F2F2F0] bg-white rounded-lg flex items-center gap-1 px-3 py-2">
                             <img src="../assets/images/icons/Search-home2-blog.svg" alt="">
                             <input class="outline-none flex-grow bg-transparent" type="text" placeholder="Search">
                         </div>
-                        <div class="mt-5 border border-[#F2F2F0] p-4 rounded-lg">
+                        <div class="mt-5 border border-[#F2F2F0] bg-white p-4 rounded-lg">
                             <h1 class="text-[24px] font-semibold text-[#262729]">Categories</h1>
                             <ul class="mt-[48px] max-w-[300px] list-disc ps-10">
                                 <li class="text-[#676769] text-sm mb-2">Innovations (05)</li>
@@ -329,7 +338,7 @@
                                 <li class="text-[#676769] text-sm mb-2">Innovations (05)</li>
                             </ul>
                         </div>
-                        <div class="mt-6 border border-[#F2F2F0] p-6 rounded-lg">
+                        <div class="mt-6 border border-[#F2F2F0] bg-white p-6 rounded-lg">
                             <h1 class="text-[24px] font-semibold text-[#2C2003]">Tags</h1>
                             <div
                                 class="mt-[44px] max-w-[286px] grid grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-x-4 gap-y-3">
@@ -398,7 +407,7 @@
         <!-- End About us main -->
 
 
-        <section class="mt-[104px] max-w-[505px] px-5 md:px-0">
+        <section class="mt-[104px] max-w-[505px] px-5 lg:px-0">
             <h1 class="text-[#262729] text-base md:text-[20px] font-bold">Comments<span>(3)</span></h1>
             <div class="mt-12 flex flex-col gap-">
                 <div>
@@ -410,10 +419,10 @@
                             <p class="text-xs md:text-sm font-bold text-[#2C2003]">15 Jan, 2020</p>
                             <p class="text-sm md:text-base text-[#646464] mt-4">Lorem ipsum dolor sit amet, consectetuer
                                 adipiscing elit</p>
-                            <div class="flex items-center gap-1 mt-4">
+                            <a href="#" class="flex items-center gap-1 mt-4">
                                 <img src="../assets/images/icons/quickreply-orange.svg" alt="">
                                 <p class="text-[#E35C30] text-base font-semibold">Replay</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -426,10 +435,10 @@
                             <p class="text-xs md:text-sm font-bold text-[#2C2003]">15 Jan, 2020</p>
                             <p class="text-sm md:text-base text-[#646464] mt-4">Lorem ipsum dolor sit amet, consectetuer
                                 adipiscing elit</p>
-                            <div class="flex items-center gap-1 mt-4">
+                            <a href="#" class="flex items-center gap-1 mt-4">
                                 <img src="../assets/images/icons/quickreply-orange.svg" alt="">
                                 <p class="text-[#E35C30] text-base font-semibold">Replay</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -442,10 +451,10 @@
                             <p class="text-xs md:text-sm font-bold text-[#2C2003]">15 Jan, 2020</p>
                             <p class="text-sm md:text-base text-[#646464] mt-4">Lorem ipsum dolor sit amet, consectetuer
                                 adipiscing elit</p>
-                            <div class="flex items-center gap-1 mt-4">
+                            <a href="#" class="flex items-center gap-1 mt-4">
                                 <img src="../assets/images/icons/quickreply-orange.svg" alt="">
                                 <p class="text-[#E35C30] text-base font-semibold">Replay</p>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -454,7 +463,7 @@
 
         <!-- Contact Section -->
         <section class="mt-[136px] px-5 md:px-0">
-            <form class="bg-white">
+            <form class="">
                 <div class="md:grid grid-cols-5 gap-[26px]">
                     <div class="flex flex-col gap-[11px] col-span-2">
                         <label>
@@ -496,7 +505,7 @@
                         <span class="text-base font-medium text-[#2C2003]">Message</span>
                     </label>
                     <div class="border border-[#CED2DA] rounded-lg px-3 py-4 bg-white">
-                        <textarea class="resize-none w-full h-[138px]" name="" id=""></textarea>
+                        <textarea class="resize-none w-full h-[138px] outline-none" name="" id=""></textarea>
                     </div>
                 </div>
 
@@ -592,6 +601,10 @@
 
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

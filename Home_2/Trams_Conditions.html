@@ -14,11 +14,14 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
+
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -27,21 +30,22 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
                                 <li><a href="../Home.html">Home 1</a></li>
-                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -61,6 +65,7 @@
                                 <li><a href="#">Utility</a></li>
                                 <li><a href="Gallery.html">Gallery</a></li>
                                 <li><a href="404.html">404</a></li>
+                                <li><a href="Trams_Conditions.html">Trams & Conditions</a></li>
                                 <li class="relative contact-variation-container">
                                     <a href="#">Contact Us</a>
                                     <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
@@ -77,7 +82,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -93,24 +98,25 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
+                <a href="../Home2.html">
                     <img class="w-[100px] md:w-auto" src="../assets/images/icons/home2-logo.svg" alt="">
-                </div>
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
                             <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
                                 <li><a href="../Home.html">Home 1</a></li>
-                                <li><a href="Home2.html">Home 2</a></li>
+                                <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -119,7 +125,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -130,6 +136,7 @@
                                 <li><a href="#">Utility</a></li>
                                 <li><a href="Gallery.html">Gallery</a></li>
                                 <li><a href="404.html">404</a></li>
+                                <li><a href="Trams_Conditions.html">Trams & Conditions</a></li>
                                 <li class="relative contact-variation-container">
                                     <a href="#">Contact Us</a>
                                     <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
@@ -146,7 +153,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -171,7 +178,7 @@
     <section class="pt-[50px] md:pt-[108px] lg:flex items-center justify-between mx-6 md:mx-[70px] xl:mx-[150px]">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="max-w-[640px] text-center">
-                <h1 class="font-bold text-[#454545] text-[36px] lg:text-[57px] mb-10">Terms &
+                <h1 class="font-bold text-[#454545] text-[24px] sm:text-[36px] lg:text-[57px] mb-10">Terms &
                     Conditions</h1>
                 <p class="text-sm md:text-base font-medium text-[#676769] md:leading-[24px]">By
                     accessing and placing an order with UXTheme, you confirm that you are in agreement with and
@@ -191,8 +198,8 @@
 
 
         <section>
-            <div class="mt-[92px]">
-                <p class="text-sm md:text-base text-[#676769] font-medium">By accessing and placing an order with
+            <div class="mt-[50px] md:mt-[92px]">
+                <p class="text-sm md:text-base text-[#676769] font-medium text-center md:text-start">By accessing and placing an order with
                     UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained
                     in the Terms Of Use outlined below. These terms apply to the entire website and any email or other
                     type of communication between you and UXTheme. Under no circumstances shall UXTheme team be liable
@@ -204,21 +211,21 @@
                     any outcome that may occur during the course of usage of our resources.
                 </p>
             </div>
-            <div class="mt-[83px]">
+            <div class="mt-[50px] md:mt-[83px]">
                 <h2 class="font-semibold text-sm md:text-base text-[#454545] mb-6">License</h2>
                 <p class="text-sm md:text-base text-[#676769] font-medium">By accessing and placing an order with
                     UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained
                     in the Terms Of Use outlined below. These terms apply to
                 </p>
             </div>
-            <div class="mt-[83px]">
+            <div class="mt-[50px] md:mt-[83px]">
                 <h2 class="font-semibold text-sm md:text-base text-[#454545] mb-6">Security</h2>
                 <p class="text-sm md:text-base text-[#676769] font-medium">By accessing and placing an order with
                     UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained
                     in the Terms Of Use outlined below. These terms apply to
                 </p>
             </div>
-            <div class="mt-[83px]">
+            <div class="mt-[50px] md:mt-[83px]">
                 <h2 class="font-semibold text-sm md:text-base text-[#454545] mb-6">Embedded content from other websites
                 </h2>
                 <p class="text-sm md:text-base text-[#676769] font-medium">By accessing and placing an order with
@@ -226,7 +233,7 @@
                     in the Terms Of Use outlined below. These terms apply to
                 </p>
             </div>
-            <div class="mt-[83px]">
+            <div class="mt-[50px] md:mt-[83px]">
                 <h2 class="font-semibold text-sm md:text-base text-[#454545] mb-6">Changes about terms</h2>
                 <p class="text-sm md:text-base text-[#676769] font-medium">By accessing and placing an order with
                     UXTheme, you confirm that you are in agreement with and bound by the terms and conditions contained
@@ -242,20 +249,20 @@
 
     <!-- Footer -->
     <footer class="mt-[100px] md:mt-[199px] px-[30px] lg:px-[150px] pb-[30px] lg:pb-[56px]">
-        <div class="flex flex-col md:flex-row gap-3 items-center justify-between mb-6 px-5">
+        <div class="flex flex-col md:flex-row gap-3 items-center justify-between mb-6">
             <div class="md:hidden">
                 <img src="../assets/images/icons/align-justify.svg" alt="">
             </div>
             <div class="flex items-center gap-1">
                 <img class="w-[120px] md:w-auto" src="../assets/images/icons/home2-logo.svg" alt="">
             </div>
-            <ul class="flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#25373F]">
+            <ul class="flex items-center gap-4 md:gap-6 text-[14px] font-semibold text-[#25373F]">
                 <li>
                     <div class="dropdown dropdown-hover">
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Home </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -272,7 +279,7 @@
                         <label tabindex="0" class="home2-footer-page-label">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Pages </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -300,7 +307,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Components </a>
-                                <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>

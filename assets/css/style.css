@@ -1,4 +1,5 @@
 
+
 .features-card:hover {
     box-shadow: 1px 10px 20px -1px rgba(173, 181, 183, 0.67);
     transition: .5s ease;
@@ -39,29 +40,36 @@
     transition: .5s ease;
 }
 
-.mini-card{
+.mini-card {
     box-shadow: 1px 10px 20px -1px rgba(173, 181, 183, 0.67);
     transition: .5s ease;
 }
-.white-image{
+
+.white-image {
     display: none;
 }
-.mini-card:hover{
+
+.mini-card:hover {
     box-shadow: none;
 }
-.mini-card:hover .white-image{
+
+.mini-card:hover .white-image {
     display: block;
 }
-.mini-card:hover .black-image{
+
+.mini-card:hover .black-image {
     display: none;
 }
-.mini-card:hover h5{
+
+.mini-card:hover h5 {
     color: white;
 }
-.mini-card:hover p{
+
+.mini-card:hover p {
     color: white;
 }
-#home-4-contact-terms input[type=checkbox]{
+
+#home-4-contact-terms input[type=checkbox] {
     appearance: none;
     position: relative;
     width: 15px;
@@ -70,10 +78,12 @@
     background-color: white;
     margin: 0;
 }
-#home-4-contact-terms input[type=checkbox]:checked{
+
+#home-4-contact-terms input[type=checkbox]:checked {
     background-color: white;
 }
-#home-4-contact-terms input[type=checkbox]:checked::after{
+
+#home-4-contact-terms input[type=checkbox]:checked::after {
     content: '';
     position: absolute;
     width: 9px;
@@ -83,12 +93,14 @@
     border-left: 2.5px solid #2C2003;
     border-bottom: 2.5px solid #2C2003;
     transform: rotate(-45deg);
-    
+
 }
-.contact-variation{
+
+.contact-variation {
     display: none;
 }
-.contact-variation-container:hover .contact-variation{
+
+.contact-variation-container:hover .contact-variation {
     display: block;
 }
 
@@ -268,7 +280,7 @@ img {
 }
 
 .home3-banner2 {
-    background-image: (url('../images/home3-banner.png'));
+    background-image: url('../images/home3-banner.png');
 }
 
 .home3-blog {
@@ -298,8 +310,35 @@ img {
 .home4-blog {
     background-image: url('../images//home4-blog.png');
 }
-.home4-faq-bg{
+
+.home4-faq-bg {
     background-image: url('../images/home4-faq-bg.png');
+}
+
+.home5_banner_bg {
+    background-image: url('../images/Home5_banner_bg.png');
+}
+
+.home5_choose_us_bg {
+    background-image: url('../images/choose_us_bg.png');
+    background-repeat: no-repeat;
+}
+
+.home5_our_services_bg {
+    background-image: url('../images/our_services.png');
+}
+.home5_case_studies_bg {
+    background-image: url('../images/Home5_Case_studies.png');
+}
+
+.home5_footer_bg{
+    background-image: url('../images/Home5_Footer.png');
+}
+.home5_banner_bg_2{
+    background-image: url('../images/home5_banner_bg2.png');
+}
+.home5_contact_bg{
+    background-image: url('../images/contact_map.png');
 }
 
 /* End Banner */
@@ -314,12 +353,12 @@ img {
     /* top: -80px; */
 }
 
-.home4-signup-container{
+.home4-signup-container {
     padding: 31px 24px 26px 24px;
-    box-shadow: -2px 21px 15px -8px rgba(0,0,0,0.28);
+    box-shadow: -2px 21px 15px -8px rgba(0, 0, 0, 0.28);
 }
 
-#home4-ready-input::placeholder{
+#home4-ready-input::placeholder {
     color: white;
 }
 
@@ -379,10 +418,16 @@ img {
     .home3-banner {
         height: 670px;
     }
+
+    .home3-pricing-plans-card {
+        box-shadow: 0px 5px 15px -5px #404072;
+        transition: .5s ease;
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .home3-banner {
         height: 470px;
     }
+
 }

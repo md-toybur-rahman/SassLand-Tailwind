@@ -14,11 +14,13 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/css/libs/aos.css">
 
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -26,20 +28,21 @@
         <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
             <!-- mobile menubar -->
             <ul id="homeMenubar"
-                class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#2C2003]">
+                class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#2C2003]">
                 <li>
                     <div class="dropdown dropdown-hover">
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Home </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
                         <ul tabindex="0" class="dropdown-content z-[1] menu rounded-box w-40 bg-white px-2">
-                            <li><a href="Home_1/Home.html">Home 1</a></li>
-                            <li><a href="Home_3/Home3.html">Home 3</a></li>
-                            <li><a href="Home_4/Home4.html">Home 4</a></li>
+                            <li><a href="Home.html">Home 1</a></li>
+                            <li><a href="Home3.html">Home 3</a></li>
+                            <li><a href="Home4.html">Home 4</a></li>
+                            <li><a href="Home5.html">Home 5</a></li>
                         </ul>
                     </div>
                 </li>
@@ -48,7 +51,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Pages </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -60,12 +63,12 @@
                             <li><a href="Home_2/Gallery.html">Gallery</a></li>
                             <li><a href="Home_2/404.html">404</a></li>
                             <li class="relative contact-variation-container">
-                                    <a href="#">Contact Us</a>
-                                    <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
-                                        <li><a href="Home_2/Contact_Us.html">Contact Variation 1</a></li>
-                                        <li><a href="Home_2/Contact_Us_2.html">Contact Variation 2</a></li>
-                                    </ul>
-                                </li>
+                                <a href="#">Contact Us</a>
+                                <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
+                                    <li><a href="Home_2/Contact_Us.html">Contact Variation 1</a></li>
+                                    <li><a href="Home_2/Contact_Us_2.html">Contact Variation 2</a></li>
+                                </ul>
+                            </li>
                             <li><a href="Home_2/Blog.html">Blog</a></li>
                         </ul>
                     </div>
@@ -75,7 +78,7 @@
                         <label tabindex="0" class="">
                             <div class="flex items-center gap-1">
                                 <a href="#" class="">Components </a>
-                                <img class="p-2 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
+                                <img class="py-1 cursor-pointer" src="assets/images/icons/arrow_black_drop_down.svg"
                                     alt="">
                             </div>
                         </label>
@@ -91,9 +94,9 @@
             <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                 <img src="assets/images/icons/align-justify-dark.svg" alt="">
             </div>
-            <div class="flex items-center gap-1">
+            <a href="index.html" class="flex items-center gap-1">
                 <img class="w-[100px] md:w-auto" src="assets/images/icons/home2-logo.svg" alt="">
-            </div>
+            </a>
             <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#2C2003]">
                 <li>
                     <div class="dropdown dropdown-hover">
@@ -108,6 +111,7 @@
                             <li><a href="Home.html">Home 1</a></li>
                             <li><a href="Home3.html">Home 3</a></li>
                             <li><a href="Home4.html">Home 4</a></li>
+                            <li><a href="Home5.html">Home 5</a></li>
                         </ul>
                     </div>
                 </li>
@@ -128,12 +132,12 @@
                             <li><a href="Home_2/Gallery.html">Gallery</a></li>
                             <li><a href="Home_2/404.html">404</a></li>
                             <li class="relative contact-variation-container">
-                                    <a href="#">Contact Us</a>
-                                    <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
-                                        <li><a href="Home_2/Contact_Us.html">Contact Variation 1</a></li>
-                                        <li><a href="Home_2/Contact_Us_2.html">Contact Variation 2</a></li>
-                                    </ul>
-                                </li>
+                                <a href="#">Contact Us</a>
+                                <ul class="w-40 absolute mt-8 z-10 bg-white contact-variation">
+                                    <li><a href="Home_2/Contact_Us.html">Contact Variation 1</a></li>
+                                    <li><a href="Home_2/Contact_Us_2.html">Contact Variation 2</a></li>
+                                </ul>
+                            </li>
                             <li><a href="Home_2/Blog.html">Blog</a></li>
                         </ul>
                     </div>
@@ -195,24 +199,30 @@
                 OVER THE
                 WORLD</h1>
             <div class="flex flex-wrap items-center justify-center gap-[30px] md:gap-[86px]">
-                <img class="w-[50px] md:w-auto" src="assets/images/icons/git-yellow.svg" alt="">
-                <img class="w-[50px] md:w-auto" src="assets/images/icons/evernote.svg" alt="">
-                <img class="w-[50px] md:w-auto" src="assets/images/icons/zendesk.svg" alt="">
-                <img class="w-[50px] md:w-auto" src="assets/images/icons/kayako.svg" alt="">
-                <img class="w-[50px] md:w-auto" src="assets/images/icons/intercom.svg" alt="">
-                <img class="w-[50px] md:w-auto" src="assets/images/icons/treehouse.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/git-yellow.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/evernote.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/zendesk.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/kayako.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/intercom.svg" alt="">
+                <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500" class="w-[50px] md:w-auto"
+                    src="assets/images/icons/treehouse.svg" alt="">
             </div>
         </div>
     </section>
     <!-- End Trusted Companies -->
 
     <!-- Top Main -->
-    <main class="max-w-[1142px] mx-auto px-5 xl:px-0">
+    <main class="max-w-[1142px] overflow-hidden md:overflow-visible mx-auto px-5 xl:px-0">
 
         <!-- Leader in web -->
         <section
             class="flex flex-col items-center justify-center lg:grid grid-cols-2 gap-10 lg:gap-[97px] mt-[60px] md:mt-[120px] max-w-[1140px] mx-auto px-5">
-            <div>
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <img src="assets/images/Group366.jpg" alt="">
             </div>
             <div class="lg:max-w-[485px]">
@@ -221,17 +231,20 @@
                 <p class="text-base md:text-[20px], font-medium text-[#676769] mb-11">Amet minim mollit non deserunt
                     ullamco est sit aliqua dolor do amet sint velit of a officia</p>
                 <div class=" flex items-center justify-center lg:justify-start gap-6">
-                    <div class="text-center">
+                    <div class="text-center" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-delay="0">
                         <h1 class="text-[36px] md:text-[48px] text-[#F9C242] font-bold mb-4">53K</h1>
                         <p class="text-sm md:text-base text-[#676769]">Cool Number</p>
                     </div>
                     <div class="w-[1px] h-[51px] bg-[#E8E8E9]"></div>
-                    <div class="text-center">
+                    <div class="text-center" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-delay="100">
                         <h1 class="text-[36px] md:text-[48px] text-[#F9C242] font-bold mb-4">10K</h1>
                         <p class="text-sm md:text-base text-[#676769]">Projects Done</p>
                     </div>
                     <div class="w-[1px] h-[51px] bg-[#E8E8E9]"></div>
-                    <div class="text-center">
+                    <div class="text-center" data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-delay="300">
                         <h1 class="text-[36px] md:text-[48px] text-[#F9C242] font-bold mb-4">120</h1>
                         <p class="text-sm md:text-base text-[#676769]">Cool Number</p>
                     </div>
@@ -251,7 +264,8 @@
                 spend and optimize finance operations, all on a single platform.</p>
         </div>
         <div class="flex items-center gap-6 flex-wrap justify-center">
-            <div class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[#E6E9E9] rounded-2xl">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="400"
+                class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[#E6E9E9] rounded-2xl">
                 <img class="mb-7" src="assets/images/icons/Design-icon.svg" alt="">
                 <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Design & Vreatives</h1>
                 <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem
@@ -260,7 +274,8 @@
                 <a class="text-sm md:text-base font-bold md:font-normal flex items-center gap-2 text-[#6A26DA]"
                     href="#">Get Started <img src="assets/images/icons/Arrow Right.svg" alt=""></a>
             </div>
-            <div class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[#E6E9E9] rounded-2xl">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200"
+                class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[#E6E9E9] rounded-2xl">
                 <img class="mb-7" src="assets/images/icons/Account-icon.svg" alt="">
                 <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Team Accounts</h1>
                 <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem
@@ -269,7 +284,8 @@
                 <a class="text-sm md:text-base font-bold md:font-normal flex items-center gap-2 text-[#6A26DA]"
                     href="#">Get Started <img src="assets/images/icons/Arrow Right.svg" alt=""></a>
             </div>
-            <div class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[#E6E9E9] rounded-2xl">
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="px-[27px] pt-[27px] pb-[53px] max-w-[361px] bg-white border border-[#E6E9E9] rounded-2xl">
                 <img class="mb-7" src="assets/images/icons/branding-icon.svg" alt="">
                 <h1 class="text-lg md:text-2xl font-semibold text-[#25373F] mb-4">Branding</h1>
                 <p class="text-sm md:text-base text-[#676769] mb-[27px]">There are many variations passages of Lorem
@@ -285,7 +301,8 @@
 
     <!-- Pricing And Plans -->
     <section class="bg-[#F9C242] px-5 lg:px-0 pb-[86px]">
-        <div class="pt-[86px] flex items-center gap-[100px] lg:gap-[215px] flex-wrap justify-center">
+        <div
+            class="pt-[86px] flex items-center gap-[100px] lg:gap-[215px] flex-wrap justify-center max-w-[1140px] overflow-hidden md:overflow-visible mx-auto">
             <div>
                 <h1 class="text-2xl md:text-[36px] text-[#2C2003] font-semibold mb-6">Pricing & Plans</h1>
                 <p class="text-sm md:text-base font-medium text-[#2C2003] mb-[84px] max-w-[460px]">Everything you need
@@ -343,12 +360,12 @@
                                             alt="">
                                     </div>
                                     <div>
-                                        <p class="text-[#F0F0F0] text-xs md:text-sm py-2">“The platform has been able to
+                                        <p class="text-[#392904] text-xs md:text-sm py-2">“The platform has been able to
                                             accommodate
                                             our
                                             growth and
                                             a variety of event types throughout the year.”</p>
-                                        <p class="text-[11px] text-[#E0E0E0]">Hunter A., Head of Growth</p>
+                                        <p class="text-[11px] text-[#84661E]">Hunter A., Head of Growth</p>
                                     </div>
                                 </div>
                             </div>
@@ -373,12 +390,12 @@
                                             alt="">
                                     </div>
                                     <div>
-                                        <p class="text-[#F0F0F0] text-xs md:text-sm py-2">“The platform has been able to
+                                        <p class="text-[#392904] text-xs md:text-sm py-2">“The platform has been able to
                                             accommodate
                                             our
                                             growth and
                                             a variety of event types throughout the year.”</p>
-                                        <p class="text-[11px] text-[#E0E0E0]">Hunter A., Head of Growth</p>
+                                        <p class="text-[11px] text-[#84661E]">Hunter A., Head of Growth</p>
                                     </div>
                                 </div>
                             </div>
@@ -399,7 +416,8 @@
                 <!-- End Carousel -->
 
             </div>
-            <div class="bg-white rounded-2xl w-[433px] py-[45px]">
+            <div data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="bg-white rounded-2xl w-[433px] py-[45px]">
                 <div class="px-[59px] border-b border-[#DADADA] text-center">
                     <h1 class="font-extrabold text-4xl md:text-6xl mb-4 tracking-tighter"><span
                             class="text-base md:text-xl font-medium">$</span>99<span
@@ -543,6 +561,10 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/libs/home2-carousel.js"></script>
+    <script src="assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

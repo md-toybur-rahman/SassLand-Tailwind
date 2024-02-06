@@ -21,7 +21,7 @@
     <!-- Tailwind Css -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -30,13 +30,13 @@
             <nav class="mx-6 md:mx-[70px] xl:mx-[150px] py-[18px] flex items-center justify-between">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-[#262729]">
+                    class="flex lg:hidden justify-center absolute top-14 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -44,7 +44,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -53,7 +54,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -74,7 +75,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer"
+                                    <img class="py-1 cursor-pointer"
                                         src="../assets/images/icons/arrow_black_drop_down.svg" alt="">
                                 </div>
                             </label>
@@ -90,9 +91,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div>
-                    <img src="../assets/images/icons/dark-logo.svg" alt="">
-                </div>
+                <a href="../Home.html">
+                    <img class="w-[100px] md:w-auto" src="../assets/images/icons/dark-logo.svg" alt="">
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#262729]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -107,7 +108,8 @@
                                 <li><a href="../Home.html">Home 1</a></li>
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
-                                <li><a href="..//Home4.html">Home 4</a></li>
+                                <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -157,8 +159,10 @@
                 </div>
             </nav>
             <!-- Banner Section -->
-            <section class="pt-[50px] md:pt-[99px] mx-6 md:mx-[70px] xl:mx-[150px]">
-                <h1 class="font-bold text-[#262729] text-[36px] lg:text-[57px] mb-[50px] md:mb-[100px] lg:mb-[150px]">
+            <section
+                class="pt-[50px] md:pt-[99px] px-6 md:px-[70px] xl:mx-[150px] w-[100vw] md:w-auto overflow-hidden text-center md:text-start">
+                <h1
+                    class="font-bold text-[#262729] text-[24px] sm:text-[36px] lg:text-[57px] mb-[50px] md:mb-[100px] lg:mb-[150px]">
                     About us.</h1>
                 <!-- Easy to use -->
                 <section class="flex flex-wrap lg:flex-nowrap  gap-10 justify-between items-center">
@@ -223,7 +227,8 @@
     <!-- End Dashboard -->
 
     <!-- Team Leader -->
-    <section class="mx-auto max-w-[1150px] px-5 md:px-0 mt-[70px] md:mt-[150px]">
+    <section
+        class="mx-auto max-w-[1150px] overflow-hidden xl:overflow-visible px-5 md:px-0 mt-[70px] md:mt-[150px] pb-10 md:pb-0">
         <div class="max-w-[790px] mx-auto text-center">
             <h1 class="font-semibold text-[24px] md:text-[36px] text-[#262729] mb-4">Our Team Leader</h1>
             <p class="text-sm md:text-base text-[#676769] font-medium mb-[56px] md:leading-[32px]">We partner closely
@@ -242,6 +247,12 @@
                     <p class="text-xs md:text-sm mt-2">Management</p>
                     <p class="text-[#676769] text-xs md:text-sm mt-[23px]">Amet minim mollit non deserunt ullamco est
                         sit aliqua dolor do amet sint velit of a officia</p>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
+                        <a href="#"><img src="../assets/images/icons/facebook-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/twitter-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/linkedin-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/instagram-blue.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
             <div data-aos="fade-down-left" data-aos-duration="1000"
@@ -254,6 +265,12 @@
                     <p class="text-xs md:text-sm mt-2">Management</p>
                     <p class="text-[#676769] text-xs md:text-sm mt-[23px]">Amet minim mollit non deserunt ullamco est
                         sit aliqua dolor do amet sint velit of a officia</p>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
+                        <a href="#"><img src="../assets/images/icons/facebook-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/twitter-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/linkedin-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/instagram-blue.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
             <div data-aos="fade-up-right" data-aos-duration="1000"
@@ -266,6 +283,12 @@
                     <p class="text-xs md:text-sm mt-2">Management</p>
                     <p class="text-[#676769] text-xs md:text-sm mt-[23px]">Amet minim mollit non deserunt ullamco est
                         sit aliqua dolor do amet sint velit of a officia</p>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
+                        <a href="#"><img src="../assets/images/icons/facebook-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/twitter-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/linkedin-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/instagram-blue.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
             <div data-aos="fade-up-left" data-aos-duration="1000"
@@ -278,6 +301,12 @@
                     <p class="text-xs md:text-sm mt-2">Management</p>
                     <p class="text-[#676769] text-xs md:text-sm mt-[23px]">Amet minim mollit non deserunt ullamco est
                         sit aliqua dolor do amet sint velit of a officia</p>
+                    <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
+                        <a href="#"><img src="../assets/images/icons/facebook-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/twitter-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/linkedin-blue.svg" alt=""></a>
+                        <a href="#"><img src="../assets/images/icons/instagram-blue.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -287,8 +316,8 @@
     <!-- Time is Money -->
     <section class="bg-[#6A26DA] px-5 py-[80px] md:py-[124px] mt-[100px] md:mt-[162px]">
         <section
-            class="flex flex-col md:flex-row items-start md:items-center justify-center gap-10 md:gap-[80px] lg:gap-[136px] w-fit mx-auto pt-[66px] pb-[156px]">
-            <div class="max-w-[413px]">
+            class="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-[80px] lg:gap-[136px] w-fit mx-auto">
+            <div class="max-w-[413px] text-center lg:text-start">
                 <h1 class="text-xl md:text-2xl font-semibold text-white mb-3">Time is money. Save both.</h1>
                 <p class="text-sm md:text-base text-[#C1C1F3] font-normal">With lots of unique blocks, you can easily
                     build a page

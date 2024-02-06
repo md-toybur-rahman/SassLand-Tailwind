@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'inter': ['Inter', 'sans-serif'],
-      'plex': ['IBM Plex Mono', 'sans-serif']
+      'plex': ['IBM Plex Mono', 'monospace']
     },
     extend: {
       colors: {

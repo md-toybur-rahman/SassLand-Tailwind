@@ -14,12 +14,16 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="../assets/css/libs/google_font.css">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="../assets/css/libs/aos.css">
 
     <!-- Tailwind Css -->
-    <!-- <link rel="stylesheet" href="../assets/css/libs/tailwind.css"> -->
     <link rel="stylesheet" href="../assets/css/libs/tailwind.css">
 
-    <title>Document</title>
+     <!-- GRT Youtube Plugin CSS -->
+     <link rel="stylesheet" href="../assets/css/libs/grt-youtube-popup.css">
+
+    <title>SassLand</title>
 </head>
 
 <body class="font-[inter]">
@@ -28,13 +32,13 @@
             <nav class="px-6 md:px-[70px] xl:px-[150px] py-[18px] flex items-center justify-between bg-white">
                 <!-- mobile menubar -->
                 <ul id="homeMenubar"
-                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-6 md:gap-10 text-[14px] font-semibold text-white">
+                    class="flex lg:hidden justify-center absolute top-16 -left-[1024px] duration-500 px-5 py-1 w-full items-center gap-4 md:gap-10 text-[14px] font-semibold text-white">
                     <li>
                         <div class="dropdown dropdown-hover">
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Home </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -43,6 +47,7 @@
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
                                 <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -51,7 +56,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Pages </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -72,7 +77,7 @@
                             <label tabindex="0" class="">
                                 <div class="flex items-center gap-1">
                                     <a href="#" class="">Components </a>
-                                    <img class="p-2 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
+                                    <img class="py-1 cursor-pointer" src="../assets/images/icons/arrow_drop_down.svg"
                                         alt="">
                                 </div>
                             </label>
@@ -88,9 +93,9 @@
                 <div onclick="mobileMenubarHandler('homeMenubar')" class="lg:hidden cursor-pointer">
                     <img src="../assets/images/icons/align-justify-dark.svg" alt="">
                 </div>
-                <div class="flex items-center gap-1">
+                <a href="../Home4.html" class="flex items-center gap-1">
                     <img class="w-[100px] md:w-auto" src="../assets/images/icons/home4-logo2.svg" alt="">
-                </div>
+                </a>
                 <ul class="hidden lg:flex items-center gap-2 md:gap-6 text-[14px] font-semibold text-[#242221]">
                     <li>
                         <div class="dropdown dropdown-hover">
@@ -106,6 +111,7 @@
                                 <li><a href="../Home2.html">Home 2</a></li>
                                 <li><a href="../Home3.html">Home 3</a></li>
                                 <li><a href="../Home4.html">Home 4</a></li>
+                                <li><a href="../Home5.html">Home 5</a></li>
                             </ul>
                         </div>
                     </li>
@@ -253,10 +259,11 @@
 
 
     <!-- Banner Section -->
-    <section class="h-[326px] lg:flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
+    <section class="h-[290px] md:h-[326px] flex items-center justify-between px-5 md:px-0 home4-banner2 bg-cover">
         <div class="flex flex-col items-center justify-center w-full">
             <div class="max-w-[746px] text-center">
-                <h1 class="font-bold text-[#E35C30] text-[24px] lg:text-[36px] leading-[72px] mb-6">About Us</h1>
+                <h1 class="font-bold text-[#E35C30] text-[24px] lg:text-[36px] leading-[72px] mb-4 md:mb-6">About Us
+                </h1>
                 <p class="text-sm md:text-sm lg:text-base font-medium leading-[24px] text-[#FFF5F2]">
                     We partner closely with the most progressive companies in the world to improve their customer
                     support operations. As consumers, we all have our own version of that one call to customer support.
@@ -267,7 +274,7 @@
     <!-- End Banner Section -->
 
 
-    <section class="mt-[50px] md:mt-[152px]">
+    <section class="mt-[50px] md:mt-[152px] max-w-full overflow-hidden">
         <div class="flex flex-wrap md:flex-nowrap items-center justify-center relative px-5 xl:px-0">
             <div class="absolute right-0 bottom-0 md:-top-[64px] z-0">
                 <img src="../assets/images/helping-background.png" alt="">
@@ -288,17 +295,18 @@
                 </div>
             </div>
             <div class="mt-10 md:mt-0">
-                <img src="../assets/images/Helping-image.png" alt="">
+                <img data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                    src="../assets/images/Helping-image.png" alt="">
             </div>
         </div>
     </section>
 
 
     <!-- Bottom Main -->
-    <main class="max-w-[1141px] mx-auto">
+    <main class="max-w-[1141px] mx-auto overflow-hidden md:overflow-visible">
         <!-- Testimonials Section -->
         <section class="px-5 lg:px-0 mt-[100px] md:mt-[156px]">
-            <div class="flex flex-col items-center justify-center mb-10 md:mb-[98px]">
+            <div class="flex flex-col items-center justify-center mb-[98px]">
                 <h1
                     class="font-bold text-[24px] md:text-[36px] text-[#242221] leadign-[54px] mb-4 max-w-[535px] mx-auto text-center">
                     What our clients think
@@ -311,7 +319,7 @@
             <div>
                 <div class="flex flex-wrap items-center gap-6 mb-6">
                     <div
-                        class="md:h-[348px] w-[705px] home4-testimonials bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
+                        class="md:h-[348px] w-full xl:w-[705px] home4-testimonials bg-cover px-5 md:px-[42px] py-[27px] flex items-end rounded-2xl">
                         <div>
                             <h1 class="text-lg md:text-[24px] leading-[36px] text-white">“The platform has been able to
                                 accommodate our
@@ -325,15 +333,18 @@
                                     </div>
                                     <p class="text-base md:text-[20px] text-[#E2E2E2]">Hunter A., Head of Growth</p>
                                 </div>
-                                <img class="w-10 md:w-auto" src="../assets/images/icons/play.svg" alt="">
+                                <img class="w-10 md:w-auto youtube-link cursor-pointer" youtubeid="xcJtL7QggTI" src="../assets/images/icons/play.svg" alt="">
                             </div>
                         </div>
                     </div>
                     <div
-                        class="md:h-[348px] w-full md:w-[407px] bg-[#E35C30] rounded-2xl md:ps-[28px] md:pe-[71px] md:pb-[28px] p-5 md:p-0 flex items-end">
+                        class="md:h-[348px] w-full xl:w-[407px] bg-[#E35C30] rounded-2xl md:ps-[28px] md:pe-[71px] md:pb-[28px] p-5 md:p-0 flex items-center xl:items-end justify-center xl:justify-start">
                         <div>
-                            <h1 class="font-semibold text-[50px] md:text-[73px] text-white">98%</h1>
-                            <p class="font-semibold text-lg md:text-[24px] leading-[36px] text-white max-w-[230px]">of
+                            <h1 class="font-semibold text-[50px] md:text-[73px] text-white text-center xl:text-start">
+                                98%</h1>
+                            <p
+                                class="font-semibold text-lg md:text-[24px] leading-[36px] text-white xl:max-w-[230px] text-center xl:text-start">
+                                of
                                 customers recommend sassland
                                 services</p>
                         </div>
@@ -341,17 +352,18 @@
                 </div>
                 <div class="flex flex-wrap gap-6">
                     <div
-                        class="w-full md:w-[397px] md:h-[367px] bg-[#343130] rounded-2xl md:ps-[33px] md:pe-[25px] md:pb-[24px] p-5 md:p-0 flex items-center md:items-end justify-center md:justify-start">
+                        class="w-full xl:w-[397px] md:h-[367px] bg-[#343130] rounded-2xl md:ps-[33px] md:pe-[25px] md:pb-[24px] p-5 md:p-0 flex items-center xl:items-end justify-center xl:justify-start">
                         <div>
                             <p class="font-semibold text-lg md:text-[26px] text-white leading-[36px] mb-12">How Christos
                                 Fellas
                                 Saves 25 hours
                                 a Month </p>
-                            <img class="w-full md:w-auto" src="../assets/images/testimonials2.svg" alt="">
+                            <img class="w-full md:w-auto mx-auto xl:mx-0" src="../assets/images/testimonials2.svg"
+                                alt="">
                         </div>
                     </div>
                     <div
-                        class="md:h-[367px] w-full md:w-[716px] px-5 md:px-[60px] py-5 md:py-[42px] rounded-2xl border border-[#E5E8EC]">
+                        class="md:h-[367px] w-full xl:w-[716px] px-5 md:px-[60px] py-5 md:py-[42px] rounded-2xl border border-[#E5E8EC]">
                         <div>
                             <div class="flex items-center gap-1">
                                 <img class="w-[30px] md:w-[42px]" src="../assets/images/icons/brown-star.svg" alt="">
@@ -383,12 +395,18 @@
             class="flex items-center justify-center mt-[50px] lg:mt-[89px] px-5 border-t border-[#E9E0DE] pt-[42px]">
             <div>
                 <div class="flex flex-wrap items-center justify-center gap-[30px] md:gap-[86px]">
-                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/git-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/evernote-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/zendesk-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/kayako-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/intercom-dark.svg" alt="">
-                    <img class="w-[50px] md:w-auto" src="../assets/images/icons/treehouse-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="../assets/images/icons/git-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="../assets/images/icons/evernote-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="../assets/images/icons/zendesk-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="../assets/images/icons/kayako-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="../assets/images/icons/intercom-dark.svg" alt="">
+                    <img data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500" data-aos-easing="ease-in-out"
+                        class="w-[50px] md:w-auto" src="../assets/images/icons/treehouse-dark.svg" alt="">
                 </div>
             </div>
         </section>
@@ -396,7 +414,7 @@
 
 
         <!-- Team Leader -->
-        <section class="mt-[70px] md:mt-[152px] px-5 xl:px-0">
+        <section class="mt-[70px] md:mt-[152px] px-5 xl:px-0 max-w-full overflow-hidden lg:overflow-visible">
             <div class="max-w-[790px] mx-auto text-center">
                 <h1 class="font-semibold text-[24px] md:text-[36px] text-[#322F2F] mb-4">Our Team Leader</h1>
                 <p class="text-sm md:text-base text-[#676769] font-medium mb-[56px] md:leading-[32px]">We partner
@@ -419,10 +437,10 @@
                             est
                             sit aliqua dolor do amet sint velit of a officia</p>
                         <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
-                            <img src="../assets/images/icons/Facebook-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/twitter-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/linkedin-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/instagram-home4-leader.svg" alt="">
+                            <a href="#"><img src="../assets/images/icons/Facebook-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/twitter-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/linkedin-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/instagram-home4-leader.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -438,10 +456,10 @@
                             est
                             sit aliqua dolor do amet sint velit of a officia</p>
                         <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
-                            <img src="../assets/images/icons/Facebook-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/twitter-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/linkedin-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/instagram-home4-leader.svg" alt="">
+                            <a href="#"><img src="../assets/images/icons/Facebook-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/twitter-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/linkedin-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/instagram-home4-leader.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -457,10 +475,10 @@
                             est
                             sit aliqua dolor do amet sint velit of a officia</p>
                         <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
-                            <img src="../assets/images/icons/Facebook-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/twitter-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/linkedin-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/instagram-home4-leader.svg" alt="">
+                            <a href="#"><img src="../assets/images/icons/Facebook-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/twitter-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/linkedin-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/instagram-home4-leader.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -476,10 +494,10 @@
                             est
                             sit aliqua dolor do amet sint velit of a officia</p>
                         <div class="flex items-center justify-center md:justify-start gap-2 mt-4">
-                            <img src="../assets/images/icons/Facebook-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/twitter-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/linkedin-home4-leader.svg" alt="">
-                            <img src="../assets/images/icons/instagram-home4-leader.svg" alt="">
+                            <a href="#"><img src="../assets/images/icons/Facebook-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/twitter-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/linkedin-home4-leader.svg" alt=""></a>
+                            <a href="#"><img src="../assets/images/icons/instagram-home4-leader.svg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -527,7 +545,8 @@
                 consumers,
                 we all have our own version of that one call to customer support.</p>
         </div>
-        <div class="mt-[42px] h-[497px] w-full home4-about bg-cover bg-center">
+        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="0" data-aos-easing="ease-in-out"
+            class="mt-[42px] h-[497px] w-full home4-about bg-cover bg-center">
         </div>
         <div class="max-w-[746px] mx-auto text-center mt-[42px] px-5 xl:px-0">
             <p class="text-sm md:text-base text-[#676769] font-medium mb-[56px] md:leading-[24px]">We partner
@@ -619,6 +638,21 @@
 
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/libs/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script src="../assets/js/libs/grt-youtube-popup.js"></script>
+ 
+     <!-- Initialize GRT Youtube Popup plugin -->
+     <script>
+         // Demo video 1
+         $(".youtube-link").grtyoutube({
+             autoPlay: true,
+             theme: "dark"
+         });
+     </script>
 </body>
 
 </html>
